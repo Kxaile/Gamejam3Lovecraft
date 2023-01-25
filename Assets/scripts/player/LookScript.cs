@@ -13,10 +13,9 @@ public class LookScript : MonoBehaviour
     public float lookPosition;
     public float viewLimit;
 
-    private void Update()
+    void Update()
     {
-        
-       
+
     }
     private void FixedUpdate()
     {
@@ -24,6 +23,20 @@ public class LookScript : MonoBehaviour
          * Qaternions dont project negative angles to euler, meaning we cant just rely on angle < limit to work 
          * so we need to check against both possible extremes 
          */
+
+        var mousePos = Input.mousePosition;
+        mousePos.x -= Screen.width / 2;
+        mousePos.y -= Screen.height / 2;
+
+        //print(mousePos.x + ", " + mousePos.y); // mouse coords
+
+        var MouseDistance = new Vector2((mousePos.x / (Screen.width / 2)) * 5, (mousePos.y / (Screen.height / 2)) * 5); // get mouse distance from centre 
+        Vector3 TargetRot = new Vector3(-MouseDistance.y, MouseDistance.x, 0f); //making rot vector
+
+        //print(TargetRot);  // rot vector
+
+        this.transform.localEulerAngles = TargetRot; // offsettign CAMERA NOT the holder
+
 
         if (TurningRight)
         {
