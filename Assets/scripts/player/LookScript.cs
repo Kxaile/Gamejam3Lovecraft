@@ -8,10 +8,15 @@ public class LookScript : MonoBehaviour
 {
 
     public Transform PlayerCam;
+    public Transform SeatPos;
+    public Transform TableViewPos;
+    public GameObject LeftAndRight;
     public bool TurningLeft;
     public bool TurningRight;
+    public bool LookingDown;
     public float lookPosition;
     public float viewLimit;
+
 
     void Update()
     {
@@ -71,11 +76,34 @@ public class LookScript : MonoBehaviour
     {
         TurningRight = false;
     }
+
+    public void LookTable()
+    {
+        if(LookingDown == true)
+        {
+            LookUp();
+        }
+        else
+        {
+            LookDown();
+        }
+    }
     public void LookDown()
     {
+        PlayerCam.position = TableViewPos.position;
+        PlayerCam.rotation = TableViewPos.rotation;
+        LookingDown = true;
+        LeftAndRight.SetActive(false);
+    }
+    public void LookUp()
+    {
+        PlayerCam.position = SeatPos.position;
+        PlayerCam.rotation = SeatPos.rotation;
+        LookingDown = false;
+        LeftAndRight.SetActive(true);
 
     }
-  
-    
-    
+
+
+
 }
