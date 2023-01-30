@@ -59,6 +59,27 @@ public class LookScript : MonoBehaviour
                 PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
             }
         }
+    }    
+    
+    public void LookDown()
+    {
+        LeanTween.move(PlayerCam.gameObject, TableViewPos.transform, 0.1f).setEaseOutCubic();
+        LeanTween.rotate(PlayerCam.gameObject, TableViewPos.eulerAngles, 0.1f).setEaseOutCubic();
+        //PlayerCam.position = TableViewPos.position;
+        //PlayerCam.rotation = TableViewPos.rotation;
+        LookingDown = true;
+        LeftAndRight.SetActive(false);
+    }
+    public void LookUp()
+    {
+        LeanTween.move(PlayerCam.gameObject, SeatPos.transform, 0.1f).setEaseOutCubic();
+        LeanTween.rotate(PlayerCam.gameObject, SeatPos.eulerAngles, 0.1f).setEaseOutCubic();
+        //PlayerCam.position = SeatPos.position;
+        //PlayerCam.rotation = SeatPos.rotation;
+        LookingDown = false;
+        LeftAndRight.SetActive(true);
+        lookPosition = 0f;
+
     }
     public void LookLeft()
     {
@@ -88,22 +109,7 @@ public class LookScript : MonoBehaviour
             LookDown();
         }
     }
-    public void LookDown()
-    {
-        PlayerCam.position = TableViewPos.position;
-        PlayerCam.rotation = TableViewPos.rotation;
-        LookingDown = true;
-        LeftAndRight.SetActive(false);
-    }
-    public void LookUp()
-    {
-        PlayerCam.position = SeatPos.position;
-        PlayerCam.rotation = SeatPos.rotation;
-        LookingDown = false;
-        LeftAndRight.SetActive(true);
-        lookPosition = 0f;
 
-    }
 
 
 
