@@ -101,6 +101,7 @@ public class LookScript : MonoBehaviour
         PlayerCam.rotation = SeatPos.rotation;
         LookingDown = false;
         LeftAndRight.SetActive(true);
+        lookPosition = 0f;
 
     }
 
