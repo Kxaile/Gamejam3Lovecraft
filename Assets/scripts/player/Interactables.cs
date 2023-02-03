@@ -11,7 +11,7 @@ public class Interactables : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        LastHit = null;
     }
 
     // Update is called once per frame
@@ -19,16 +19,21 @@ public class Interactables : MonoBehaviour
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        
-        if (Physics.Raycast( ray , out hit , 25f , mask ))
+
+        if (Physics.Raycast(ray, out hit, 25f, mask) && LastHit == null)
         {
+                // highlight object
 
-            
+                LastHit = hit.transform.gameObject;
+                print("hovering");
+            return;
+        }
+        else if(!(Physics.Raycast(ray, out hit,25f,mask)) && LastHit != null)
+        {
+            // unhighlight object
 
-            LastHit = hit.transform.gameObject;
-            print(LastHit.name);
-            
-            
+            LastHit = null;
+            print("hovering stopped");
         }
     }
 }
