@@ -7,7 +7,8 @@ public class CreateCultists : MonoBehaviour
     public int NumCultists;
     public GameObject cultistParent;
 
-
+    public List<string> MascNames = new List<string> { "Jebediah", "Chris", "Craig", "Damian", "Viktor", "Gus", "Hector", "Mac", "Dennis", "Charlie", "Frank" };
+    public List<string> FemNames = new List<string> { "Deandra", "Artemis", "Amanda", "Victoria", "Mabel", "Violet", "Helena", "Beatrice", "Ebba", "Alexandra" };
 
 
     /*public class cultist
@@ -42,6 +43,20 @@ public class CreateCultists : MonoBehaviour
             GameObject culty = Instantiate(Resources.Load("CultistDefault")) as GameObject;
             culty.transform.parent = cultistParent.transform;
 
+            if (Random.Range(1,3) == 1)
+			{
+                int x = Random.Range(0, MascNames.Count);
+                culty.gameObject.name = MascNames[x];
+                MascNames.RemoveAt(x);
+
+            } else
+			{
+                int x = Random.Range(0, FemNames.Count);
+                culty.gameObject.name = FemNames[x];
+                FemNames.RemoveAt(x);
+
+                //change icon to fem one
+            }
             culty.transform.position = new Vector3(-(NumCultists*2) + i * 5, 0, 0);
 		}
     }

@@ -10,11 +10,17 @@ public class CultistMain : MonoBehaviour
     ///             /_____\                                                                                          /_____\     
     /// </summary>
 
+
+    public int age;
+    public bool evil;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         
-    }
+}
 
     // Update is called once per frame
     void Update()
