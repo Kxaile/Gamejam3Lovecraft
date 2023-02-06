@@ -23,6 +23,7 @@ public class Interactables : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 25f, mask) && LastHit == null)
         {
                 // highlight object
+                hit.transform.GetChild(0).gameObject.SetActive(true);
 
                 LastHit = hit.transform.gameObject;
                 print("hovering");
@@ -30,10 +31,12 @@ public class Interactables : MonoBehaviour
         }
         else if(!(Physics.Raycast(ray, out hit,25f,mask)) && LastHit != null)
         {
-            // unhighlight object
+                // unhighlight object
+                LastHit.transform.GetChild(0).gameObject.SetActive(false);
+                
 
-            LastHit = null;
-            print("hovering stopped");
+                LastHit = null;
+                print("hovering stopped");
         }
     }
 }
