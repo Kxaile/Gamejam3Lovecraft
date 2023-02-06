@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreateCultists : MonoBehaviour
+public class GameBuilder : MonoBehaviour
 {
     public int NumCultists;
     public int NumEvil;
