@@ -15,7 +15,6 @@ public class CultistMain : MonoBehaviour
     public bool evil;
 
 
-
     // Start is called before the first frame update
     void Start()
     {

@@ -15,5 +15,6 @@ public class BillboardObject : MonoBehaviour
     void Update()
     {
         transform.LookAt(aCam.transform);
+        transform.localEulerAngles += new Vector3(0, 180, 0);
     }
 }
