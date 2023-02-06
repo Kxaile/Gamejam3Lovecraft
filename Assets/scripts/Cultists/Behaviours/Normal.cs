@@ -21,6 +21,9 @@ public class B_Normal : MonoBehaviour
         Age = Random.Range(16, 50);
         Rooms = GameObject.Find("RuntimeScripts").GetComponent<GameBuilder>().Rooms;
         Room = Rooms[Random.Range(0, Rooms.Count)];
+
+        // TEMP FOR TESTING
+
         RoomUI = GameObject.Find("MinimapTemp").transform.Find("Background").Find(Room).Find("CultistIconHolder").gameObject;
         GameObject icon = Instantiate(Resources.Load("CultistIcon")) as GameObject;
         icon.name = CultName;
