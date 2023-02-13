@@ -10,7 +10,8 @@ public class LookScript : MonoBehaviour
     public Transform PlayerCam;
     public Transform SeatPos;
     public Transform TableViewPos;
-    public GameObject LeftAndRight;
+    public GameObject LeftUI;
+    public GameObject RightUI;
     public bool TurningLeft;
     public bool TurningRight;
     public bool LookingDown;
@@ -68,7 +69,8 @@ public class LookScript : MonoBehaviour
         //PlayerCam.position = TableViewPos.position;
         //PlayerCam.rotation = TableViewPos.rotation;
         LookingDown = true;
-        LeftAndRight.SetActive(false);
+        LeftUI.SetActive(false);
+        RightUI.SetActive(false);
     }
     public void LookUp()
     {
@@ -77,7 +79,8 @@ public class LookScript : MonoBehaviour
         //PlayerCam.position = SeatPos.position;
         //PlayerCam.rotation = SeatPos.rotation;
         LookingDown = false;
-        LeftAndRight.SetActive(true);
+        LeftUI.SetActive(true);
+        RightUI.SetActive(true);
         lookPosition = 0f;
 
     }
