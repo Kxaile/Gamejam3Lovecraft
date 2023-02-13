@@ -47,6 +47,18 @@ public class Interactables : MonoBehaviour
 
             LastHit = null;
             print("hovering stopped");
+            return;
+        }
+        if (Physics.Raycast(ray, out hit, 25f, mask) && Highlighted == true)
+        {
+            if (hit.transform.gameObject != LastHit)
+            {
+                LastHit.transform.GetChild(0).gameObject.SetActive(false);
+                hit.transform.GetChild(0).gameObject.SetActive(true);
+
+                LastHit = hit.transform.gameObject;
+
+            }
         }
     }
 }
