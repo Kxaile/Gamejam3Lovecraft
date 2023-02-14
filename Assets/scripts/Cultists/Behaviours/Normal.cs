@@ -13,7 +13,9 @@ public class B_Normal : MonoBehaviour
 
     private List<string> Rooms;
     private GameObject RoomUI;
-    
+
+    public GameObject icon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,15 +27,28 @@ public class B_Normal : MonoBehaviour
         // TEMP FOR TESTING
 
         RoomUI = GameObject.Find("MinimapTemp").transform.Find("Background").Find(Room).Find("CultistIconHolder").gameObject;
-        GameObject icon = Instantiate(Resources.Load("CultistIcon")) as GameObject;
+        icon = Instantiate(Resources.Load("CultistIcon")) as GameObject;
         icon.name = CultName;
         icon.transform.SetParent(RoomUI.transform);
         icon.transform.localPosition += new Vector3(0, 0, -6);
     }
-        
+    
+    public void ChangeRoom(GameObject iconToMove)
+	{
+        Room = Rooms[Random.Range(0, Rooms.Count)];
+        RoomUI = GameObject.Find("MinimapTemp").transform.Find("Background").Find(Room).Find("CultistIconHolder").gameObject;
+        icon.transform.SetParent(RoomUI.transform);
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-        
+        // CHANGING ROOM // 
+
+        if(Random.Range(1,1000) == 1)
+		{
+            ChangeRoom(icon);
+		}
     }
 }

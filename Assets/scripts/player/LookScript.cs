@@ -43,23 +43,25 @@ public class LookScript : MonoBehaviour
 
         this.transform.localEulerAngles = TargetRot; // offsettign CAMERA NOT the holder
 
-
-        if (TurningRight)
-        {
-            if (PlayerCam.localRotation.eulerAngles.y < viewLimit || PlayerCam.localRotation.eulerAngles.y >= 360 - viewLimit)
+        if (!LookingDown)
+		{
+            if (mousePos.x > Screen.width / 8)
             {
-                lookPosition++;
-                PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
+                if (PlayerCam.localRotation.eulerAngles.y < viewLimit || PlayerCam.localRotation.eulerAngles.y >= 360 - viewLimit)
+                {
+                    lookPosition++;
+                    PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
+                }
             }
-        }
-        if (TurningLeft)
-        {
-            if (PlayerCam.localRotation.eulerAngles.y > 360 -viewLimit || PlayerCam.localRotation.eulerAngles.y <= viewLimit+5)
+            if (mousePos.x < -Screen.width / 8)
             {
-                lookPosition--;
-                PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
+                if (PlayerCam.localRotation.eulerAngles.y > 360 -viewLimit || PlayerCam.localRotation.eulerAngles.y <= viewLimit+5)
+                {
+                    lookPosition--;
+                    PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
+                }
             }
-        }
+		}
     }    
     
     public void LookDown()
@@ -69,8 +71,6 @@ public class LookScript : MonoBehaviour
         //PlayerCam.position = TableViewPos.position;
         //PlayerCam.rotation = TableViewPos.rotation;
         LookingDown = true;
-        LeftUI.SetActive(false);
-        RightUI.SetActive(false);
     }
     public void LookUp()
     {
@@ -79,8 +79,6 @@ public class LookScript : MonoBehaviour
         //PlayerCam.position = SeatPos.position;
         //PlayerCam.rotation = SeatPos.rotation;
         LookingDown = false;
-        LeftUI.SetActive(true);
-        RightUI.SetActive(true);
         lookPosition = 0f;
 
     }

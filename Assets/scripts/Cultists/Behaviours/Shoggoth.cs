@@ -20,7 +20,7 @@ public class B_Shoggoth : MonoBehaviour
         Rooms = GameObject.Find("RuntimeScripts").GetComponent<GameBuilder>().Rooms;
         Room = Rooms[Random.Range(0, Rooms.Count)];
 
-        // TEMP FOR TESTING
+        // TEMP FOR TESTING   
 
         RoomUI = GameObject.Find("MinimapTemp").transform.Find("Background").Find(Room).Find("CultistIconHolder").gameObject;
         GameObject icon = Instantiate(Resources.Load("SusIcon")) as GameObject;
