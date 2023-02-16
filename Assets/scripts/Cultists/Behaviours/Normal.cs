@@ -46,9 +46,16 @@ public class B_Normal : MonoBehaviour
     {
         // CHANGING ROOM // 
 
-        if(Random.Range(1,1000) == 1)
+        if(Random.Range(1,5000) == 1) // 1/5000 chance to change room every tick
 		{
             ChangeRoom(icon);
 		}
+
+        // make sound
+
+        if (Random.Range(1, 2000) == 1) // 1/5000 chance to change room every tick
+        {
+            ChangeRoom(icon);
+        }
     }
 }

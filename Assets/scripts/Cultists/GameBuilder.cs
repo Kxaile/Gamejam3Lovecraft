@@ -75,13 +75,13 @@ public class GameBuilder : MonoBehaviour
                 //change icon to fem one
             }
 
-            if (i < NumCultists - NumEvil)
-			{
-                culty.AddComponent<B_Normal>();
-			} else
+            culty.AddComponent<B_Normal>();
+
+            if (i >= NumCultists - NumEvil)
 			{
                 culty.AddComponent(evilBehaviours[chosenEvil]);
-            }
+			}
+                
 
             culty.transform.position = new Vector3(-(NumCultists*2) + i * 5, Random.Range(3, 8), 0);
 		}
