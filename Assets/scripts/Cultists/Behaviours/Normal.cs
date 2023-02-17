@@ -10,12 +10,14 @@ public class B_Normal : MonoBehaviour
     public string CultName;
     public int Age;
     public string Room;
+    public List<string> Traits;
+
+    public float timeSinceLastAction = 0;
 
     private List<string> Rooms;
     private GameObject RoomUI;
 
     public GameObject icon;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -44,18 +46,15 @@ public class B_Normal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // CHANGING ROOM // 
+        
+        timeSinceLastAction += Time.deltaTime;
 
-        if(Random.Range(1,5000) == 1) // 1/5000 chance to change room every tick
+        // CHANGING ROOM // 
+        
+        if(timeSinceLastAction > 15f && Random.Range(1,3000) == 1) // 1/5000 chance to change room every tick
 		{
             ChangeRoom(icon);
+            timeSinceLastAction = 0f;
 		}
-
-        // make sound
-
-        if (Random.Range(1, 2000) == 1) // 1/5000 chance to change room every tick
-        {
-            ChangeRoom(icon);
-        }
     }
 }

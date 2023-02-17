@@ -608,6 +608,22 @@ MonoBehaviour:
   NumEvil: 1
   cultistParent: {fileID: 1475556874}
   chosenEvil: 
+  ChanceForSecondPositive: 20
+  ChanceForNegative: 50
+  PosTraits:
+  - Energetic
+  - Assertive
+  - Strong
+  - Calm
+  - Informative
+  - Resilient
+  - Loyal
+  NegTraits:
+  - Clumsy
+  - Aggressive
+  - Stubborn
+  - Dishonest
+  - Timid
   MascNames:
   - Jebediah
   - Chris

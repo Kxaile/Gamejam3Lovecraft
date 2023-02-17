@@ -9,6 +9,12 @@ public class GameBuilder : MonoBehaviour
     public GameObject cultistParent;
     public string chosenEvil;
 
+    public int ChanceForSecondPositive;
+    public int ChanceForNegative;
+
+    public List<string> PosTraits = new List<string> { "Energetic", "Assertive", "Strong", "Calm", "Informative", "Resilient", "Loyal", "Normal" };
+    public List<string> NegTraits = new List<string> { "Clumsy", "Aggressive", "Stubborn", "Dishonest", "Timid" };
+
     public List<string> MascNames = new List<string> { "Jebediah", "Chris", "Craig", "Damian", "Viktor", "Gus", "Hector", "Mac", "Dennis", "Charlie", "Frank" };
     public List<string> FemNames = new List<string> { "Deandra", "Artemis", "Amanda", "Victoria", "Mabel", "Violet", "Helena", "Beatrice", "Ebba", "Alexandra" };
     public List<string> Evils = new List<string> { "Shoggoth", "Kassogtha", "Azathoth", "Golonac", "Nyarlathotep"};
@@ -60,6 +66,9 @@ public class GameBuilder : MonoBehaviour
             GameObject culty = Instantiate(Resources.Load("CultistDefault")) as GameObject;
             culty.transform.parent = cultistParent.transform;
 
+
+            // PICKING NAME // 
+
             if (Random.Range(0,2) == 1)
 			{
                 int x = Random.Range(0, MascNames.Count);
@@ -75,13 +84,34 @@ public class GameBuilder : MonoBehaviour
                 //change icon to fem one
             }
 
-            culty.AddComponent<B_Normal>();
+            // TRAITS AND BEHAVIOUR SCRIPTS // 
 
-            if (i >= NumCultists - NumEvil)
+            B_Normal currScript = culty.AddComponent<B_Normal>(); // ADD BASE SCRIPT
+            TraitHandler TraitScript = culty.AddComponent<TraitHandler>();  // ADDING THE TRAIT HANDLER
+
+            print(TraitScript);
+
+
+            TraitScript.CultistTraits.Add(PosTraits[Random.Range(0, PosTraits.Count)]); // Adding random base trait
+
+            if (Random.Range(0,101) <= ChanceForSecondPositive) // adding a second Positive if the chance succeeds
+            {
+                TraitScript.CultistTraits.Add(PosTraits[Random.Range(0, PosTraits.Count)]);
+            }
+
+            if (Random.Range(0, 101) <= ChanceForNegative) // adding a negative if the chance succeeds
+			{
+                TraitScript.CultistTraits.Add(NegTraits[Random.Range(0, NegTraits.Count)]);
+            }
+
+            
+
+            if (i >= NumCultists - NumEvil) // ADDING STARTING EVIL SCRIPT
 			{
                 culty.AddComponent(evilBehaviours[chosenEvil]);
 			}
-                
+
+            
 
             culty.transform.position = new Vector3(-(NumCultists*2) + i * 5, Random.Range(3, 8), 0);
 		}
