@@ -585,6 +585,7 @@ GameObject:
   m_Component:
   - component: {fileID: 411306795}
   - component: {fileID: 411306794}
+  - component: {fileID: 411306796}
   m_Layer: 0
   m_Name: RuntimeScripts
   m_TagString: Untagged
@@ -676,6 +677,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411306796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411306793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a80275d8e4f71345a33be21495dc4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insanity: 1000
+  timePerTick: 3
+  currentTime: 0
+  rate: 1
 --- !u!1 &411585979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,7 +1102,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 70
+  field of view: 65
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1133,10 +1150,6 @@ MonoBehaviour:
   PlayerCam: {fileID: 2103922449}
   SeatPos: {fileID: 310871456}
   TableViewPos: {fileID: 1325020888}
-  LeftUI: {fileID: 0}
-  RightUI: {fileID: 0}
-  TurningLeft: 0
-  TurningRight: 0
   LookingDown: 0
   lookPosition: 0
   viewLimit: 50
@@ -1282,6 +1295,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   Highlighted: 0
+  camerascript: {fileID: 1389566218}
 --- !u!1 &1459216012
 GameObject:
   m_ObjectHideFlags: 0
