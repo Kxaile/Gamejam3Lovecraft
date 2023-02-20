@@ -10,10 +10,6 @@ public class LookScript : MonoBehaviour
     public Transform PlayerCam;
     public Transform SeatPos;
     public Transform TableViewPos;
-    public GameObject LeftUI;
-    public GameObject RightUI;
-    public bool TurningLeft;
-    public bool TurningRight;
     public bool LookingDown;
     public float lookPosition;
     public float viewLimit;
@@ -45,7 +41,7 @@ public class LookScript : MonoBehaviour
 
         if (!LookingDown)
 		{
-            if (mousePos.x > Screen.width / 8)
+            if (mousePos.x > Screen.width / 5)
             {
                 if (PlayerCam.localRotation.eulerAngles.y < viewLimit || PlayerCam.localRotation.eulerAngles.y >= 360 - viewLimit)
                 {
@@ -53,7 +49,7 @@ public class LookScript : MonoBehaviour
                     PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
                 }
             }
-            if (mousePos.x < -Screen.width / 8)
+            if (mousePos.x < -Screen.width / 5)
             {
                 if (PlayerCam.localRotation.eulerAngles.y > 360 -viewLimit || PlayerCam.localRotation.eulerAngles.y <= viewLimit+5)
                 {
@@ -81,22 +77,6 @@ public class LookScript : MonoBehaviour
         LookingDown = false;
         lookPosition = 0f;
 
-    }
-    public void LookLeft()
-    {
-        TurningLeft = true;
-    }
-    public void StopLeft()
-    {
-        TurningLeft = false;
-    }
-    public void LookRight()
-    {
-        TurningRight = true;
-    }
-    public void StopRight()
-    {
-        TurningRight = false;
     }
 
     public void LookTable()
