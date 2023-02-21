@@ -25,6 +25,5 @@ public class InsanityScript : MonoBehaviour
             insanity -= rate;
             currentTime = 0;
         }
-        print(insanity);
     }
 }

@@ -11,20 +11,56 @@ public class B_Normal : MonoBehaviour
     public int Age;
     public string Room;
     public List<string> Traits;
+    public Vector2 RoomCoords;
 
     public float timeSinceLastAction = 0;
+
+    public TraitHandler traits;
 
     private List<string> Rooms;
     private GameObject RoomUI;
 
     public GameObject icon;
     // Start is called before the first frame update
+    public void setRoom(Vector2 pos)
+	{
+        if (pos.y == 0)
+        {
+            Room = "Attic";
+        }
+        else if (pos.x == 1)
+        {
+            Room = "Hallway";
+        }
+
+        if (pos == new Vector2(0, 1))
+        {
+            Room = "Kitchen";
+        }
+        if (pos == new Vector2(0, 2))
+        {
+            Room = "Observatory";
+        }
+        if (pos == new Vector2(2, 1))
+        {
+            Room = "Library";
+        }
+        if (pos == new Vector2(2, 2))
+        {
+            Room = "Bedrooms";
+        }
+    }
+
     void Start()
     {
         CultName = this.gameObject.name;
         Age = Random.Range(16, 50);
         Rooms = GameObject.Find("RuntimeScripts").GetComponent<GameBuilder>().Rooms;
-        Room = Rooms[Random.Range(0, Rooms.Count)];
+
+        RoomCoords = new Vector2(Random.Range(0, 3), Random.Range(0, 3));
+
+        setRoom(RoomCoords);
+        traits = GetComponent<TraitHandler>();
 
         // TEMP FOR TESTING
 
@@ -37,7 +73,16 @@ public class B_Normal : MonoBehaviour
     
     public void ChangeRoom(GameObject iconToMove)
 	{
-        Room = Rooms[Random.Range(0, Rooms.Count)];
+        Vector2 NewCoords = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2)) + RoomCoords;
+        while (NewCoords == RoomCoords && NewCoords.x < 0 && NewCoords.y < 0)
+		{
+            NewCoords = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2)) + RoomCoords;
+        }
+
+        RoomCoords = NewCoords;
+        setRoom(RoomCoords);
+
+        // testing
         RoomUI = GameObject.Find("MinimapTemp").transform.Find("Background").Find(Room).Find("CultistIconHolder").gameObject;
         icon.transform.SetParent(RoomUI.transform);
     }
@@ -46,12 +91,12 @@ public class B_Normal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         timeSinceLastAction += Time.deltaTime;
+        int chanceChangeRoom = Mathf.Clamp(Mathf.FloorToInt(3000 / traits.ChangeRoomMulti), 2, 6000);
+        int timeBetweenRooms = Mathf.Clamp(Mathf.FloorToInt(15 / traits.TimeBetweenActionsMulti), 1, 60);
 
         // CHANGING ROOM // 
-        
-        if(timeSinceLastAction > 15f && Random.Range(1,3000) == 1) // 1/5000 chance to change room every tick
+        if (timeSinceLastAction > timeBetweenRooms && Random.Range(1, chanceChangeRoom) == 1) // chance to change room every tick
 		{
             ChangeRoom(icon);
             timeSinceLastAction = 0f;

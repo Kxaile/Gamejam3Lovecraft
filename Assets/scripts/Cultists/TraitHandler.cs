@@ -12,6 +12,9 @@ public class TraitHandler : MonoBehaviour
     public float itemFindMulti = 1f;
     public float SearchMulti = 1f;
     public float ExtraItemsChanceMulti = 1f;
+    public float ChangeRoomMulti = 1f;
+    public float SeeSomethingMulti = 1f;
+    public float TimeBetweenActionsMulti = 1f;
 
     void Start()
     {
