@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	439776027	GJ3-Menu-V1	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\GJ3-Menu-V1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\GJ3-Menu-V1\GJ3-Menu-V1		5773188
+

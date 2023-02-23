@@ -3,96 +3,146 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{8F3E6E0F-8012-45B4-8034-46A275AB9343}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSegment Name="GJ3-Menu-V1" ID="{5CC67D63-0164-4802-A5F8-2C647060A051}" ShortID="392667757">
+				<MusicPlaylistContainer Name="Menu" ID="{47B6BA86-9830-4A13-8950-EA668EB9A5AE}" ShortID="368502336">
 					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="32727.2789115646"/>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
-						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-							<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Dirty_Washing_Machine" ID="{824764DD-7364-411D-AF50-DEDF8E3DCC48}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="GJ3-Menu-V1" ID="{761B6068-6730-42F9-A251-DA873E852BA1}" ShortID="830957508">
+						<MusicSegment Name="GJ3-Menu-V1" ID="{5CC67D63-0164-4802-A5F8-2C647060A051}" ShortID="392667757">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="32727.2789115646"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Dirty_Washing_Machine" ID="{824764DD-7364-411D-AF50-DEDF8E3DCC48}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="GJ3-Menu-V1" ID="{E63F1F4D-FF53-4084-9808-59D62BCB937E}">
-									<Language>SFX</Language>
-									<AudioFile>GJ3-Menu-V1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="439776027"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<MusicTrack Name="GJ3-Menu-V1" ID="{761B6068-6730-42F9-A251-DA873E852BA1}" ShortID="830957508">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GJ3-Menu-V1" ID="{E63F1F4D-FF53-4084-9808-59D62BCB937E}">
+											<Language>SFX</Language>
+											<AudioFile>GJ3-Menu-V1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="439776027"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0A0ADE0C-5084-4083-92A0-97B089B76C85}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{DFEC2380-3E7E-4E4E-BA2E-7414EE92DD7B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="GJ3-Menu-V1" ID="{9C2661AC-C6B0-4042-8A41-96B1D83963FF}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="32727.2789115646"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GJ3-Menu-V1" ID="{E63F1F4D-FF53-4084-9808-59D62BCB937E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
 							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{0A0ADE0C-5084-4083-92A0-97B089B76C85}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
 							<ObjectLists>
-								<ObjectList Name="Sequences">
+								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{DFEC2380-3E7E-4E4E-BA2E-7414EE92DD7B}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="GJ3-Menu-V1" ID="{9C2661AC-C6B0-4042-8A41-96B1D83963FF}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="32727.2789115646"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GJ3-Menu-V1" ID="{E63F1F4D-FF53-4084-9808-59D62BCB937E}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
+											<MusicCue Name="Entry Cue" ID="{82255AD0-B832-4F6A-A048-A5FC85482E66}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{E60AD10C-54A2-4283-BDAA-04DC3BC79AFB}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="32727.2789115646"/>
+												</PropertyList>
+											</MusicCue>
 										</Local>
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
-						</MusicTrack>
+						</MusicSegment>
 					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{82255AD0-B832-4F6A-A048-A5FC85482E66}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{E60AD10C-54A2-4283-BDAA-04DC3BC79AFB}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="32727.2789115646"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{E422811F-5116-4C5B-87F1-B3F991FA9DBD}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{42C2BDCB-06FB-43E2-A641-1CC02A86DC63}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{A5A121F1-22AF-4539-891A-17BAC0A2F915}" ShortID="996536434">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{F6C0686F-55B0-4295-91E3-BE553F98746C}" ShortID="834279731">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="GJ3-Menu-V1" ID="{5CC67D63-0164-4802-A5F8-2C647060A051}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

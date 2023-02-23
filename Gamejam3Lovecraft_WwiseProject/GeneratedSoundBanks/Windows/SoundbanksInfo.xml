@@ -22,6 +22,23 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{863217DF-0717-A18B-935F-ABD387095019}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="439776027" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GJ3-Menu-V1.wav</ShortName>
+					<CachePath>SFX/GJ3-Menu-V1_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="439776027"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{728B0CF1-C3AD-A635-6DAF-778047395964}</FileHash>
+	<FileHash>{3E4E8E23-E926-2753-16BA-45A49851D2E0}</FileHash>
 </SoundBanksInfo>

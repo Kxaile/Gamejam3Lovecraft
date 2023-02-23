@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="StartMenuMusic" ID="{229D159F-B966-4683-9DA5-68C50CBFA201}">
+					<ChildrenList>
+						<Action Name="" ID="{83F7321D-6173-4605-A010-86656E1605D5}" ShortID="336079164">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{47B6BA86-9830-4A13-8950-EA668EB9A5AE}" WorkUnitID="{8F3E6E0F-8012-45B4-8034-46A275AB9343}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
