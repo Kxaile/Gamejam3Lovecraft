@@ -104,7 +104,7 @@ public class GameBuilder : MonoBehaviour
                 TraitScript.CultistTraits.Add(NegTraits[Random.Range(0, NegTraits.Count)]);
             }
 
-            
+            TraitScript.UpdateTraits();
 
             if (i >= NumCultists - NumEvil) // ADDING STARTING EVIL SCRIPT
 			{

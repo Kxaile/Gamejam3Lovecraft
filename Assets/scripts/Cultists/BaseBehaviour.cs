@@ -92,8 +92,8 @@ public class B_Normal : MonoBehaviour
     void Update()
     {
         timeSinceLastAction += Time.deltaTime;
-        int chanceChangeRoom = Mathf.Clamp(Mathf.FloorToInt(3000 / traits.ChangeRoomMulti), 2, 6000);
-        int timeBetweenRooms = Mathf.Clamp(Mathf.FloorToInt(15 / traits.TimeBetweenActionsMulti), 1, 60);
+        int chanceChangeRoom = Mathf.Clamp(Mathf.FloorToInt(3000 / traits.Chance_ChangeRoom), 2, 6000);
+        int timeBetweenRooms = Mathf.Clamp(Mathf.FloorToInt(15 * traits.Time_ActionBuffer), 1, 60);
 
         // CHANGING ROOM // 
         if (timeSinceLastAction > timeBetweenRooms && Random.Range(1, chanceChangeRoom) == 1) // chance to change room every tick
