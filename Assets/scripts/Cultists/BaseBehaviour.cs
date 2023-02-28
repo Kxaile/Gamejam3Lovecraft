@@ -91,15 +91,6 @@ public class B_Normal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeSinceLastAction += Time.deltaTime;
-        int chanceChangeRoom = Mathf.Clamp(Mathf.FloorToInt(3000 / traits.Chance_ChangeRoom), 2, 6000);
-        int timeBetweenRooms = Mathf.Clamp(Mathf.FloorToInt(15 * traits.Time_ActionBuffer), 1, 60);
-
-        // CHANGING ROOM // 
-        if (timeSinceLastAction > timeBetweenRooms && Random.Range(1, chanceChangeRoom) == 1) // chance to change room every tick
-		{
-            ChangeRoom(icon);
-            timeSinceLastAction = 0f;
-		}
+        
     }
 }
