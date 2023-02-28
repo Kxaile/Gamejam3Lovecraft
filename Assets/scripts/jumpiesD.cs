@@ -17,7 +17,7 @@ public class jumpiesD : MonoBehaviour
 		{
             transform.GetComponent<Rigidbody>().velocity *= -1;
             transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
-
+            transform.localScale = new Vector3(Random.Range(0f, 5f), Random.Range(0f, 5f), Random.Range(0f, 5f));
         }
     }
 }

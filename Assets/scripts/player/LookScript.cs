@@ -11,13 +11,14 @@ public class LookScript : MonoBehaviour
     public Transform SeatPos;
     public Transform TableViewPos;
     public bool LookingDown;
+    public bool canLook = false;
     public float lookPosition;
     public float viewLimit;
 
     public float yRotationLimit = 88f;
     public float xRotationLimit = 88f;
 
-    public float sensitivity = 0.1f;
+    public float sensitivity = 2f;
 
     Vector2 rotation = Vector2.zero;
 
@@ -31,9 +32,11 @@ public class LookScript : MonoBehaviour
 
 	private void Start()
 	{
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-	}
+        transform.eulerAngles = new Vector3(0, 0, 0);
+        canLook = true;
+    }
 	private void FixedUpdate()
     {
         /*
@@ -41,9 +44,9 @@ public class LookScript : MonoBehaviour
          * so we need to check against both possible extremes 
          */
 
-        var mousePos = Input.mousePosition;
-        mousePos.x -= Screen.width / 2;
-        mousePos.y -= Screen.height / 2;
+        //var mousePos = Input.mousePosition;
+        //mousePos.x -= Screen.width / 2;
+        //mousePos.y -= Screen.height / 2;
 
         //print(mousePos.x + ", " + mousePos.y); // mouse coords
 
@@ -54,7 +57,7 @@ public class LookScript : MonoBehaviour
 
         //this.transform.localEulerAngles = TargetRot; // offsettign CAMERA NOT the holder
 
-        if (!LookingDown)
+        if (!LookingDown && canLook)
 		{
             /*if (mousePos.x > Screen.width / 5)
             {
@@ -74,14 +77,9 @@ public class LookScript : MonoBehaviour
             }*/
 
 
-            rotation.x = mousePos.x;
-            rotation.y = mousePos.y;
-            rotation.y = Mathf.Clamp(rotation.y * sensitivity, -yRotationLimit, yRotationLimit);
-            rotation.x = Mathf.Clamp(rotation.x * sensitivity, -xRotationLimit, xRotationLimit);
-            var xQuat = Quaternion.AngleAxis(rotation.x, Vector3.up);
-            var yQuat = Quaternion.AngleAxis(rotation.y, Vector3.left); 
-
-            transform.localRotation = xQuat * yQuat;
+            rotation.x = Input.GetAxis("Mouse X");
+            rotation.y = Input.GetAxis("Mouse Y");
+            transform.localEulerAngles += new Vector3(-rotation.y * sensitivity, rotation.x * sensitivity);
 
         }
     }    
@@ -90,7 +88,6 @@ public class LookScript : MonoBehaviour
     {
         transform.eulerAngles = new Vector3(0, 0, 0);
         LookingDown = true;
-        Cursor.lockState = CursorLockMode.Locked;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         LeanTween.move(PlayerCam.gameObject, TableViewPos.transform, 0.1f).setEaseOutCubic();
@@ -106,7 +103,6 @@ public class LookScript : MonoBehaviour
         //PlayerCam.rotation = SeatPos.rotation;
         LookingDown = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
     }
 
