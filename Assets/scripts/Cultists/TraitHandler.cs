@@ -9,18 +9,18 @@ public class TraitHandler : MonoBehaviour
 
 	public List<string> CultistTraits = new List<string>();
 
-    public float itemFindMulti = 1f;
+    //public float itemFindMulti = 1f;
 
-    public float Time_Search = 1f;
-    public float Time_ActionBuffer = 1f;
-    public float Time_PossessionSpeed = 1f;
+    //public float Time_Search = 1f;
+    //public float Time_ActionBuffer = 1f;
+    //public float Time_PossessionSpeed = 1f;
 
     public float Chance_ExtraItems = 0.5f;
     public float Chance_ChangeRoom = 1f;
     public float Chance_SeeSomething = 1f;
 
     public bool Can_BePossessed = true;
-    public bool Can_GetExtraItems = false;
+    //public bool Can_GetExtraItems = false;
 
     void Start()
     {
@@ -36,14 +36,14 @@ public class TraitHandler : MonoBehaviour
 			{
                 case "Energetic":
                     Chance_ChangeRoom += 2f;
-                    Time_Search *= 0.7f;
-                    Time_ActionBuffer *= 0.6f;
+                    //Time_Search *= 0.7f;
+                    //Time_ActionBuffer *= 0.6f;
                     break;
                 case "Assertive":
                     Chance_SeeSomething += 2f;
                     break;
                 case "Strong":
-                    Can_GetExtraItems = true;
+                    //Can_GetExtraItems = true;
                     Chance_ExtraItems += 0.5f;
                     break;
                 case "Calm":
@@ -51,7 +51,7 @@ public class TraitHandler : MonoBehaviour
                 case "Informative":
                     break;
                 case "Resilient":
-                    Time_PossessionSpeed *= 0.5f;
+                    //Time_PossessionSpeed *= 0.5f;
                     break;
                 case "Loyal":
                     Can_BePossessed = false;

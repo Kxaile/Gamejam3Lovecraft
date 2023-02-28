@@ -686,13 +686,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 411306793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a80275d8e4f71345a33be21495dc4a4, type: 3}
+  m_Script: {fileID: 11500000, guid: ce4bbf8b20e651141859f0d4b51aa84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  insanity: 1000
-  timePerTick: 3
-  currentTime: 0
-  rate: 1
+  ResourceItems:
+  - Gold
+  - Obsidian
+  - Salt
+  - Sapphire
+  - Bone
+  CreatureItems:
+  - Matches
+  - Medicinal Herbs
+  - Smelling Salts
+  - Crucifix
+  - Magnesium
 --- !u!1 &411585979
 GameObject:
   m_ObjectHideFlags: 0
