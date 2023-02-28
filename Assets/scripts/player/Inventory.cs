@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
 
     public int ItemBonus; // from menu
+
+    public GameObject resourceTemp;
     void Start()
     {
         //randomise inventory
@@ -33,7 +35,14 @@ public class Inventory : MonoBehaviour
             Amount += ItemBonus - 1;
 
             PlrInv.Add(Item, Amount);
+
+            for(int i = 0; i<PlrInv[Item]; i++)
+			{
+                Instantiate(resourceTemp, GameObject.Find("Inventory").transform).name = Item;
+			}
 		}
+
+        print(PlrInv);
     }
 
     // Update is called once per frame
