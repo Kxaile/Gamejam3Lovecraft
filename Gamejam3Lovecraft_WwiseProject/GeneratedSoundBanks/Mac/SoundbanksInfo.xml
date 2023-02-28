@@ -22,23 +22,24 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{863217DF-0717-A18B-935F-ABD387095019}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{317CA743-2313-5273-B8AD-F937473DBB7D}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="439776027" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GJ3-Menu-V1.wav</ShortName>
-					<CachePath>SFX/GJ3-Menu-V1_D79FB2B7.wem</CachePath>
+				<File Id="152918676" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Clair De Lune Start.wav</ShortName>
+					<CachePath>SFX/Clair De Lune Start_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="439776027"/>
+						<MediaRef Id="152918676"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CF4DD004-683E-CC3D-8F3C-55E682E3004C}</FileHash>
+	<FileHash>{8FA2F707-3838-A7A1-2065-A167D7023A12}</FileHash>
 </SoundBanksInfo>

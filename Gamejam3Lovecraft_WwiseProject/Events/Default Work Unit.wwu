@@ -17,6 +17,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="EndMusic" ID="{5D429907-2023-41A3-BF99-F54344E19739}">
+					<ChildrenList>
+						<Action Name="" ID="{114B2615-8F19-4418-BDD6-39E74BD400FF}" ShortID="211621642">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{47B6BA86-9830-4A13-8950-EA668EB9A5AE}" WorkUnitID="{8F3E6E0F-8012-45B4-8034-46A275AB9343}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class SceneSwtich : MonoBehaviour
 {
+    public GameObject SoundBank;
+
     // Start is called before the first frame update
     void Start()
     {
