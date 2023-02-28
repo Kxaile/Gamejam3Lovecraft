@@ -39,43 +39,8 @@ public class LookScript : MonoBehaviour
     }
 	private void FixedUpdate()
     {
-        /*
-         * Qaternions dont project negative angles to euler, meaning we cant just rely on angle < limit to work 
-         * so we need to check against both possible extremes 
-         */
-
-        //var mousePos = Input.mousePosition;
-        //mousePos.x -= Screen.width / 2;
-        //mousePos.y -= Screen.height / 2;
-
-        //print(mousePos.x + ", " + mousePos.y); // mouse coords
-
-        //var MouseDistance = new Vector2((mousePos.x / (Screen.width / 2)) * 5, (mousePos.y / (Screen.height / 2)) * 5); // get mouse distance from centre 
-        //Vector3 TargetRot = new Vector3(-MouseDistance.y, MouseDistance.x, 0f); //making rot vector
-
-        //print(TargetRot);  // rot vector
-
-        //this.transform.localEulerAngles = TargetRot; // offsettign CAMERA NOT the holder
-
         if (!LookingDown && canLook)
 		{
-            /*if (mousePos.x > Screen.width / 5)
-            {
-                if (PlayerCam.localRotation.eulerAngles.y < viewLimit || PlayerCam.localRotation.eulerAngles.y >= 360 - viewLimit)
-                {
-                    lookPosition++;
-                    PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
-                }
-            }
-            if (mousePos.x < -Screen.width / 5)
-            {
-                if (PlayerCam.localRotation.eulerAngles.y > 360 -viewLimit || PlayerCam.localRotation.eulerAngles.y <= viewLimit+5)
-                {
-                    lookPosition--;
-                    PlayerCam.rotation = Quaternion.Euler(0, lookPosition, 0);
-                }
-            }*/
-
 
             rotation.x = Input.GetAxis("Mouse X");
             rotation.y = Input.GetAxis("Mouse Y");
