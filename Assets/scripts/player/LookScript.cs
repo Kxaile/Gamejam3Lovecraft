@@ -18,9 +18,7 @@ public class LookScript : MonoBehaviour
     public float yRotationLimit = 88f;
     public float xRotationLimit = 88f;
 
-    public float sensitivity = 2f;
-
-    Vector2 rotation = Vector2.zero;
+    public float sensitivity = 50f;
 
     void Update()
     {
@@ -29,6 +27,8 @@ public class LookScript : MonoBehaviour
             LookTable();
         }
     }
+
+
 
 	private void Start()
 	{
@@ -41,11 +41,33 @@ public class LookScript : MonoBehaviour
     {
         if (!LookingDown && canLook)
 		{
+            /*yRotation = Input.GetAxis("Mouse Y") * -sensitivity;
+            xRotation = Input.GetAxis("Mouse X") * sensitivity;
 
-            rotation.x = Input.GetAxis("Mouse X");
-            rotation.y = Input.GetAxis("Mouse Y");
-            transform.localEulerAngles += new Vector3(-rotation.y * sensitivity, rotation.x * sensitivity);
+            Quaternion unclampedCameraRotation = transform.localRotation;
+            transform.localRotation *= Quaternion.Euler(yRotation, xRotation, 0);
+            transform.localEulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
 
+            if (transform.eulerAngles.x < -90 && transform.eulerAngles.x > 90)
+            {
+                transform.localRotation = unclampedCameraRotation;
+            }*/
+
+            float yaw = sensitivity * Input.GetAxis("Mouse X") * Time.deltaTime;
+            float pitch = -sensitivity * Input.GetAxis("Mouse Y") * Time.deltaTime;
+
+            transform.localRotation *= Quaternion.Euler(0, yaw, 0);
+
+
+            Quaternion unclampedCameraRotation = transform.localRotation;
+            transform.localRotation *= Quaternion.Euler(pitch, 0, 0);
+
+            if (Vector3.Angle(transform.forward, Vector3.forward) > 70f)
+            {
+                transform.localRotation = unclampedCameraRotation;
+            }
+
+            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, 0);
         }
     }    
     

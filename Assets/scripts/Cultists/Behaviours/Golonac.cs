@@ -13,8 +13,6 @@ public class B_Golonac : MonoBehaviour
     {
         cultist = this.gameObject;
         baseScript = cultist.GetComponent<B_Normal>();
-        print(baseScript.icon);
-        baseScript.icon.GetComponent<Image>().color = Color.red;
     }
 
     // Update is called once per frame

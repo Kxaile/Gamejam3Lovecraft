@@ -14,8 +14,6 @@ public class B_Shoggoth : MonoBehaviour
     {
         cultist = this.gameObject;
         baseScript = cultist.GetComponent<B_Normal>();
-        print(baseScript.icon);
-        baseScript.icon.GetComponent<Image>().color = Color.red;
     }
 
     // Update is called once per frame

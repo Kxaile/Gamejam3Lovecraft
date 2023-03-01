@@ -1147,7 +1147,7 @@ MonoBehaviour:
   viewLimit: 50
   yRotationLimit: 90
   xRotationLimit: 100
-  sensitivity: 2
+  sensitivity: 50
 --- !u!114 &1389566219
 MonoBehaviour:
   m_ObjectHideFlags: 0
