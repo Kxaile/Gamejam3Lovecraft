@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     [Header("Player Behind Scenes")] 
     public float chaosGain = 0.01f; // The amount of Chaos gained per tick
     public float insanityGain = 0.001f; // The amount of Sanity that is lost every tick
+    public GameMaker gameData;
 
     [Header("Tick Events")]
     public float T_Insanity = 1f; // How often insanity is lost
@@ -28,6 +29,8 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxSanity = gameData.maxSanity;
+        Rituals = gameData.numOfRituals;
 
     }
 
@@ -37,15 +40,15 @@ public class PlayerStats : MonoBehaviour
         CT_Insanity += Time.deltaTime;
         CT_Chaos += Time.deltaTime;
 
-        if (CT_Insanity >= T_Insanity)
+        if (CT_Insanity >= T_Insanity / gameData.sanityLossRate)
         {
-            Sanity -= insanityGain;
+            Sanity -= insanityGain * gameData.sanityLossRate;
             CT_Insanity = 0;
         }
 
-        if (CT_Chaos >= T_Chaos)
+        if (CT_Chaos >= T_Chaos / gameData.chaosGainRate)
         {
-            Chaos += chaosGain;
+            Chaos += chaosGain * gameData.chaosGainRate;
             CT_Chaos = 0;
         }
     }

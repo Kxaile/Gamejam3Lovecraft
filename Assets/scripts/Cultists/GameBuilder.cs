@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameBuilder : MonoBehaviour
 {
+    public GameMaker buildData;
+
     public int NumCultists;
     public int NumEvil;
     public GameObject cultistParent;
@@ -58,6 +60,9 @@ public class GameBuilder : MonoBehaviour
 
     void Start()
     {
+        NumCultists = buildData.numOfCultists;
+
+
         chosenEvil = Evils[Random.Range(0, Evils.Count)];
 
 
