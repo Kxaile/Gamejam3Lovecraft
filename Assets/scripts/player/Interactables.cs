@@ -8,7 +8,7 @@ public class Interactables : MonoBehaviour
     public GameObject LastHit;
     public LayerMask mask;
     public bool Highlighted;
-    public LookScript camerascript;
+    public NewCamScript camerascript;
   
 
     // Start is called before the first frame update
@@ -63,6 +63,19 @@ public class Interactables : MonoBehaviour
                     LastHit = hit.transform.gameObject;
 
                 }
+            }
+        }
+        else
+        {
+            if (LastHit.transform.GetChild(0).gameObject.activeSelf)
+            {
+                LastHit.transform.GetChild(0).gameObject.SetActive(false);
+
+                Highlighted = false;
+
+                LastHit = null;
+                print("no lingering highlighted");
+                return;
             }
         }
     }
