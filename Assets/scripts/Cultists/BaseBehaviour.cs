@@ -61,14 +61,6 @@ public class B_Normal : MonoBehaviour
 
         setRoom(RoomCoords);
         traits = GetComponent<TraitHandler>();
-
-        // TEMP FOR TESTING
-
-        RoomUI = GameObject.Find("MinimapTemp").transform.Find("Background").Find(Room).Find("CultistIconHolder").gameObject;
-        icon = Instantiate(Resources.Load("CultistIcon")) as GameObject;
-        icon.name = CultName;
-        icon.transform.SetParent(RoomUI.transform);
-        icon.transform.localPosition += new Vector3(0, 0, -6);
     }
     
     public void ChangeRoom(GameObject iconToMove)

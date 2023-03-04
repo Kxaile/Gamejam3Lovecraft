@@ -13,7 +13,7 @@ public class PlayerStats : MonoBehaviour
     [Header("Player Behind Scenes")] 
     public float chaosGain = 0.01f; // The amount of Chaos gained per tick
     public float insanityGain = 0.001f; // The amount of Sanity that is lost every tick
-    public GameMaker gameData;
+    public gameStartOptions gameData;
 
     [Header("Tick Events")]
     public float T_Insanity = 1f; // How often insanity is lost
@@ -29,6 +29,7 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameData = GameObject.Find("RuntimeScripts").GetComponent<gameStartOptions>();
         maxSanity = gameData.maxSanity;
         Rituals = gameData.numOfRituals;
 

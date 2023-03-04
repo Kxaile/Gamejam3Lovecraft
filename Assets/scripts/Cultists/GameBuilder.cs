@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameBuilder : MonoBehaviour
 {
-    public GameMaker buildData;
+    public gameStartOptions buildData;
 
     public int NumCultists;
     public int NumEvil;
@@ -60,9 +60,8 @@ public class GameBuilder : MonoBehaviour
 
     void Start()
     {
+        buildData = this.GetComponent<gameStartOptions>();
         NumCultists = buildData.numOfCultists;
-
-
         chosenEvil = Evils[Random.Range(0, Evils.Count)];
 
 
