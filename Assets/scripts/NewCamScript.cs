@@ -69,7 +69,7 @@ public class NewCamScript : MonoBehaviour
                 }
             }
         }
-        if (CurrentY == -1 && LookingDown == true)
+        if (CurrentY == -1)
         {
             LookingDown = true;
         }
@@ -77,6 +77,8 @@ public class NewCamScript : MonoBehaviour
         {
             LookingDown = false;
         }
+        print(LookingDown);
+
 
         
         
@@ -115,6 +117,5 @@ public class NewCamScript : MonoBehaviour
         LeanTween.rotate(this.gameObject, Table.eulerAngles, 0.1f).setEaseOutCubic();
         CurrentX = 0;
         CurrentY = -1;
-        LookingDown = true;
     }
 }
