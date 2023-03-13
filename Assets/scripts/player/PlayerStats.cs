@@ -26,6 +26,9 @@ public class PlayerStats : MonoBehaviour
     public float Multi_IL = 1f; // Insanity Loss Multiplier - Set from start menu, default here
     public float Multi_chaos = 1f; // Multiplier for chaos increase rate - Set from start menu, default here
 
+    [Header("Candles")]
+    public GameObject candleParent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,5 +55,22 @@ public class PlayerStats : MonoBehaviour
             Chaos += chaosGain * gameData.chaosGainRate;
             CT_Chaos = 0;
         }
+
+        switch (Sanity)
+        {
+            case 75f:
+                candleParent.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+                break;
+            case 50f:
+                candleParent.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+                break;
+            case 25f:
+                candleParent.transform.GetChild(2).transform.GetChild(0).gameObject.SetActive(false);
+                break;
+            case 0f:
+                candleParent.transform.GetChild(3).transform.GetChild(0).gameObject.SetActive(false);
+                break;
+        }
+            
     }
 }
