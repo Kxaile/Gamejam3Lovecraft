@@ -54,7 +54,7 @@ public class B_Normal : MonoBehaviour
     void Start()
     {
         CultName = this.gameObject.name;
-        Age = Random.Range(16, 50);
+        //Age = Random.Range(16, 50);
         Rooms = GameObject.Find("RuntimeScripts").GetComponent<GameBuilder>().Rooms;
 
         RoomCoords = new Vector2(Random.Range(0, 3), Random.Range(0, 3));

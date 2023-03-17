@@ -20,6 +20,8 @@ public class TraitHandler : MonoBehaviour
     public float Chance_SeeSomething = 1f;
 
     public bool Can_BePossessed = true;
+
+    public int age;
     //public bool Can_GetExtraItems = false;
 
     void Start()

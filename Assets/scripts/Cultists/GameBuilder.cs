@@ -11,6 +11,8 @@ public class GameBuilder : MonoBehaviour
     public GameObject cultistParent;
     public string chosenEvil;
 
+    public BookInteract book;
+
     public int ChanceForSecondPositive;
     public int ChanceForNegative;
 
@@ -69,7 +71,16 @@ public class GameBuilder : MonoBehaviour
 		{
             GameObject culty = Instantiate(Resources.Load("CultistDefault")) as GameObject;
             culty.transform.parent = cultistParent.transform;
+            // TRAITS AND BEHAVIOUR SCRIPTS // 
 
+            B_Normal currScript = culty.AddComponent<B_Normal>(); // ADD BASE SCRIPT
+            TraitHandler TraitScript = culty.AddComponent<TraitHandler>();  // ADDING THE TRAIT HANDLER
+
+            int Age = Random.Range(16, 50);
+
+            currScript.Age = Age;
+
+            print(TraitScript);
 
             // PICKING NAME // 
 
@@ -88,12 +99,7 @@ public class GameBuilder : MonoBehaviour
                 //change icon to fem one
             }
 
-            // TRAITS AND BEHAVIOUR SCRIPTS // 
-
-            B_Normal currScript = culty.AddComponent<B_Normal>(); // ADD BASE SCRIPT
-            TraitHandler TraitScript = culty.AddComponent<TraitHandler>();  // ADDING THE TRAIT HANDLER
-
-            print(TraitScript);
+            
 
 
             TraitScript.CultistTraits.Add(PosTraits[Random.Range(0, PosTraits.Count)]); // Adding random base trait
@@ -119,6 +125,9 @@ public class GameBuilder : MonoBehaviour
 
             culty.transform.position = new Vector3(-(NumCultists*2) + i * 5, Random.Range(3, 8), 0);
 		}
+
+        book.buildPages();
+
     }
 
     // Update is called once per frame
