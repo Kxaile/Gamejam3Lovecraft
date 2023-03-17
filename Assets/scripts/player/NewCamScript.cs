@@ -79,7 +79,7 @@ public class NewCamScript : MonoBehaviour
         {
             LookingDown = false;
         }
-        print(LookingDown);
+        //print(LookingDown);
 
 
         

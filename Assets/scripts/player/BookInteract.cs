@@ -24,13 +24,13 @@ public class BookInteract : MonoBehaviour
 		{
 			if (!BookOpen)
 			{
-                LeanTween.move(this.gameObject, bookOpenPos.transform, 0.1f).setEaseOutCubic();
-                LeanTween.rotate(this.gameObject, bookOpenPos.eulerAngles, 0.1f).setEaseOutCubic();
+                LeanTween.move(this.gameObject, bookOpenPos.transform, 0.6f).setEaseOutCubic();
+                LeanTween.rotate(this.gameObject, bookOpenPos.eulerAngles, 0.6f).setEaseOutCubic();
                 BookOpen = true;
             } else
 			{
-                LeanTween.move(this.gameObject, bookStartPos.transform, 0.1f).setEaseOutCubic();
-                LeanTween.rotate(this.gameObject, bookStartPos.eulerAngles, 0.1f).setEaseOutCubic();
+                LeanTween.move(this.gameObject, bookStartPos.transform, 0.6f).setEaseOutCubic();
+                LeanTween.rotate(this.gameObject, bookStartPos.eulerAngles, 0.6f).setEaseOutCubic();
                 BookOpen = false;
             }
 		}
