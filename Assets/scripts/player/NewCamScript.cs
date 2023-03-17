@@ -13,6 +13,8 @@ public class NewCamScript : MonoBehaviour
     public Transform Table;
     public Transform Seat;
 
+    public BookInteract book;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class NewCamScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && !book.BookOpen)
         {
             if (Input.GetKeyDown(KeyCode.A))
             {
