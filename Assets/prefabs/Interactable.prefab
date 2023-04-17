@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 3412337419002576334}
   - component: {fileID: 7703532965373888872}
   - component: {fileID: 530482379329039171}
+  - component: {fileID: 198990666820036369}
   m_Layer: 6
   m_Name: Interactable
   m_TagString: Untagged
@@ -432,3 +433,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0488c3a8ccecb48908ecffa7b20768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &198990666820036369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106635898697277548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6344ff61ee8b974cb3a8067f7ed82e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraScript: {fileID: 0}
+  book: {fileID: 0}
+  cultistHolder: {fileID: 0}
+  pageBase: {fileID: 0}
+  bookStartPos: {fileID: 0}
+  bookOpenPos: {fileID: 0}
+  BookOpen: 0
+  CurrentPage: 0
+  MaxPages: 0

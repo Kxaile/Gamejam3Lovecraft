@@ -50,11 +50,11 @@ public class NewCamScript : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.W))
             {
-                if (CurrentY == 0)
+                if (CurrentY == 0 && CurrentX ==0)
                 {
                     LookUp();
                 }
-                else if (CurrentY == -1)
+                else if (CurrentY == -1 || CurrentX!=0)
                 {
                     LookCenter();
                 }

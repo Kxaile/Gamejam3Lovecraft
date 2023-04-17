@@ -154,6 +154,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 261181237}
     m_Modifications:
+    - target: {fileID: 198990666820036369, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
+      propertyPath: bookOpenPos
+      value: 
+      objectReference: {fileID: 1283943953}
+    - target: {fileID: 198990666820036369, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
+      propertyPath: bookStartPos
+      value: 
+      objectReference: {fileID: 1129586167}
+    - target: {fileID: 198990666820036369, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
+      propertyPath: cameraScript
+      value: 
+      objectReference: {fileID: 1389566223}
     - target: {fileID: 2907041532642089595, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
       propertyPath: m_Camera
       value: 
@@ -168,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
     - target: {fileID: 3537263658340193087, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3537263658340193087, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
       propertyPath: m_LocalScale.x
@@ -286,7 +298,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 530482379329039171, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
 --- !u!1 &26582742
 GameObject:
@@ -389,7 +402,7 @@ Transform:
   m_Children:
   - {fileID: 1198500754}
   m_Father: {fileID: 261181237}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 2.564, y: -27.386, z: 0.383}
 --- !u!65 &28956338
 BoxCollider:
@@ -801,11 +814,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 28956337}
   - {fileID: 30017534}
   - {fileID: 364740}
-  - {fileID: 28956337}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &310871455
 GameObject:
@@ -936,6 +949,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372046708}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &411050045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411050046}
+  m_Layer: 0
+  m_Name: bookPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411050046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411050045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1129586167}
+  - {fileID: 1283943953}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411306793
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +1019,7 @@ MonoBehaviour:
   NumEvil: 1
   cultistParent: {fileID: 1475556874}
   chosenEvil: 
+  book: {fileID: 0}
   ChanceForSecondPositive: 20
   ChanceForNegative: 50
   PosTraits:
@@ -1124,7 +1171,7 @@ MonoBehaviour:
   base_ILM: 1
   Multi_IL: 1
   Multi_chaos: 1
-  candleParent: {fileID: 490874823}
+  candleParent: {fileID: 447074189}
 --- !u!1 &411585979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1399,7 @@ Transform:
   - {fileID: 372046709}
   - {fileID: 663808592}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &490874823
 GameObject:
@@ -1507,7 +1554,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663808591
 GameObject:
@@ -1636,7 +1683,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &940351564
 GameObject:
@@ -2103,6 +2150,48 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1129586166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1129586167}
+  m_Layer: 6
+  m_Name: BookTablePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1129586167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129586166}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: -1.41, z: -5.2}
+  m_LocalScale: {x: 1.96, y: 0.27, z: 1.33}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 411050046}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150002481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 198990666820036369, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
+  m_PrefabInstance: {fileID: 13551129}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6344ff61ee8b974cb3a8067f7ed82e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1198500753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2324,37 @@ Transform:
   - {fileID: 1841312404}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1283943952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1283943953}
+  m_Layer: 6
+  m_Name: BookOpenPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1283943953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283943952}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: -6}
+  m_LocalScale: {x: 1.96, y: 0.27, z: 1.33}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 411050046}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1325020887
 GameObject:
@@ -2546,6 +2666,7 @@ MonoBehaviour:
   UpTransform: {fileID: 1841312404}
   Table: {fileID: 1325020888}
   Seat: {fileID: 310871456}
+  book: {fileID: 1150002481}
 --- !u!1 &1459216012
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,7 +3422,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2075629995
 GameObject:
@@ -3699,7 +3820,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
     - target: {fileID: 3537263658340193087, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3537263658340193087, guid: a5863fbfec1445c47a081cf4e78097a5, type: 3}
       propertyPath: m_LocalScale.x
