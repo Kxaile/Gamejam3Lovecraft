@@ -28,6 +28,10 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Candles")]
     public GameObject candleParent;
+    public bool Candle1 =true;
+    public bool Candle2 =true;
+    public bool Candle3 =true;
+    public bool candle4 =true;
 
     // Start is called before the first frame update
     void Start()
@@ -56,21 +60,28 @@ public class PlayerStats : MonoBehaviour
             CT_Chaos = 0;
         }
 
-        switch (Sanity)
+        if (Sanity <= 75 && Candle1) 
         {
-            case 75f:
-                candleParent.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
-                break;
-            case 50f:
-                candleParent.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
-                break;
-            case 25f:
-                candleParent.transform.GetChild(2).transform.GetChild(0).gameObject.SetActive(false);
-                break;
-            case 0f:
-                candleParent.transform.GetChild(3).transform.GetChild(0).gameObject.SetActive(false);
-                break;
+            Candle1 = false;
+            candleParent.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
         }
-            
+        if (Sanity <= 50 && Candle2)
+        {
+            Candle2 = false;
+            candleParent.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
+
+        }
+        if (Sanity <=25 && Candle3)
+        {
+            Candle3 = false;
+            candleParent.transform.GetChild(2).transform.GetChild(0).gameObject.SetActive(false);
+
+        }
+        if (Sanity <= 0 && candle4)
+        {
+            candle4 = false;
+            candleParent.transform.GetChild(4).transform.GetChild(0).gameObject.SetActive(false);
+
+        }
     }
 }

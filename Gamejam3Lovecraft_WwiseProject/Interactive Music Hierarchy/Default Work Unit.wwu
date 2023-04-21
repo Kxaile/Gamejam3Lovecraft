@@ -118,6 +118,11 @@
 						<MusicSegment Name="Clair De Lune Start" ID="{7ECC9C77-D6D9-41CE-8533-DFE4311D075B}" ShortID="866882758">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="30425.1473922902"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="MakeUpGain" Type="Real64">
 									<ValueList>
 										<Value>8</Value>
@@ -214,6 +219,90 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicSegment>
+						<MusicSegment Name="clair de lune Start v2" ID="{76ED1431-0420-4066-985E-BB1E8CA913CF}" ShortID="770704364">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="30425.1473922902"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="clair de lune Start v2" ID="{7D081D43-25C4-432A-9D69-3C603C9E3173}" ShortID="261125078">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="clair de lune Start v2" ID="{A4AAF923-D45F-4E82-B5E3-894DCAF1B695}">
+											<Language>SFX</Language>
+											<AudioFile>clair de lune Start v2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="546093544"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CC92E2A4-EB12-4C16-8DF7-5817EBC1FBA4}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{020CA705-26F2-490C-AA1C-2C3F6E0FDECB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="clair de lune Start v2" ID="{CE8B6185-D312-451D-A331-445804A7EF1B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="30425.1473922902"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="clair de lune Start v2" ID="{A4AAF923-D45F-4E82-B5E3-894DCAF1B695}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{EF8D035A-5355-43A1-A21D-8CABBABFEA08}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{6F9A62F1-FA73-40B7-BCCC-0F5F8DF0A0F4}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="30425.1473922902"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{E422811F-5116-4C5B-87F1-B3F991FA9DBD}">
@@ -231,18 +320,12 @@
 					<Playlist>
 						<MusicPlaylistItem Name="" ID="{A5A121F1-22AF-4539-891A-17BAC0A2F915}" ShortID="996536434">
 							<ChildrenList>
-								<MusicPlaylistItem Name="" ID="{100D32D3-2B72-4FC7-97C1-B0ED767DAD9A}" ShortID="636951460">
+								<MusicPlaylistItem Name="" ID="{2E86A428-1102-4C6D-B56D-D01635D2E59C}" ShortID="961964062">
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
-									<SegmentRef Name="Clair De Lune Start" ID="{7ECC9C77-D6D9-41CE-8533-DFE4311D075B}"/>
-								</MusicPlaylistItem>
-								<MusicPlaylistItem Name="" ID="{F6C0686F-55B0-4295-91E3-BE553F98746C}" ShortID="834279731">
-									<PropertyList>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-									</PropertyList>
-									<SegmentRef Name="GJ3-Menu-V1" ID="{5CC67D63-0164-4802-A5F8-2C647060A051}"/>
+									<SegmentRef Name="clair de lune Start v2" ID="{76ED1431-0420-4066-985E-BB1E8CA913CF}"/>
 								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>

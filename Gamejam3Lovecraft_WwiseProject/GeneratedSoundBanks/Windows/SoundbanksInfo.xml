@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{28B6D9CB-F099-EB0B-40D1-F1F4140549D3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,24 +22,34 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{317CA743-2313-5273-B8AD-F937473DBB7D}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{59B975FD-889B-EECF-F112-C5491D38B39F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="152918676" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Clair De Lune Start.wav</ShortName>
-					<CachePath>SFX/Clair De Lune Start_D79FB2B7.wem</CachePath>
+				<File Id="546093544" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>clair de lune Start v2.wav</ShortName>
+					<CachePath>SFX/clair de lune Start v2_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="343527198" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="152918676"/>
+						<MediaRef Id="546093544"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="343527198"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B292A40D-6CFA-23EF-434C-094F295261C9}</FileHash>
+	<FileHash>{9307E640-1082-7512-1CE1-DA9A1D200E1F}</FileHash>
 </SoundBanksInfo>

@@ -1172,6 +1172,10 @@ MonoBehaviour:
   Multi_IL: 1
   Multi_chaos: 1
   candleParent: {fileID: 447074189}
+  Candle1: 1
+  Candle2: 1
+  Candle3: 1
+  candle4: 1
 --- !u!1 &411585979
 GameObject:
   m_ObjectHideFlags: 0

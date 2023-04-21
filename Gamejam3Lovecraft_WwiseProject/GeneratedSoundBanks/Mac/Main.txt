@@ -2,6 +2,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
 	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
 
+Effect plug-ins	ID	Name	Type				Notes
+	343527198	RoomVerb (Custom)	Wwise RoomVerb			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	152918676	Clair De Lune Start	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Clair De Lune Start_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\Clair De Lune Start\Clair De Lune Start		5367092
+	546093544	clair de lune Start v2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\clair de lune Start v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\clair de lune Start v2		5367092
 
