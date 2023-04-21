@@ -10,7 +10,6 @@
 								<Value>9</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Tempo" Type="Real64" Value="90"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -234,6 +233,11 @@
 						<MusicSegment Name="clair de lune Start v2" ID="{76ED1431-0420-4066-985E-BB1E8CA913CF}" ShortID="770704364">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="30425.1473922902"/>
+								<Property Name="PlaybackSpeed" Type="Real64">
+									<ValueList>
+										<Value>0.8</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
