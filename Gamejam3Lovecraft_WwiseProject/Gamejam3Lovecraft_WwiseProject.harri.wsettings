@@ -3,9 +3,10 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{687BB904-4D51-4A39-B2E8-29377ECC509E}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\harri\OneDrive\Desktop\Music stuff\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\harri\Downloads\"/>
 				<Property Name="EffectsView\MeteringObject\{C7E71A3B-745F-47B0-8F31-276DD413F83C}" Type="string" Value="{761B6068-6730-42F9-A251-DA873E852BA1}"/>
 				<Property Name="Event Action List\{229D159F-B966-4683-9DA5-68C50CBFA201}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3F833341-7E56-4A91-8E8E-4988D3F210BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5D429907-2023-41A3-BF99-F54344E19739}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>

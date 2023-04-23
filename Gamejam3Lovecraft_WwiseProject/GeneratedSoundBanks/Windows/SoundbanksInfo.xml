@@ -22,10 +22,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CEFDE328-7757-FFBD-5F9B-615D8BF7D23B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7D26C0C2-9314-2439-B6CA-2E2CCD256F01}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="393081101" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
+					<CachePath>SFX/blowing-out-candlewav-14441_10C4C929.wem</CachePath>
+				</File>
 				<File Id="546093544" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>clair de lune Start v2.wav</ShortName>
 					<CachePath>SFX/clair de lune Start v2_D79FB2B7.wem</CachePath>
@@ -37,6 +41,11 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="920148974" Name="Candle_extinguished" DurationType="OneShot" DurationMin="0.84" DurationMax="0.84">
+					<MediaRefs>
+						<MediaRef Id="393081101"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
 					<MediaRefs>
@@ -51,5 +60,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{34D30D6C-01FF-1541-7F6F-88FF01A86BA8}</FileHash>
+	<FileHash>{1058458D-DB44-8B93-EF54-2B170BB1D3A2}</FileHash>
 </SoundBanksInfo>

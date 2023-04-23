@@ -31,6 +31,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Candle_extinguished" ID="{3F833341-7E56-4A91-8E8E-4988D3F210BA}">
+					<ChildrenList>
+						<Action Name="" ID="{D36790B3-DE76-4DF8-8B21-0B25B4742F5C}" ShortID="979266801">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blowing-out-candlewav-14441" ID="{CD694704-A635-49DC-9FED-8A449A63DA93}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

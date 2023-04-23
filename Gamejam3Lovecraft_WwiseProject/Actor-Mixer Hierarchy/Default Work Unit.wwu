@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="blowing-out-candlewav-14441" ID="{CD694704-A635-49DC-9FED-8A449A63DA93}" ShortID="838722582">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="blowing-out-candlewav-14441" ID="{1D4311DD-DCD0-4B04-89DB-8D3A8B4905F7}">
+							<Language>SFX</Language>
+							<AudioFile>blowing-out-candlewav-14441.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="393081101"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="blowing-out-candlewav-14441" ID="{1D4311DD-DCD0-4B04-89DB-8D3A8B4905F7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
