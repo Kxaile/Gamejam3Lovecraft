@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="EndMusic" ID="{5D429907-2023-41A3-BF99-F54344E19739}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartMenuMusic" ID="{229D159F-B966-4683-9DA5-68C50CBFA201}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Candle_extinguished" ID="{3F833341-7E56-4A91-8E8E-4988D3F210BA}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
