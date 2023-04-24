@@ -15,7 +15,7 @@ public class TraitHandler : MonoBehaviour
     //public float Time_ActionBuffer = 1f;
     //public float Time_PossessionSpeed = 1f;
 
-    public int Intelligence;
+    public int Mentality;
     public int Faith;
     public int Perception;
 

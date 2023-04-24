@@ -115,7 +115,7 @@ public class GameBuilder : MonoBehaviour
             }
 
             TraitScript.Faith = Random.Range(0, 11);
-            TraitScript.Intelligence = Random.Range(0, 11);
+            TraitScript.Mentality = Random.Range(0, 11);
             TraitScript.Perception = Random.Range(0, 11);
 
             if (i >= NumCultists - NumEvil) // ADDING STARTING EVIL SCRIPT

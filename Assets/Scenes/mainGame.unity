@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 228170522}
   - component: {fileID: 228170521}
   m_Layer: 0
-  m_Name: DreamQ
+  m_Name: Dream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,7 +728,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 228170522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 228170519}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &228170522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +896,7 @@ GameObject:
   - component: {fileID: 301837935}
   - component: {fileID: 301837934}
   m_Layer: 0
-  m_Name: Azathoth
+  m_Name: Salts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -954,7 +966,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 301837935}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 301837932}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &301837935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,7 +1426,8 @@ MonoBehaviour:
   cultistCalled: 0
   book: {fileID: 1397848174}
   cams: {fileID: 1389566223}
-  interactingUis: {fileID: 0}
+  interactingUis: {fileID: 2040541533}
+  questionModule: {fileID: 2040541535}
 --- !u!1 &411585979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,7 +2014,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 628859080}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 628859077}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &628859080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,7 +2275,7 @@ GameObject:
   - component: {fileID: 759405680}
   - component: {fileID: 759405679}
   m_Layer: 0
-  m_Name: Golonac
+  m_Name: Crucifix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2308,7 +2345,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 759405680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 759405677}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &759405680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,7 +2732,7 @@ GameObject:
   - component: {fileID: 858532594}
   - component: {fileID: 858532593}
   m_Layer: 0
-  m_Name: Shoggoth
+  m_Name: Matches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2753,7 +2802,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 858532594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 858532591}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &858532594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3975,7 +4036,7 @@ GameObject:
   - component: {fileID: 1302288407}
   - component: {fileID: 1302288406}
   m_Layer: 0
-  m_Name: OddQ
+  m_Name: Odd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4045,7 +4106,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1302288407}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1302288404}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1302288407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4263,7 +4336,7 @@ GameObject:
   - component: {fileID: 1375316083}
   - component: {fileID: 1375316082}
   m_Layer: 0
-  m_Name: LiteratureQ
+  m_Name: Literature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4333,7 +4406,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1375316083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1375316080}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1375316083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5371,7 +5456,7 @@ GameObject:
   - component: {fileID: 1466231607}
   - component: {fileID: 1466231606}
   m_Layer: 0
-  m_Name: WeatherQ
+  m_Name: Weather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5441,7 +5526,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1466231607}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1466231604}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1466231607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5629,7 +5726,7 @@ GameObject:
   - component: {fileID: 1645082171}
   - component: {fileID: 1645082170}
   m_Layer: 0
-  m_Name: FaithQ
+  m_Name: Faith
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5699,7 +5796,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645082171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1645082168}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1645082171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5751,7 +5860,7 @@ GameObject:
   - component: {fileID: 1679455432}
   - component: {fileID: 1679455431}
   m_Layer: 0
-  m_Name: Kassogtha
+  m_Name: Herbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5821,7 +5930,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1679455432}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1679455429}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1679455432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5873,7 +5994,7 @@ GameObject:
   - component: {fileID: 1694776922}
   - component: {fileID: 1694776921}
   m_Layer: 0
-  m_Name: Nyarla
+  m_Name: Magnesium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5943,7 +6064,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1694776922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2040541535}
+        m_TargetAssemblyTypeName: questioning, Assembly-CSharp
+        m_MethodName: buttonPressed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1694776919}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1694776922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6558,6 +6691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040541534}
+  - component: {fileID: 2040541535}
   m_Layer: 0
   m_Name: interactionHolder
   m_TagString: Untagged
@@ -6582,6 +6716,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040541535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040541533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e3c08dce6d8bf4986dcdcbd8f382fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cultist: {fileID: 0}
+  faith: 0
+  mentality: 0
+  perception: 0
+  questionsLeft: 0
+  weather: 0
 --- !u!1 &2075629995
 GameObject:
   m_ObjectHideFlags: 0

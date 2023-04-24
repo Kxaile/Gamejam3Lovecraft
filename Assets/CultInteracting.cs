@@ -10,6 +10,7 @@ public class CultInteracting : MonoBehaviour
     public BookInteract book;
     public NewCamScript cams;
     public GameObject interactingUis;
+    public questioning questionModule;
     void Start()
     {
         
@@ -30,6 +31,8 @@ public class CultInteracting : MonoBehaviour
 
             // effects here n shitttt
 
+            // maybe we make the stuff fly in idk man 
+
             cams.LookCenter();
             cultist.transform.position = new Vector3(0, 0, 20);
             LeanTween.move(cultist, new Vector3(0,0,0), 2f).setEaseOutCubic();
@@ -37,7 +40,7 @@ public class CultInteracting : MonoBehaviour
 
             // ok code continues
 
-
+            questionModule.newRoundOfQuestioning(cultist);
         }
 	}
 }
