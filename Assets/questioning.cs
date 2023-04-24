@@ -284,6 +284,8 @@ public class questioning : MonoBehaviour
         string Response = "";
         int highestValue = Mathf.Max(perception, mentality, faith);
 
+        print(highestValue);
+
         List<string> responses = new List<string>();
         if (perception == highestValue) responses.Add("a book about psychology. The human brain is quite fascinating.");
         if (mentality == highestValue) responses.Add("a book about the cosmos. It has been quite thought provoking.");
