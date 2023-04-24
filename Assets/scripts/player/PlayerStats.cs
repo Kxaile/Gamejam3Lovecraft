@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AK.Wwise.Editor;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -64,24 +65,25 @@ public class PlayerStats : MonoBehaviour
         {
             Candle1 = false;
             candleParent.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+            AkSoundEngine.PostEvent("Candle_extinguished",candleParent);
         }
         if (Sanity <= 50 && Candle2)
         {
             Candle2 = false;
             candleParent.transform.GetChild(1).transform.GetChild(0).gameObject.SetActive(false);
-
+            AkSoundEngine.PostEvent("Candle_extinguished", candleParent);
         }
         if (Sanity <=25 && Candle3)
         {
             Candle3 = false;
             candleParent.transform.GetChild(2).transform.GetChild(0).gameObject.SetActive(false);
-
+            AkSoundEngine.PostEvent("Candle_extinguished", candleParent);
         }
         if (Sanity <= 0 && candle4)
         {
             candle4 = false;
             candleParent.transform.GetChild(4).transform.GetChild(0).gameObject.SetActive(false);
-
+            AkSoundEngine.PostEvent("Candle_extinguished", candleParent);
         }
     }
 }

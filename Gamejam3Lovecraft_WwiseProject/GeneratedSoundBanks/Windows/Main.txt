@@ -8,7 +8,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	3451596814	Hall_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	152918676	Clair De Lune Start	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Clair De Lune Start_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\Clair De Lune Start		5367092
 	393081101	blowing-out-candlewav-14441	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\blowing-out-candlewav-14441_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blowing-out-candlewav-14441		80736
 	546093544	clair de lune Start v2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\clair de lune Start v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\clair de lune Start v2		5367092
 

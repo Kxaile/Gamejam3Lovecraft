@@ -15,6 +15,8 @@ public class NewCamScript : MonoBehaviour
 
     public BookInteract book;
 
+    public Light Spotlight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +80,14 @@ public class NewCamScript : MonoBehaviour
         else
         {
             LookingDown = false;
+        }
+        if(CurrentX!= 0)
+        {
+            Spotlight.gameObject.SetActive(true);
+        }
+        else
+        {
+            Spotlight.gameObject.SetActive(false);
         }
         //print(LookingDown);
 

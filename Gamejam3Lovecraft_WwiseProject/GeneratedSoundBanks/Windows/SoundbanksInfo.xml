@@ -22,14 +22,10 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FCBE6446-666B-3941-0272-2654EFADE2B1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AE690059-2F0B-6109-9C7A-C6AD4B72423F}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="152918676" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Clair De Lune Start.wav</ShortName>
-					<CachePath>SFX/Clair De Lune Start_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="393081101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
 					<CachePath>SFX/blowing-out-candlewav-14441_10C4C929.wem</CachePath>
@@ -61,7 +57,6 @@
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="152918676"/>
 						<MediaRef Id="546093544"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -73,5 +68,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DA81D610-B34A-9C45-52D6-0E134D69F121}</FileHash>
+	<FileHash>{94D61230-8684-3FE3-7CFC-4811790B7205}</FileHash>
 </SoundBanksInfo>

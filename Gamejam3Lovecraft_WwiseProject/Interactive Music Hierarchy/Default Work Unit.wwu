@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{8F3E6E0F-8012-45B4-8034-46A275AB9343}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Menu" ID="{47B6BA86-9830-4A13-8950-EA668EB9A5AE}" ShortID="368502336">
+					<PropertyList>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
@@ -15,6 +18,7 @@
 										<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
 										<Property Name="ERPattern" Type="int32" Value="10"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-16"/>
+										<Property Name="RoomSize" Type="Real32" Value="65"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
@@ -32,6 +36,11 @@
 										<Value>0.8</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -43,6 +52,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="clair de lune Start v2" ID="{7D081D43-25C4-432A-9D69-3C603C9E3173}" ShortID="261125078">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
@@ -94,6 +110,11 @@
 								</MusicTrack>
 								<MusicTrack Name="Clair De Lune Start" ID="{8E7B9399-9B34-49FF-837A-B44FF066966A}" ShortID="933023374">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
 												<Value>10</Value>
@@ -185,6 +206,14 @@
 							</ObjectLists>
 						</MusicSegment>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{290FDB6F-544D-43CD-A084-B1C1F12DFF0B}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="26.9841269841269"/>
+								<Property Name="PanY" Type="Real64" Value="100"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{E422811F-5116-4C5B-87F1-B3F991FA9DBD}">
 							<PropertyList>
