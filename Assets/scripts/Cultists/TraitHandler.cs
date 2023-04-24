@@ -17,7 +17,7 @@ public class TraitHandler : MonoBehaviour
 
     public int Intelligence;
     public int Faith;
-    public int Observation;
+    public int Perception;
 
     public float Chance_ExtraItems = 1f;
     public float Chance_ChangeRoom = 1f;

@@ -27,9 +27,16 @@ public class CultInteracting : MonoBehaviour
 		{
             cultistCalled = true;
             book.bookOpenClose();
+
+            // effects here n shitttt
+
             cams.LookCenter();
             cultist.transform.position = new Vector3(0, 0, 20);
             LeanTween.move(cultist, new Vector3(0,0,0), 2f).setEaseOutCubic();
+
+            // ok code continues
+
+
         }
 	}
 }
