@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ae2d59ae49a9d84daa8e78aeee2cd2e8
     GuidInternal: 
-    m_lastTime: -8585239999251679788
+    m_lastTime: -8585193425653484730
     List:
     - name: Main
       guid: e9057ed319a78e4b8c3ebd7611800be3
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
-    m_lastTime: -8585239999251755214
+    m_lastTime: -8585193433214536241
     List:
+    - name: Candle_extinguished
+      guid: 4133833f567e914a8e8e4988d3f210ba
+      id: 920148974
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: Candle_extinguished
+        ObjectType: 3
+        guid: 4133833f567e914a8e8e4988d3f210ba
+      Path: Events\Default Work Unit\Candle_extinguished
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: EndMusic
       guid: 0799425d2320a341bf99f54344e19739
       id: 1681803181
