@@ -9,7 +9,8 @@ public class CultInteracting : MonoBehaviour
     public bool cultistCalled;
     public BookInteract book;
     public NewCamScript cams;
-
+    public GameObject interactingUis;
+    public questioning questionModule;
     void Start()
     {
         
@@ -27,9 +28,19 @@ public class CultInteracting : MonoBehaviour
 		{
             cultistCalled = true;
             book.bookOpenClose();
+
+            // effects here n shitttt
+
+            // maybe we make the stuff fly in idk man 
+
             cams.LookCenter();
             cultist.transform.position = new Vector3(0, 0, 20);
             LeanTween.move(cultist, new Vector3(0,0,0), 2f).setEaseOutCubic();
+            interactingUis.SetActive(true);
+
+            // ok code continues
+
+            questionModule.newRoundOfQuestioning(cultist);
         }
 	}
 }

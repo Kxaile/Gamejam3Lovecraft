@@ -118,7 +118,7 @@ public class BookInteract : MonoBehaviour
             page.transform.Find("Name").GetComponent<TMPro.TextMeshProUGUI>().text = cultist.name;
             page.transform.Find("Age").GetComponent<TMPro.TextMeshProUGUI>().text = "Age: " + cultist.GetComponent<B_Normal>().Age.ToString();
 
-            string bioString = "Faith: " + traits.Faith.ToString() + "\nObservation: " + traits.Observation.ToString() + "\nIntelligence: " + traits.Intelligence.ToString();
+            string bioString = "Faith: " + traits.Faith.ToString() + "\nPerception: " + traits.Perception.ToString() + "\nMentality: " + traits.Mentality.ToString();
 
             page.transform.Find("Personality").GetComponent<TMPro.TextMeshProUGUI>().text = bioString;
 
