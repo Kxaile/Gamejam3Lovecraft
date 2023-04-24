@@ -30,17 +30,7 @@ public class BookInteract : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && cameraScript.LookingDown)
 		{
-			if (!BookOpen)
-			{
-                LeanTween.move(this.gameObject, bookOpenPos.transform, 0.6f).setEaseOutCubic();
-                LeanTween.rotate(this.gameObject, bookOpenPos.eulerAngles, 0.6f).setEaseOutCubic();
-                BookOpen = true;
-            } else
-			{
-                LeanTween.move(this.gameObject, bookStartPos.transform, 0.6f).setEaseOutCubic();
-                LeanTween.rotate(this.gameObject, bookStartPos.eulerAngles, 0.6f).setEaseOutCubic();
-                BookOpen = false;
-            }
+            bookOpenClose();
 		}
 
 		if (BookOpen)
@@ -58,6 +48,21 @@ public class BookInteract : MonoBehaviour
             }
         }
     }
+
+    public void bookOpenClose()
+	{
+            if (!BookOpen)
+			{
+                LeanTween.move(this.gameObject, bookOpenPos.transform, 0.6f).setEaseOutCubic();
+                LeanTween.rotate(this.gameObject, bookOpenPos.eulerAngles, 0.6f).setEaseOutCubic();
+                BookOpen = true;
+            } else
+			{
+                LeanTween.move(this.gameObject, bookStartPos.transform, 0.6f).setEaseOutCubic();
+                LeanTween.rotate(this.gameObject, bookStartPos.eulerAngles, 0.6f).setEaseOutCubic();
+                BookOpen = false;
+            }
+	}
 
     public void UpdatePages()
 	{
@@ -117,6 +122,7 @@ public class BookInteract : MonoBehaviour
 
             page.transform.Find("Personality").GetComponent<TMPro.TextMeshProUGUI>().text = bioString;
 
+            page.transform.Find("Button").GetComponent<CallScript>().cultist = cultist;
 
 			if (left)
 			{

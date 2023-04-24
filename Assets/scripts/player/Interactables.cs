@@ -67,16 +67,16 @@ public class Interactables : MonoBehaviour
         }
         else
         {
-            if (LastHit.transform.GetChild(0).gameObject.activeSelf)
-            {
-                LastHit.transform.GetChild(0).gameObject.SetActive(false);
+            //if (LastHit.transform.GetChild(0).gameObject.activeSelf)
+            //{
+            //    LastHit.transform.GetChild(0).gameObject.SetActive(false);
 
-                Highlighted = false;
+            //    Highlighted = false;
 
-                LastHit = null;
-                print("no lingering highlighted");
-                return;
-            }
+            //    LastHit = null;
+            //    print("no lingering highlighted");
+            //    return;
+            //}
         }
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CallScript : MonoBehaviour
+public class GameStates : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,4 @@ public class CallScript : MonoBehaviour
     {
         
     }
-
-    public void callCultist()
-	{
-        print("Her is cumming");
-	}
 }

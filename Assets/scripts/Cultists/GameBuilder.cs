@@ -125,7 +125,7 @@ public class GameBuilder : MonoBehaviour
 
             
 
-            culty.transform.position = new Vector3(-(NumCultists*2) + i * 5, Random.Range(3, 8), 0);
+            culty.transform.localPosition = new Vector3(-(NumCultists*2) + i * 5, 0, 0);
 		}
 
         book.buildPages();

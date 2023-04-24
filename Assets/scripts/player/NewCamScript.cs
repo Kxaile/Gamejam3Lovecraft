@@ -87,36 +87,36 @@ public class NewCamScript : MonoBehaviour
     }
     public void LookLeft()
     {
-        LeanTween.move(this.gameObject, LeftTransform.transform, 0.1f).setEaseOutCubic();
-        LeanTween.rotate(this.gameObject, LeftTransform.eulerAngles, 0.1f).setEaseOutCubic();
+        LeanTween.move(this.gameObject, LeftTransform.transform, 0.3f).setEaseOutCubic();
+        LeanTween.rotate(this.gameObject, LeftTransform.eulerAngles, 0.3f).setEaseOutCubic();
         CurrentX = -1;
         CurrentY = 0;
     }
     public void LookRight()
     {
-        LeanTween.move(this.gameObject, RightTransform.transform, 0.1f).setEaseOutCubic();
-        LeanTween.rotate(this.gameObject, RightTransform.eulerAngles, 0.1f).setEaseOutCubic();
+        LeanTween.move(this.gameObject, RightTransform.transform, 0.3f).setEaseOutCubic();
+        LeanTween.rotate(this.gameObject, RightTransform.eulerAngles, 0.3f).setEaseOutCubic();
         CurrentX = 1;
         CurrentY = 0;
     }
     public void LookUp()
     {
-        LeanTween.move(this.gameObject, UpTransform.transform, 0.1f).setEaseOutCubic();
-        LeanTween.rotate(this.gameObject, UpTransform.eulerAngles, 0.1f).setEaseOutCubic();
+        LeanTween.move(this.gameObject, UpTransform.transform, 0.3f).setEaseOutCubic();
+        LeanTween.rotate(this.gameObject, UpTransform.eulerAngles, 0.3f).setEaseOutCubic();
         CurrentX = 0;
         CurrentY = 1;
     }
     public void LookCenter()
     {
-        LeanTween.move(this.gameObject, Seat.transform, 0.1f).setEaseOutCubic();
-        LeanTween.rotate(this.gameObject, Seat.eulerAngles, 0.1f).setEaseOutCubic();
+        LeanTween.move(this.gameObject, Seat.transform, 0.3f).setEaseOutCubic();
+        LeanTween.rotate(this.gameObject, Seat.eulerAngles, 0.3f).setEaseOutCubic();
         CurrentX = 0;
         CurrentY = 0;
     }
     public void looktable()
     {
-        LeanTween.move(this.gameObject, Table.transform, 0.1f).setEaseOutCubic();
-        LeanTween.rotate(this.gameObject, Table.eulerAngles, 0.1f).setEaseOutCubic();
+        LeanTween.move(this.gameObject, Table.transform, 0.3f).setEaseOutCubic();
+        LeanTween.rotate(this.gameObject, Table.eulerAngles, 0.3f).setEaseOutCubic();
         CurrentX = 0;
         CurrentY = -1;
     }
