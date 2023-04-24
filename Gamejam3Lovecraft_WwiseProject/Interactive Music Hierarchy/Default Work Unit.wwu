@@ -4,13 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{8F3E6E0F-8012-45B4-8034-46A275AB9343}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Menu" ID="{47B6BA86-9830-4A13-8950-EA668EB9A5AE}" ShortID="368502336">
-					<PropertyList>
-						<Property Name="MakeUpGain" Type="Real64">
-							<ValueList>
-								<Value>9</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
@@ -158,58 +151,6 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="Clair De Lune Start" ID="{8E7B9399-9B34-49FF-837A-B44FF066966A}" ShortID="933023374">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Clair De Lune Start" ID="{128B4A2F-0C09-4C8B-B027-276A112A2429}">
-											<Language>SFX</Language>
-											<AudioFile>Clair De Lune Start.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="152918676"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{97F108BF-9810-4B07-8377-6DF52749DB97}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{4006221B-1CC1-4F37-9337-6B935766555D}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Clair De Lune Start" ID="{1028150E-9B6A-4154-8FAD-E4261D3227E5}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="30425.1473922902"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Clair De Lune Start" ID="{128B4A2F-0C09-4C8B-B027-276A112A2429}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Cues">
 									<Reference>
@@ -287,6 +228,77 @@
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="clair de lune Start v2" ID="{A4AAF923-D45F-4E82-B5E3-894DCAF1B695}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Clair De Lune Start" ID="{8E7B9399-9B34-49FF-837A-B44FF066966A}" ShortID="933023374">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="RoomVerb (Custom)" ID="{D095308A-BAAB-48CF-B678-77D45B263EC7}" ShortID="659524619" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
+														<Property Name="ERPattern" Type="int32" Value="10"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-16"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Clair De Lune Start" ID="{128B4A2F-0C09-4C8B-B027-276A112A2429}">
+											<Language>SFX</Language>
+											<AudioFile>Clair De Lune Start.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="152918676"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{97F108BF-9810-4B07-8377-6DF52749DB97}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{4006221B-1CC1-4F37-9337-6B935766555D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Clair De Lune Start" ID="{1028150E-9B6A-4154-8FAD-E4261D3227E5}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="30425.1473922902"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Clair De Lune Start" ID="{128B4A2F-0C09-4C8B-B027-276A112A2429}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
