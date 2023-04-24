@@ -9,7 +9,7 @@ public class CultInteracting : MonoBehaviour
     public bool cultistCalled;
     public BookInteract book;
     public NewCamScript cams;
-
+    public GameObject interactingUis;
     void Start()
     {
         
@@ -33,6 +33,7 @@ public class CultInteracting : MonoBehaviour
             cams.LookCenter();
             cultist.transform.position = new Vector3(0, 0, 20);
             LeanTween.move(cultist, new Vector3(0,0,0), 2f).setEaseOutCubic();
+            interactingUis.SetActive(true);
 
             // ok code continues
 
