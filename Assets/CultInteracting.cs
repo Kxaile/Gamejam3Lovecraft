@@ -22,9 +22,28 @@ public class CultInteracting : MonoBehaviour
         
     }
 
+    public void Dismiss(GameObject cultist)
+	{
+        cultistCalled = false;
+        //book.bookOpenClose();
+
+        // effects here n shitttt
+
+        // maybe we make the stuff fly in idk man 
+
+        cams.LookCenter();
+        LeanTween.move(cultist, new Vector3(0, 0, 20), 2f).setEaseOutCubic();
+        //cultist.transform.position = new Vector3(0, 20, 20);
+        interactingUis.SetActive(false);
+
+        // ok code continues
+
+        questionModule.newRoundOfQuestioning(cultist);
+    }
+
     public void AttemptCall(GameObject cultist)
 	{
-        if(book.BookOpen && !cultistCalled)
+        if(book.BookOpen && !cultistCalled && cultist.GetComponent<TraitHandler>().Questions > 0)
 		{
             cultistCalled = true;
             book.bookOpenClose();

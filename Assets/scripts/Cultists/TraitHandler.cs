@@ -25,6 +25,9 @@ public class TraitHandler : MonoBehaviour
 
     public bool Can_BePossessed = true;
 
+    public int Questions = 3;
+    public bool isEvil = false;
+
     public int age;
     //public bool Can_GetExtraItems = false;
 
