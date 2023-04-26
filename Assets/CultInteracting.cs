@@ -31,7 +31,7 @@ public class CultInteracting : MonoBehaviour
 
         // maybe we make the stuff fly in idk man 
 
-        cams.LookCenter();
+        //cams.LookCenter();
         LeanTween.move(cultist, new Vector3(0, 0, 20), 2f).setEaseOutCubic();
         //cultist.transform.position = new Vector3(0, 20, 20);
         interactingUis.SetActive(false);

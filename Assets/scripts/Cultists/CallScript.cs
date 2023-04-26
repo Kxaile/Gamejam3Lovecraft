@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CallScript : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CallScript : MonoBehaviour
 
     public GameObject runtimeHolder;
     public GameObject cultist;
+    public TMP_Text diaryLog;
     public CultInteracting cultCaller;
     void Start()
     {

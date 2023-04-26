@@ -115,6 +115,8 @@ public class BookInteract : MonoBehaviour
 
             GameObject page = Instantiate(pageBase);
 
+            traits.diaryPage = page;
+
             page.transform.Find("Name").GetComponent<TMPro.TextMeshProUGUI>().text = cultist.name;
             page.transform.Find("Age").GetComponent<TMPro.TextMeshProUGUI>().text = "Age: " + cultist.GetComponent<B_Normal>().Age.ToString();
 

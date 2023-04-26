@@ -9,6 +9,8 @@ public class TraitHandler : MonoBehaviour
 
 	public List<string> CultistTraits = new List<string>();
 
+    public GameObject diaryPage;
+
     //public float itemFindMulti = 1f;
 
     //public float Time_Search = 1f;

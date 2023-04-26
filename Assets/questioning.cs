@@ -20,6 +20,7 @@ public class questioning : MonoBehaviour
     public int bias;
 
     public TMP_Text questionsText;
+    public TMP_Text log;
 
     public TraitHandler cultistStats;
     public CultInteracting cultinter;
@@ -63,12 +64,14 @@ public class questioning : MonoBehaviour
         mentality = cultistStats.Mentality;
         perception = cultistStats.Perception;
 
+        log = cultistStats.diaryPage.transform.Find("Log").GetComponent<TMP_Text>();
+
         questionsText.text = "Questions left: " + questionsLeft.ToString() + "/3";
     }
 
     public void responseHandler(string response, int strength, string trait, string function)
 	{
-        string diaryEntry = "They showed ";
+        string diaryEntry = "- They showed ";
 
         if (strength <= 0)
 		{
@@ -94,6 +97,9 @@ public class questioning : MonoBehaviour
         diaryEntry += trait += " when asked about " + function;
 
         print(diaryEntry);
+
+        log.text += diaryEntry + "<br><br>";
+
         StartCoroutine(TypeResponse(response));
     }
 
@@ -103,10 +109,25 @@ public class questioning : MonoBehaviour
         textB.SetActive(true);
         isTyping = true;
         textResp.text = "";
+
+        bool newLine = false;
         foreach (char c in response)
         {
             textResp.text += c;
             yield return new WaitForSeconds(characterSpeed);
+
+            if(newLine && c == 32)
+			{
+                yield return new WaitForSeconds(0.8f);
+                textResp.text = "";
+            }
+
+            newLine = false;
+
+            if (c == 46)
+			{
+                newLine = true;
+			}
         }
 
         yield return new WaitForSeconds(1.0f);
@@ -142,7 +163,7 @@ public class questioning : MonoBehaviour
 		    }
 		    else
 		    {
-                bias = Random.Range(-2, 4);
+                bias = Random.Range(-1, 2);
             }
 
             faith = cultistStats.Faith + bias;
