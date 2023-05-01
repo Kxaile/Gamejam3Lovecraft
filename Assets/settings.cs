@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class settings : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class settings : MonoBehaviour
     [Header("Sliders")]
     public Slider VolSlider;
     public Slider BrightSlider;
-    public Slider FovSlider;
+    
     public struct Controls
     {
         Input left;
@@ -28,7 +28,7 @@ public class settings : MonoBehaviour
     {
         VolSlider.value = Volume;
         BrightSlider.value = brightness;
-        FovSlider.value = fov;
+        
     }
 
     public void ChangedValue(float Value, int Indecator)
@@ -38,8 +38,6 @@ public class settings : MonoBehaviour
             case 0: VolSlider.value = Value;
                 break;
             case 1: BrightSlider.value = Value;
-                break;
-            case 2: FovSlider.value = Value;
                 break;
         }
     }
