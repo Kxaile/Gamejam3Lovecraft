@@ -3,8 +3,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
 	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2938993575	Sanity			\Default Work Unit\Sanity	
+
 Effect plug-ins	ID	Name	Type				Notes
 	343527198	RoomVerb (Custom)	Wwise RoomVerb			
+	445125199	Nearly_Forever (Custom)	Wwise Delay			
 	3451596814	Hall_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size

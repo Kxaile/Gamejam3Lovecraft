@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using AK.Wwise.Editor;
+using AK.Wwise;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -34,12 +35,16 @@ public class PlayerStats : MonoBehaviour
     public bool Candle3 =true;
     public bool candle4 =true;
 
+    
+    
+
     // Start is called before the first frame update
     void Start()
     {
         gameData = GameObject.Find("RuntimeScripts").GetComponent<gameStartOptions>();
         maxSanity = gameData.maxSanity;
         Rituals = gameData.numOfRituals;
+        
 
     }
 
@@ -53,6 +58,7 @@ public class PlayerStats : MonoBehaviour
         {
             Sanity -= insanityGain * gameData.sanityLossRate;
             CT_Insanity = 0;
+            AkSoundEngine.SetRTPCValue("Sanity", Sanity);
         }
 
         if (CT_Chaos >= T_Chaos / gameData.chaosGainRate)
@@ -82,7 +88,7 @@ public class PlayerStats : MonoBehaviour
         if (Sanity <= 0 && candle4)
         {
             candle4 = false;
-            candleParent.transform.GetChild(4).transform.GetChild(0).gameObject.SetActive(false);
+            candleParent.transform.GetChild(3).transform.GetChild(0).gameObject.SetActive(false);
             AkSoundEngine.PostEvent("Candle_extinguished", candleParent);
         }
     }

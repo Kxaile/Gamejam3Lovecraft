@@ -159,8 +159,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c99ec70bb83ce34bac46214e06cf6b3d
     GuidInternal: 
-    m_lastTime: -8585245098419830753
-    List: []
+    m_lastTime: -8585186887834713236
+    List:
+    - name: Sanity
+      guid: 156f5dbb2c21164a978a42a3df2fbb08
+      id: 2938993575
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c99ec70bb83ce34bac46214e06cf6b3d
+      - ElementName: Sanity
+        ObjectType: 13
+        guid: 156f5dbb2c21164a978a42a3df2fbb08
+      Path: Game Parameters\Default Work Unit\Sanity
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -173,8 +187,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 19f3ee151bf7714b8a0ab9956d643c76
     GuidInternal: 
-    m_lastTime: -8585245098419402501
-    List: []
+    m_lastTime: -8585186887834798153
+    List:
+    - name: PlayerLife
+      guid: f7c6c07d06bffd43b9b3bb4b6809a175
+      id: 444815956
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 19f3ee151bf7714b8a0ab9956d643c76
+      - ElementName: PlayerLife
+        ObjectType: 9
+        guid: f7c6c07d06bffd43b9b3bb4b6809a175
+      Path: States\Default Work Unit\PlayerLife
+      values:
+      - name: Alive
+        guid: f4b9b5543d96ff4b80b4574c50f42eca
+        id: 655265632
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19f3ee151bf7714b8a0ab9956d643c76
+        - ElementName: PlayerLife
+          ObjectType: 9
+          guid: f7c6c07d06bffd43b9b3bb4b6809a175
+        - ElementName: Alive
+          ObjectType: 8
+          guid: f4b9b5543d96ff4b80b4574c50f42eca
+      - name: Dead
+        guid: a47b99399da93642a90e200a62eb0a83
+        id: 2044049779
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19f3ee151bf7714b8a0ab9956d643c76
+        - ElementName: PlayerLife
+          ObjectType: 9
+          guid: f7c6c07d06bffd43b9b3bb4b6809a175
+        - ElementName: Dead
+          ObjectType: 8
+          guid: a47b99399da93642a90e200a62eb0a83
+      - name: None
+        guid: 54c5b62c30805b4a8880b800f3e56c67
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 19f3ee151bf7714b8a0ab9956d643c76
+        - ElementName: PlayerLife
+          ObjectType: 9
+          guid: f7c6c07d06bffd43b9b3bb4b6809a175
+        - ElementName: None
+          ObjectType: 8
+          guid: 54c5b62c30805b4a8880b800f3e56c67
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -187,8 +267,90 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5c35e3fc89e4234e99d09169689129ed
     GuidInternal: 
-    m_lastTime: -8585245098419950423
-    List: []
+    m_lastTime: -8585186887834866414
+    List:
+    - name: Insanity
+      guid: 855ac085b48b0f42984ef51bb61ed7eb
+      id: 34996162
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c35e3fc89e4234e99d09169689129ed
+      - ElementName: Insanity
+        ObjectType: 11
+        guid: 855ac085b48b0f42984ef51bb61ed7eb
+      Path: Switches\Default Work Unit\Insanity
+      values:
+      - name: Level1
+        guid: d923d37a318e7342ab3d1941333b09ef
+        id: 2678230382
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c35e3fc89e4234e99d09169689129ed
+        - ElementName: Insanity
+          ObjectType: 11
+          guid: 855ac085b48b0f42984ef51bb61ed7eb
+        - ElementName: Level1
+          ObjectType: 10
+          guid: d923d37a318e7342ab3d1941333b09ef
+      - name: Level2
+        guid: b8d2e1144510e743b94ae4da3eca7131
+        id: 2678230381
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c35e3fc89e4234e99d09169689129ed
+        - ElementName: Insanity
+          ObjectType: 11
+          guid: 855ac085b48b0f42984ef51bb61ed7eb
+        - ElementName: Level2
+          ObjectType: 10
+          guid: b8d2e1144510e743b94ae4da3eca7131
+      - name: Level3
+        guid: af415287b35b534e81fe7226c19ae431
+        id: 2678230380
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c35e3fc89e4234e99d09169689129ed
+        - ElementName: Insanity
+          ObjectType: 11
+          guid: 855ac085b48b0f42984ef51bb61ed7eb
+        - ElementName: Level3
+          ObjectType: 10
+          guid: af415287b35b534e81fe7226c19ae431
+      - name: Level4
+        guid: e4d5ce81b3220b4d971e2d3528b3aca9
+        id: 2678230379
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5c35e3fc89e4234e99d09169689129ed
+        - ElementName: Insanity
+          ObjectType: 11
+          guid: 855ac085b48b0f42984ef51bb61ed7eb
+        - ElementName: Level4
+          ObjectType: 10
+          guid: e4d5ce81b3220b4d971e2d3528b3aca9
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

@@ -18,6 +18,44 @@ namespace AK
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace PLAYERLIFE
+        {
+            static const AkUniqueID GROUP = 444815956U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace PLAYERLIFE
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace INSANITY
+        {
+            static const AkUniqueID GROUP = 34996162U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LEVEL1 = 2678230382U;
+                static const AkUniqueID LEVEL2 = 2678230381U;
+                static const AkUniqueID LEVEL3 = 2678230380U;
+                static const AkUniqueID LEVEL4 = 2678230379U;
+            } // namespace SWITCH
+        } // namespace INSANITY
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SANITY = 2938993575U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{11AE950E-05FF-4E91-47B0-D00A23B83BA4}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A16FB069-4BA6-7274-3790-E8331F07DF1B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,8 +21,30 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="2938993575" Name="Sanity"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="444815956" Name="PlayerLife">
+					<States>
+						<State Id="655265632" Name="Alive"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="34996162" Name="Insanity">
+					<Switches>
+						<Switch Id="2678230379" Name="Level4"/>
+						<Switch Id="2678230380" Name="Level3"/>
+						<Switch Id="2678230381" Name="Level2"/>
+						<Switch Id="2678230382" Name="Level1"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AE690059-2F0B-6109-9C7A-C6AD4B72423F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{48028F0C-ED89-6893-9E79-BF9A29D9DCC5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -38,6 +60,7 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="343527198" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="445125199" Name="Nearly_Forever (Custom)" LibName="Wwise Delay" LibId="6946819"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -49,6 +72,9 @@
 						<MediaRef Id="393081101"/>
 					</MediaRefs>
 					<PluginRefs>
+						<Custom>
+							<PluginRef Id="445125199"/>
+						</Custom>
 						<ShareSets>
 							<PluginRef Id="3451596814"/>
 						</ShareSets>
@@ -66,7 +92,10 @@
 					</PluginRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="2938993575" Name="Sanity"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2E72EB08-1319-E0FF-99BC-794194A59D26}</FileHash>
+	<FileHash>{FF06BF96-E5D5-0972-07EC-570C9E2CB19E}</FileHash>
 </SoundBanksInfo>
