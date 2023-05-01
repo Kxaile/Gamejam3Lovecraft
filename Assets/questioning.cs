@@ -29,6 +29,8 @@ public class questioning : MonoBehaviour
     public float characterSpeed = 0.05f;
     private bool isTyping = false;
 
+    public Inventory inv;
+
     void Start()
     {
         weather = Random.Range(1,4);
@@ -102,6 +104,39 @@ public class questioning : MonoBehaviour
 
         StartCoroutine(TypeResponse(response));
     }
+
+    public void itemHandler(string item)
+	{
+        if (inv.PlrInv[item] > 0)
+        {
+            inv.PlrInv[item] -= 1;
+
+            switch (item)
+            {
+                case "Matches":
+                    Matches();
+                    break;
+                case "Herbs":
+                    Herbs();
+                    break;
+                case "Salts":
+                    Salts();
+                    break;
+                case "Crucifix":
+                    Crucifix();
+                    break;
+                case "Magnesium":
+                    Magnesium();
+                    break;
+                default:
+                    Debug.LogWarning("Function not found: " + item);
+                    break;
+            }
+
+            print("Success showed item");
+        }
+    }
+
 
     IEnumerator TypeResponse(string response)
     {
@@ -190,23 +225,8 @@ public class questioning : MonoBehaviour
                 case "Literature":
                     Literature();
                     break;
-                case "Matches":
-                    Matches();
-                    break;
-                case "Herbs":
-                    Herbs();
-                    break;
-                case "Salts":
-                    Salts();
-                    break;
-                case "Crucifix":
-                    Crucifix();
-                    break;
-                case "Magnesium":
-                    Magnesium();
-                    break;
                 default:
-                    Debug.LogWarning("Function not found: " + btnName);
+                    itemHandler(btnName);
                     break;
             }
 		}
@@ -462,6 +482,14 @@ public class questioning : MonoBehaviour
     public void Matches()
     {
         Debug.Log("Showed Matches");
+		if (cultist.GetComponent<B_Shoggoth>())
+		{
+
+		}
+		else
+		{
+            //normal response
+		}
     }
 
     public void Herbs()

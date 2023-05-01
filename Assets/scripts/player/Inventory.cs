@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
     public Dictionary<string, int> PlrInv = new Dictionary<string, int>();
 
     public List<string> ResourceItems = new List<string>() { "Gold", "Obsidian", "Salt", "Sapphire", "Bone"};
-    public List<string> CreatureItems = new List<string>() { "Matches", "Medicinal Herbs", "Smelling Salts", "Crucifix", "Magnesium" };
+    public List<string> CreatureItems = new List<string>() { "Matches", "Herbs", "Salts", "Crucifix", "Magnesium" };
     // Start is called before the first frame update
 
     public int ItemBonus; // from menu
@@ -41,6 +41,17 @@ public class Inventory : MonoBehaviour
                 Instantiate(resourceTemp, GameObject.Find("Inventory").transform).name = Item;
 			}
 		}
+
+        foreach (string Item in CreatureItems)
+        {
+            int Amount = 3;
+            PlrInv.Add(Item, Amount);
+
+            for (int i = 0; i < PlrInv[Item]; i++)
+            {
+                Instantiate(resourceTemp, GameObject.Find("Inventory").transform).name = Item;
+            }
+        }
 
         print(PlrInv);
     }
