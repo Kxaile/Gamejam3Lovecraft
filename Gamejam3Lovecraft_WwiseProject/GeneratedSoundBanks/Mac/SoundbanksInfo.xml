@@ -47,7 +47,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BF27D66D-ED72-EB61-676F-85AFA7D87580}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{45E68E28-4543-B49E-1820-9F9F8B8607F7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -66,6 +66,10 @@
 				<File Id="964153902" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Drone 17.wav</ShortName>
 					<CachePath>SFX/Drone 17_23CE8040.wem</CachePath>
+				</File>
+				<File Id="1001763267" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP.wav</ShortName>
+					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -108,11 +112,17 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="2407527377" Name="StartRain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1001763267"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="2938993575" Name="Sanity"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B2EE0C07-CFF1-CCF8-43B9-044589B54D2D}</FileHash>
+	<FileHash>{BCFE8EA0-BA82-EB1C-CB24-282EF7FC77AF}</FileHash>
 </SoundBanksInfo>

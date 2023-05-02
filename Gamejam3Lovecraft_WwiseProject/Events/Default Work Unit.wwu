@@ -63,6 +63,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StartRain" ID="{81E4751E-C18A-4E20-8A3A-F83F8EBE1450}">
+					<ChildrenList>
+						<Action Name="" ID="{FF2FC126-FEB6-4D16-A5EA-32A925EECC01}" ShortID="603180686">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{139884F6-1D6B-49CD-AED4-543B6990AEC5}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopRain" ID="{2B842A1B-E4F5-4639-B2B1-52F6E4234BB0}">
+					<ChildrenList>
+						<Action Name="" ID="{854693BF-1C15-4BB5-902D-AC4C08F32BF4}" ShortID="108045319">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{139884F6-1D6B-49CD-AED4-543B6990AEC5}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

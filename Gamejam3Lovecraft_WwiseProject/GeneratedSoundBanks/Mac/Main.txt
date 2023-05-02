@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
+	856242967	StopRain			\Default Work Unit\StopRain	
 	920148974	Candle_extinguished			\Default Work Unit\Candle_extinguished	
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
+	2407527377	StartRain			\Default Work Unit\StartRain	
 	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
 	3356728648	StartMain			\Default Work Unit\StartMain	
 
@@ -17,4 +19,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	546093544	clair de lune Start v2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\clair de lune Start v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\clair de lune Start v2		5367092
 	774007996	Ambient_Body	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Drone 17_E9485EC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\background Noise\Ambient_Body		5603784
 	964153902	Ambient_Start	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Drone 17_23CE8040.wem		\Actor-Mixer Hierarchy\Default Work Unit\background Noise\Ambient_Start		5932036
+	1001763267	Rain	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		5760292
 

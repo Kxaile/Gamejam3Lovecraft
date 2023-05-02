@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c687d8084630942ae9fcfa03db84ebc
     GuidInternal: 
-    m_lastTime: -8585245098420027450
+    m_lastTime: -8585186019245871853
     List:
+    - name: Environment
+      guid: 5eb02fd39c70e24489df294eb345ae71
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c687d8084630942ae9fcfa03db84ebc
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Environment
+        ObjectType: 2
+        guid: 5eb02fd39c70e24489df294eb345ae71
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environment
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,43 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: b159a96bb0d9dc4e829ded86f4baa7e4
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c687d8084630942ae9fcfa03db84ebc
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: b159a96bb0d9dc4e829ded86f4baa7e4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: f534748ed133d54a802a77aa7877ccf0
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5c687d8084630942ae9fcfa03db84ebc
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Environment
+        ObjectType: 2
+        guid: 5eb02fd39c70e24489df294eb345ae71
+      - ElementName: SFX
+        ObjectType: 2
+        guid: f534748ed133d54a802a77aa7877ccf0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environment\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ae2d59ae49a9d84daa8e78aeee2cd2e8
     GuidInternal: 
-    m_lastTime: -8585193425653484730
+    m_lastTime: -8585185985620960972
     List:
     - name: Main
       guid: e9057ed319a78e4b8c3ebd7611800be3
@@ -94,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
-    m_lastTime: -8585193433214536241
+    m_lastTime: -8585185995491270585
     List:
     - name: Candle_extinguished
       guid: 4133833f567e914a8e8e4988d3f210ba
@@ -130,6 +184,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StartMain
+      guid: dfbf801087aca049b9da1b4a6a208f41
+      id: 3356728648
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: StartMain
+        ObjectType: 3
+        guid: dfbf801087aca049b9da1b4a6a208f41
+      Path: Events\Default Work Unit\StartMain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StartMenuMusic
       guid: 9f159d2266b983469da568c50cbfa201
       id: 2440264179
@@ -144,6 +215,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9f159d2266b983469da568c50cbfa201
       Path: Events\Default Work Unit\StartMenuMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartRain
+      guid: 1e75e4818ac1204e8a3af83f8ebe1450
+      id: 2407527377
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: StartRain
+        ObjectType: 3
+        guid: 1e75e4818ac1204e8a3af83f8ebe1450
+      Path: Events\Default Work Unit\StartRain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopRain
+      guid: 1b2a842bf5e43946b2b152f6e4234bb0
+      id: 856242967
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: StopRain
+        ObjectType: 3
+        guid: 1b2a842bf5e43946b2b152f6e4234bb0
+      Path: Events\Default Work Unit\StopRain
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -365,7 +470,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585245098419556523
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000d000000
+  ExpandedFileSystemItemIds: 030000000d0000001a0000001b000000
   ExpandedWaapiItemIds: 02000000030000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

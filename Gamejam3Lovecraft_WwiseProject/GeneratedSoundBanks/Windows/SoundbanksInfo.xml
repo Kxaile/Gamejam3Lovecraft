@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F81925A-BA37-D532-96FF-0F6CBC1C296C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CD9AA6FC-6096-6ACF-0484-CBE04F4EA75F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,6 +25,9 @@
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
 				<GameParameter Id="2938993575" Name="Sanity"/>
 			</GameParameters>
 			<StateGroups>
@@ -47,7 +50,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BF27D66D-ED72-EB61-676F-85AFA7D87580}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C3AC4555-B721-6AA5-3692-324331935611}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -67,6 +70,10 @@
 					<ShortName>Drone 17.wav</ShortName>
 					<CachePath>SFX/Drone 17_23CE8040.wem</CachePath>
 				</File>
+				<File Id="1001763267" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP.wav</ShortName>
+					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_D79FB2B7.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
@@ -74,6 +81,7 @@
 					<Plugin Id="445125199" Name="Nearly_Forever (Custom)" LibName="Wwise Delay" LibId="6946819"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
@@ -108,11 +116,22 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="2407527377" Name="StartRain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1001763267"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1588715066"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="2938993575" Name="Sanity"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2973B33C-C404-B173-4B71-36833A4D2502}</FileHash>
+	<FileHash>{656F615A-A96F-0335-22DE-88ED97C3DBA5}</FileHash>
 </SoundBanksInfo>

@@ -140,7 +140,9 @@
 						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="0.25"/>
+								<Property Name="DelayTime" Type="Real32" Value="0.58"/>
+								<Property Name="Feedback" Type="Real32" Value="50"/>
+								<Property Name="WetDryMix" Type="Real32" Value="66.5"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
@@ -196,9 +198,11 @@
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<PropertyList>
-								<Property Name="Ratio" Type="Real32" Value="50"/>
-								<Property Name="ReleaseTime" Type="Real32" Value="0.02"/>
-								<Property Name="Threshold" Type="Real32" Value="-1"/>
+								<Property Name="LookAhead" Type="Real32" Value="0.016"/>
+								<Property Name="OutputGain" Type="Real32" Value="0.1"/>
+								<Property Name="Ratio" Type="Real32" Value="1"/>
+								<Property Name="ReleaseTime" Type="Real32" Value="0.13"/>
+								<Property Name="Threshold" Type="Real32" Value="-17.2"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
@@ -1976,7 +1980,9 @@
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="-1200"/>
+										<Property Name="FilterFrequency" Type="Real32" Value="20"/>
+										<Property Name="FilterType" Type="int32" Value="5"/>
+										<Property Name="Pitch" Type="Real32" Value="-1700"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

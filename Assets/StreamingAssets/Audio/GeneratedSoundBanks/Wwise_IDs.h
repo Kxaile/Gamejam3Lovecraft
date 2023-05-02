@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID ENDMUSIC = 1681803181U;
         static const AkUniqueID STARTMAIN = 3356728648U;
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
+        static const AkUniqueID STARTRAIN = 2407527377U;
+        static const AkUniqueID STOPRAIN = 856242967U;
     } // namespace EVENTS
 
     namespace STATES
@@ -54,7 +56,10 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SANITY = 2938993575U;
+        static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
