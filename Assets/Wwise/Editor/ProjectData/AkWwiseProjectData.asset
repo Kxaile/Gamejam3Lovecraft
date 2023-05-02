@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c687d8084630942ae9fcfa03db84ebc
     GuidInternal: 
-    m_lastTime: -8585186019245871853
+    m_lastTime: -8585185684900410973
     List:
     - name: Environment
       guid: 5eb02fd39c70e24489df294eb345ae71
@@ -264,8 +264,36 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c99ec70bb83ce34bac46214e06cf6b3d
     GuidInternal: 
-    m_lastTime: -8585186887834713236
+    m_lastTime: -8585185684900059810
     List:
+    - name: MasterVolume
+      guid: b2ad2bd4011c2043a2b07b13dea6a2b8
+      id: 2918011349
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c99ec70bb83ce34bac46214e06cf6b3d
+      - ElementName: MasterVolume
+        ObjectType: 13
+        guid: b2ad2bd4011c2043a2b07b13dea6a2b8
+      Path: Game Parameters\Default Work Unit\MasterVolume
+    - name: MusicVolume
+      guid: b634a5421320b940a0929e5aad1bee40
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c99ec70bb83ce34bac46214e06cf6b3d
+      - ElementName: MusicVolume
+        ObjectType: 13
+        guid: b634a5421320b940a0929e5aad1bee40
+      Path: Game Parameters\Default Work Unit\MusicVolume
     - name: Sanity
       guid: 156f5dbb2c21164a978a42a3df2fbb08
       id: 2938993575
@@ -280,6 +308,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 156f5dbb2c21164a978a42a3df2fbb08
       Path: Game Parameters\Default Work Unit\Sanity
+    - name: SFXVolume
+      guid: fc1e0958016a3445bcf572e5ce513c6e
+      id: 988953028
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c99ec70bb83ce34bac46214e06cf6b3d
+      - ElementName: SFXVolume
+        ObjectType: 13
+        guid: fc1e0958016a3445bcf572e5ce513c6e
+      Path: Game Parameters\Default Work Unit\SFXVolume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

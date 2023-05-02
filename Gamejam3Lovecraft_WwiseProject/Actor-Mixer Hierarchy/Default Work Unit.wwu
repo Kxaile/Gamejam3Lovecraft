@@ -73,13 +73,13 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>10</YPos>
+																<YPos>2.5</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Exp3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>60.06921</XPos>
-																<YPos>0.06167</YPos>
+																<YPos>-1</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>

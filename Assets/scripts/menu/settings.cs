@@ -17,8 +17,18 @@ public class settings : MonoBehaviour
     public Slider MusicVolSlider;
     public Slider SFXSlider;
     public Slider BrightSlider;
-    
 
+    private void Awake()
+    {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("settings");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     public void updateRTCPValues()
     {
