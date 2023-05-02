@@ -24,7 +24,7 @@
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+							<ObjectRef Name="Music" ID="{6BA959B1-D9B0-4EDC-829D-ED86F4BAA7E4}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CANDLE_EXTINGUISHED = 920148974U;
         static const AkUniqueID ENDMUSIC = 1681803181U;
+        static const AkUniqueID STARTMAIN = 3356728648U;
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
     } // namespace EVENTS
 
@@ -64,7 +65,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

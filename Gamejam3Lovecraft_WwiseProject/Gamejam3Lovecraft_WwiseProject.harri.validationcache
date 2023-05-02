@@ -32,7 +32,7 @@
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1682918101" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\States\Default Work Unit.wwu" DateLow="1682918101" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1682264320" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1682993824" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Queries\Factory Queries.wwu" DateLow="1677096247" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1677096247" DateHigh="0"/>
@@ -43,10 +43,10 @@
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1682348070" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Gamejam3Lovecraft_WwiseProject.wproj" DateLow="1677775489" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Gamejam3Lovecraft_WwiseProject.harri.wsettings" DateLow="1682922360" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Gamejam3Lovecraft_WwiseProject.harri.wsettings" DateLow="1682995045" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1682918102" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Events\Default Work Unit.wwu" DateLow="1682263564" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Effects\Factory Effects.wwu" DateLow="1682105294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Events\Default Work Unit.wwu" DateLow="1682995015" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Effects\Factory Effects.wwu" DateLow="1682994653" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1677096247" DateHigh="0"/>
@@ -54,5 +54,5 @@
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1677098021" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1677097043" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1682922294" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1682995015" DateHigh="0"/>
 </ValidationCache>

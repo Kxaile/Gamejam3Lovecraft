@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A16FB069-4BA6-7274-3790-E8331F07DF1B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{66C20818-D3C4-C734-DD42-D0CCFD860B1D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,7 +19,10 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1229948536" Name="Environment"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="2938993575" Name="Sanity"/>
@@ -44,7 +47,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EDE3C512-E4C7-DA69-5013-BB601DD0BC5F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BF27D66D-ED72-EB61-676F-85AFA7D87580}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -55,6 +58,14 @@
 				<File Id="546093544" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>clair de lune Start v2.wav</ShortName>
 					<CachePath>SFX/clair de lune Start v2_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="774007996" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drone 17.wav</ShortName>
+					<CachePath>SFX/Drone 17_E9485EC8.wem</CachePath>
+				</File>
+				<File Id="964153902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drone 17.wav</ShortName>
+					<CachePath>SFX/Drone 17_23CE8040.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -81,6 +92,12 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3356728648" Name="StartMain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="774007996"/>
+						<MediaRef Id="964153902"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="546093544"/>
@@ -97,5 +114,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8506037B-810A-E422-6DE7-8F8B28989BC3}</FileHash>
+	<FileHash>{B2EE0C07-CFF1-CCF8-43B9-044589B54D2D}</FileHash>
 </SoundBanksInfo>

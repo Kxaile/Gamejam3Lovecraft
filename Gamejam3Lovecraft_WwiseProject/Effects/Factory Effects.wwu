@@ -130,7 +130,13 @@
 								<Property Name="DelayTime" Type="Real32" Value="1"/>
 							</PropertyList>
 						</Effect>
-						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
+						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.901"/>
+								<Property Name="Feedback" Type="Real32" Value="20"/>
+								<Property Name="WetDryMix" Type="Real32" Value="67"/>
+							</PropertyList>
+						</Effect>
 						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
@@ -1984,9 +1990,10 @@
 								</Effect>
 								<Effect Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
-										<Property Name="DelayTime" Type="Real32" Value="51"/>
-										<Property Name="FilterFrequency" Type="Real32" Value="2000"/>
-										<Property Name="FilterGain" Type="Real32" Value="1"/>
+										<Property Name="DelayTime" Type="Real32" Value="56"/>
+										<Property Name="DryLevel" Type="Real32" Value="0"/>
+										<Property Name="FilterFrequency" Type="Real32" Value="706"/>
+										<Property Name="FilterGain" Type="Real32" Value="0.5"/>
 										<Property Name="FilterType" Type="int32" Value="1"/>
 										<Property Name="Pitch" Type="Real32" Value="-1200"/>
 										<Property Name="SyncDry" Type="bool" Value="True"/>
