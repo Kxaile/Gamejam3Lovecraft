@@ -52,6 +52,17 @@
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Music" ID="{6BA959B1-D9B0-4EDC-829D-ED86F4BAA7E4}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>4</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLog1</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 							</ChildrenList>
 						</Bus>

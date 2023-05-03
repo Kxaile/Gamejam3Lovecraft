@@ -38,7 +38,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c687d8084630942ae9fcfa03db84ebc
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585184974010338176
+=======
+    m_lastTime: -8585185625562820566
+>>>>>>> Stashed changes
     List:
     - name: Environment
       guid: 5eb02fd39c70e24489df294eb345ae71
