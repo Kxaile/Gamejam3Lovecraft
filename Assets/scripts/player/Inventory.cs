@@ -47,6 +47,10 @@ public class Inventory : MonoBehaviour
             int Amount = 3;
             PlrInv.Add(Item, Amount);
 
+
+            print(Item);
+
+
             for (int i = 0; i < PlrInv[Item]; i++)
             {
                 Instantiate(resourceTemp, GameObject.Find("Inventory").transform).name = Item;

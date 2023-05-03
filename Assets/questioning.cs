@@ -17,6 +17,8 @@ public class questioning : MonoBehaviour
     public int weather;
     public bool interacting = false;
 
+    public GameObject flashbang;
+
     public int bias;
 
     public TMP_Text questionsText;
@@ -105,6 +107,26 @@ public class questioning : MonoBehaviour
         StartCoroutine(TypeResponse(response));
     }
 
+    public void itemResponseHandler(string response, string what, string reaction)
+    {
+        string diaryEntry = "- When showed ";
+
+        diaryEntry += what += " they seemed " + reaction;
+
+        print(diaryEntry);
+
+        log.text += diaryEntry + "<br><br>";
+
+        StartCoroutine(TypeResponse(response));
+    }
+
+    public void creatureResponse()
+	{
+        log.text += "HURRY." + "<br><br>";
+
+        StartCoroutine(CreatureTypeResponse());
+    }
+
     public void itemHandler(string item)
 	{
         if (inv.PlrInv[item] > 0)
@@ -133,10 +155,29 @@ public class questioning : MonoBehaviour
                     break;
             }
 
+            // do action if they are possessed
+
             print("Success showed item");
         }
     }
 
+    IEnumerator CreatureTypeResponse()
+	{
+        
+        Dismiss();
+
+
+        // screen flash
+        LeanTween.value(1, 0, 1.0f);
+
+
+        questionsLeft -= 1;
+        cultistStats.Questions -= 1;
+        questionsText.text = "Questions left: " + questionsLeft.ToString() + "/3";
+        yield return new WaitForSeconds(1.0f);
+        // start music
+        // let chaos begin
+    }
 
     IEnumerator TypeResponse(string response)
     {
@@ -484,32 +525,69 @@ public class questioning : MonoBehaviour
         Debug.Log("Showed Matches");
 		if (cultist.GetComponent<B_Shoggoth>())
 		{
-
+            print("AAAAA");
+            Dismiss();
 		}
 		else
 		{
-            //normal response
+            itemResponseHandler("Um... nice matches?", "Matches", "seemed confused");
 		}
     }
 
     public void Herbs()
     {
-        Debug.Log("Showed Herbs");
+        Debug.Log("Showed herbs");
+        if (cultist.GetComponent<B_Kassogtha>())
+        {
+            print("AAAAA");
+            Dismiss();
+        }
+        else
+        {
+            itemResponseHandler("Oo that smells nice! :)", "medicinal herbs", "to like the smell");
+        }
     }
 
     public void Salts()
     {
-        Debug.Log("Showed Salts");
+        Debug.Log("Showed salts");
+        if (cultist.GetComponent<B_Azathoth>())
+        {
+            print("AAAAA");
+            Dismiss();
+        }
+        else
+        {
+            itemResponseHandler("Ah fuck, that woke me up.", "smelling salts", "to jolt awake a bit.");
+        }
     }
 
     public void Crucifix()
     {
-        Debug.Log("Showed Crucifix");
+        Debug.Log("Showed crucifix");
+        if (cultist.GetComponent<B_Golonac>())
+        {
+            print("AAAAA");
+            Dismiss();
+        }
+        else
+        {
+            itemResponseHandler("Um, nice cross?", "a Crucifix", "seemed confused");
+        }
     }
 
     public void Magnesium()
     {
-        Debug.Log("Showed Magnesium");
+        Debug.Log("Showed magnesium");
+        if (cultist.GetComponent<B_Nyarlathoteph>())
+        {
+            print("AAAAA");
+            Dismiss();
+        }
+        else
+        {
+            itemResponseHandler("Wow thats bright", "burning magnesium", "confused as to why you did that.");
+        }
     }
 
 }
