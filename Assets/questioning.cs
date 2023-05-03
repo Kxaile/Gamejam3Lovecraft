@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using AK.Wwise.Editor;
+using AK.Wwise;
 
 public class questioning : MonoBehaviour
 {
@@ -17,7 +19,7 @@ public class questioning : MonoBehaviour
     public int weather;
     public bool interacting = false;
 
-    public GameObject flashbang;
+    public Image flashbang;
 
     public int bias;
 
@@ -53,6 +55,13 @@ public class questioning : MonoBehaviour
             cultinter.Dismiss(cultist);
 		}
 	}
+    public void screenFlash()
+    {
+        flashbang.CrossFadeAlpha(1, 0.25f, false);
+        flashbang.CrossFadeAlpha(0, 2f, false);
+       // AkSoundEngine.PostEvent("Flashbang",this.gameObject);
+        
+    }
 
     public void newRoundOfQuestioning(GameObject culti)
 	{
@@ -168,6 +177,8 @@ public class questioning : MonoBehaviour
 
 
         // screen flash
+        screenFlash();
+
         LeanTween.value(1, 0, 1.0f);
 
 
