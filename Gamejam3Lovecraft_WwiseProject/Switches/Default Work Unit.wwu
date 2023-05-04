@@ -4,12 +4,50 @@
 		<WorkUnit Name="Default Work Unit" ID="{FCE3355C-E489-4E23-99D0-9169689129ED}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="Insanity" ID="{85C05A85-8BB4-420F-984E-F51BB61ED7EB}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Level1" ID="{7AD323D9-8E31-4273-AB3D-1941333B09EF}"/>
 						<Switch Name="Level2" ID="{14E1D2B8-1045-43E7-B94A-E4DA3ECA7131}"/>
 						<Switch Name="Level3" ID="{875241AF-5BB3-4E53-81FE-7226C19AE431}"/>
 						<Switch Name="Level4" ID="{81CED5E4-22B3-4D0B-971E-2D3528B3ACA9}"/>
 					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Sanity" ID="{BB5D6F15-212C-4A16-978A-42A3DF2FBB08}"/>
+						<Curve Name="" ID="{906F60C6-8832-4720-B131-4A46B66AB4A9}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>4</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>25</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>75</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>

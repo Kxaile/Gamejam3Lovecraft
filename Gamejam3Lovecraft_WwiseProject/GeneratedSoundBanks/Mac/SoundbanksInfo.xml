@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{66C20818-D3C4-C734-DD42-D0CCFD860B1D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4635A7A6-D22C-7E8F-D89E-3FEE88F1DF65}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -25,6 +25,9 @@
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
 				<GameParameter Id="2938993575" Name="Sanity"/>
 			</GameParameters>
 			<StateGroups>
@@ -47,13 +50,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{45E68E28-4543-B49E-1820-9F9F8B8607F7}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0FB29950-8B15-2914-2E8C-5A28500D0472}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="393081101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
 					<CachePath>SFX/blowing-out-candlewav-14441_10C4C929.wem</CachePath>
+				</File>
+				<File Id="484759496" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CCTS - 099 - R Clock.wav</ShortName>
+					<CachePath>SFX/CCTS - 099 - R Clock_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="546093544" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>clair de lune Start v2.wav</ShortName>
@@ -69,7 +76,7 @@
 				</File>
 				<File Id="1001763267" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP.wav</ShortName>
-					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_7722C869.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -78,6 +85,7 @@
 					<Plugin Id="445125199" Name="Nearly_Forever (Custom)" LibName="Wwise Delay" LibId="6946819"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
@@ -96,6 +104,11 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3764788319" Name="StartClock" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="484759496"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3356728648" Name="StartMain" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="774007996"/>
@@ -116,6 +129,11 @@
 					<MediaRefs>
 						<MediaRef Id="1001763267"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1588715066"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
@@ -124,5 +142,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BCFE8EA0-BA82-EB1C-CB24-282EF7FC77AF}</FileHash>
+	<FileHash>{885BEEF7-4605-A38B-909E-22054F8673B4}</FileHash>
 </SoundBanksInfo>

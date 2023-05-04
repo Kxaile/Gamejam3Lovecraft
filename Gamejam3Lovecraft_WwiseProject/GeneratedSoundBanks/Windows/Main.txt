@@ -2,9 +2,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	856242967	StopRain			\Default Work Unit\StopRain	
 	920148974	Candle_extinguished			\Default Work Unit\Candle_extinguished	
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
+	2020929858	Play_Pen_Sounds			\Default Work Unit\Play_Pen_Sounds	
 	2407527377	StartRain			\Default Work Unit\StartRain	
 	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
 	3356728648	StartMain			\Default Work Unit\StartMain	
+	3764788319	StartClock			\Default Work Unit\StartClock	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2938993575	Sanity			\Default Work Unit\Sanity	
@@ -16,9 +18,12 @@ Effect plug-ins	ID	Name	Type				Notes
 	3451596814	Hall_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	38831099	ballpoint_pen_4	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\ballpoint_pen_4_5567A06C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pen Sounds\ballpoint_pen_4		81536
 	393081101	blowing-out-candlewav-14441	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\blowing-out-candlewav-14441_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blowing-out-candlewav-14441		80736
+	484759496	Clock	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\CCTS - 099 - R Clock_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock		6144096
 	546093544	clair de lune Start v2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\clair de lune Start v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\clair de lune Start v2		5367092
 	774007996	Ambient_Body	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Drone 17_E9485EC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\background Noise\Ambient_Body		5603784
 	964153902	Ambient_Start	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Drone 17_23CE8040.wem		\Actor-Mixer Hierarchy\Default Work Unit\background Noise\Ambient_Start		5932036
-	1001763267	Rain	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		5760292
+	1001763267	Rain	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_7722C869.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		5760292
+	1068879304	ballpoint_pen_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\ballpoint_pen_4_F418778B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pen Sounds\ballpoint_pen_01		226660
 

@@ -11,6 +11,7 @@
 						<ObjectRef Name="StartMain" ID="{1080BFDF-AC87-49A0-B9DA-1B4A6A208F41}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Candle_extinguished" ID="{3F833341-7E56-4A91-8E8E-4988D3F210BA}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartRain" ID="{81E4751E-C18A-4E20-8A3A-F83F8EBE1450}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartClock" ID="{2B012C43-E99F-4EAA-AFCD-6DCAF6AE8AB0}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

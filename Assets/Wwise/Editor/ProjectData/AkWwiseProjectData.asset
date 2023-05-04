@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ae2d59ae49a9d84daa8e78aeee2cd2e8
     GuidInternal: 
-    m_lastTime: -8585185985620960972
+    m_lastTime: -8585184455380367409
     List:
     - name: Main
       guid: e9057ed319a78e4b8c3ebd7611800be3
@@ -148,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
-    m_lastTime: -8585185995491270585
+    m_lastTime: -8585184378419773686
     List:
     - name: Candle_extinguished
       guid: 4133833f567e914a8e8e4988d3f210ba
@@ -181,6 +181,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0799425d2320a341bf99f54344e19739
       Path: Events\Default Work Unit\EndMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Pen_Sounds
+      guid: e744fb199f31e84a9c1fea3de5c57f8f
+      id: 2020929858
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: Play_Pen_Sounds
+        ObjectType: 3
+        guid: e744fb199f31e84a9c1fea3de5c57f8f
+      Path: Events\Default Work Unit\Play_Pen_Sounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartClock
+      guid: 432c012b9fe9aa4eafcd6dcaf6ae8ab0
+      id: 3764788319
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: StartClock
+        ObjectType: 3
+        guid: 432c012b9fe9aa4eafcd6dcaf6ae8ab0
+      Path: Events\Default Work Unit\StartClock
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -414,7 +448,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5c35e3fc89e4234e99d09169689129ed
     GuidInternal: 
-    m_lastTime: -8585186887834866414
+    m_lastTime: -8585184389960220839
     List:
     - name: Insanity
       guid: 855ac085b48b0f42984ef51bb61ed7eb
@@ -513,8 +547,8 @@ MonoBehaviour:
     m_lastTime: -8585245098419556523
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 02000000030000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

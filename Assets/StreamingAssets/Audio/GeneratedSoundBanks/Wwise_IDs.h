@@ -15,6 +15,8 @@ namespace AK
     {
         static const AkUniqueID CANDLE_EXTINGUISHED = 920148974U;
         static const AkUniqueID ENDMUSIC = 1681803181U;
+        static const AkUniqueID PLAY_PEN_SOUNDS = 2020929858U;
+        static const AkUniqueID STARTCLOCK = 3764788319U;
         static const AkUniqueID STARTMAIN = 3356728648U;
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
         static const AkUniqueID STARTRAIN = 2407527377U;

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CD9AA6FC-6096-6ACF-0484-CBE04F4EA75F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B3EB476C-E969-6D3B-0F01-EF84FCA89D30}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -41,6 +41,7 @@
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="34996162" Name="Insanity">
+					<GameParameterRef Id="2938993575"/>
 					<Switches>
 						<Switch Id="2678230379" Name="Level4"/>
 						<Switch Id="2678230380" Name="Level3"/>
@@ -50,13 +51,21 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7F014394-0548-BD62-D55E-BBD11FD789A9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E7D7B6AC-18EA-388C-2347-495492343F5B}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="38831099" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ballpoint_pen_4.wav</ShortName>
+					<CachePath>SFX/ballpoint_pen_4_5567A06C.wem</CachePath>
+				</File>
 				<File Id="393081101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
 					<CachePath>SFX/blowing-out-candlewav-14441_10C4C929.wem</CachePath>
+				</File>
+				<File Id="484759496" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CCTS - 099 - R Clock.wav</ShortName>
+					<CachePath>SFX/CCTS - 099 - R Clock_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="546093544" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>clair de lune Start v2.wav</ShortName>
@@ -72,7 +81,11 @@
 				</File>
 				<File Id="1001763267" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP.wav</ShortName>
-					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_D79FB2B7.wem</CachePath>
+					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_7722C869.wem</CachePath>
+				</File>
+				<File Id="1068879304" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ballpoint_pen_4.wav</ShortName>
+					<CachePath>SFX/ballpoint_pen_4_F418778B.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -100,6 +113,17 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2020929858" Name="Play_Pen_Sounds" DurationType="OneShot" DurationMin="0.42415702" DurationMax="1.1800117">
+					<MediaRefs>
+						<MediaRef Id="38831099"/>
+						<MediaRef Id="1068879304"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3764788319" Name="StartClock" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="484759496"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3356728648" Name="StartMain" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="774007996"/>
@@ -133,5 +157,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{65EE41C2-7325-7F8D-947A-1C02AB42F44B}</FileHash>
+	<FileHash>{1A8772D0-7B75-74BC-9C10-DCF63D94BD42}</FileHash>
 </SoundBanksInfo>

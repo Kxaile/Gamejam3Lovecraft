@@ -7,6 +7,7 @@
 				<Property Name="EffectsView\MeteringObject\{C7E71A3B-745F-47B0-8F31-276DD413F83C}" Type="string" Value="{761B6068-6730-42F9-A251-DA873E852BA1}"/>
 				<Property Name="Event Action List\{1080BFDF-AC87-49A0-B9DA-1B4A6A208F41}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{229D159F-B966-4683-9DA5-68C50CBFA201}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2B012C43-E99F-4EAA-AFCD-6DCAF6AE8AB0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2B842A1B-E4F5-4639-B2B1-52F6E4234BB0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3F833341-7E56-4A91-8E8E-4988D3F210BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{568809F0-D1F6-4AE7-9851-BF3F0366CADE}\x64_Expand States" Type="string" Value=""/>

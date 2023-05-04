@@ -66,6 +66,10 @@
 				<Event Name="StartRain" ID="{81E4751E-C18A-4E20-8A3A-F83F8EBE1450}">
 					<ChildrenList>
 						<Action Name="" ID="{FF2FC126-FEB6-4D16-A5EA-32A925EECC01}" ShortID="603180686">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rain" ID="{139884F6-1D6B-49CD-AED4-543B6990AEC5}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
@@ -83,6 +87,44 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Rain" ID="{139884F6-1D6B-49CD-AED4-543B6990AEC5}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartClock" ID="{2B012C43-E99F-4EAA-AFCD-6DCAF6AE8AB0}">
+					<ChildrenList>
+						<Action Name="" ID="{4FB954B0-15C1-4299-B478-E7404DBE4E47}" ShortID="759306187">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DD317452-D9A2-4A9E-B59C-EDE51622DA72}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="30"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clock" ID="{E28404A1-5B83-40F5-8FFD-A915870F1B9F}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pen_Sounds" ID="{19FB44E7-319F-4AE8-9C1F-EA3DE5C57F8F}">
+					<ChildrenList>
+						<Action Name="" ID="{48CA08C9-AF4F-4A3A-BE9E-DA770EFFCDE2}" ShortID="504609661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pen Sounds" ID="{39F67129-1FE1-4D83-9FCE-12EBE78EDC87}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -43,7 +43,13 @@ public class questioning : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (flashbang.IsActive())
+        {
+            if(flashbang.color.a == 0)
+            {
+                flashbang.transform.gameObject.SetActive(false);
+            }
+        }
     }
     // harrriiiiii helppp - dw i got chatgpt to do it
 
@@ -57,9 +63,11 @@ public class questioning : MonoBehaviour
 	}
     public void screenFlash()
     {
+        flashbang.transform.gameObject.SetActive(true);
         flashbang.CrossFadeAlpha(1, 0.25f, false);
         flashbang.CrossFadeAlpha(0, 2f, false);
-       // AkSoundEngine.PostEvent("Flashbang",this.gameObject);
+        // AkSoundEngine.PostEvent("Flashbang",this.gameObject);
+        
         
     }
 
@@ -230,6 +238,7 @@ public class questioning : MonoBehaviour
         cultistStats.Questions -= 1;
 
         questionsText.text = "Questions left: " + questionsLeft.ToString() + "/3";
+        AkSoundEngine.PostEvent("Play_Pen_Sounds", this.gameObject);
 
         if (questionsLeft <= 0)
         {
