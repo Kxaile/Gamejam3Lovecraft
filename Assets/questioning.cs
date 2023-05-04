@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using AK.Wwise.Editor;
-using AK.Wwise;
+
 
 public class questioning : MonoBehaviour
 {
@@ -66,7 +65,7 @@ public class questioning : MonoBehaviour
         flashbang.transform.gameObject.SetActive(true);
         flashbang.CrossFadeAlpha(1, 0.25f, false);
         flashbang.CrossFadeAlpha(0, 2f, false);
-        // AkSoundEngine.PostEvent("Flashbang",this.gameObject);
+        //AkSoundEngine.PostEvent("Flashbang",this.gameObject);
         
         
     }
@@ -239,6 +238,7 @@ public class questioning : MonoBehaviour
 
         questionsText.text = "Questions left: " + questionsLeft.ToString() + "/3";
         AkSoundEngine.PostEvent("Play_Pen_Sounds", this.gameObject);
+        
 
         if (questionsLeft <= 0)
         {
