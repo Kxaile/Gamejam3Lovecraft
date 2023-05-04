@@ -130,6 +130,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Insanity" ID="{7EF0985E-0119-41F3-ACB5-D348B76361BA}">
+					<ChildrenList>
+						<Action Name="" ID="{6AFBF15F-CE1F-4C34-BE4C-83FF189586A7}" ShortID="198067644">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Insanity" ID="{87594F49-DF50-4069-81AC-FB851280F509}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -148,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
-    m_lastTime: -8585184378419773686
+    m_lastTime: -8585184339853872424
     List:
     - name: Candle_extinguished
       guid: 4133833f567e914a8e8e4988d3f210ba
@@ -181,6 +181,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0799425d2320a341bf99f54344e19739
       Path: Events\Default Work Unit\EndMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Insanity
+      guid: 5e98f07e1901f341acb5d348b76361ba
+      id: 1940554357
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c9b2fad75518be46a3dd44436531048a
+      - ElementName: Play_Insanity
+        ObjectType: 3
+        guid: 5e98f07e1901f341acb5d348b76361ba
+      Path: Events\Default Work Unit\Play_Insanity
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -298,7 +315,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c99ec70bb83ce34bac46214e06cf6b3d
     GuidInternal: 
-    m_lastTime: -8585185684900059810
+    m_lastTime: -8585184339854221650
     List:
     - name: MasterVolume
       guid: b2ad2bd4011c2043a2b07b13dea6a2b8
@@ -546,7 +563,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585245098419556523
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 02000000030000000d0000001400000015000000
   ExpandedWaapiItemIds: 02000000030000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

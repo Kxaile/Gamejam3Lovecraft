@@ -12,6 +12,7 @@
 				<Property Name="Event Action List\{3F833341-7E56-4A91-8E8E-4988D3F210BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{568809F0-D1F6-4AE7-9851-BF3F0366CADE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5D429907-2023-41A3-BF99-F54344E19739}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7EF0985E-0119-41F3-ACB5-D348B76361BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{81E4751E-C18A-4E20-8A3A-F83F8EBE1450}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>

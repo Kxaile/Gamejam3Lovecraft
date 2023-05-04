@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6738BB5E-045C-4077-8AE5-058F3CB77A40}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{6738BB5E-045C-4077-8AE5-058F3CB77A40}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6738BB5E-045C-4077-8AE5-058F3CB77A40}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{9C3BDFFC-5406-4AED-93AB-B39C20F96A64}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Rain" ID="{139884F6-1D6B-49CD-AED4-543B6990AEC5}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GlassTapping" ID="{67C34DD7-1BA8-4825-A715-96195A4430DA}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{42A534B6-2013-40B9-A092-9E5AAD1BEE40}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{D42BADB2-1C01-4320-A2B0-7B13DEA6A2B8}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{58091EFC-6A01-4534-BCF5-72E5CE513C6E}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -12,7 +12,8 @@ public class mainMenuCamScript : MonoBehaviour
     bool highlighted;
     bool AllowRaycast;
     private int Id;
-    private Light light;
+    public Light hitLight;
+    public CandleClick CandleFlicker;
 
     public void SetAllowRaycast(bool boolean)
     {
@@ -51,12 +52,11 @@ public class mainMenuCamScript : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 25f, mask) && LastHit == null)
             {
                 //brighten hit candle 
-                light = hit.transform.GetChild(0).gameObject.transform.GetComponent<Light>();
+                CandleFlicker = hit.transform.GetComponent<CandleClick>();
 
-                print(light.intensity.ToString());
 
-                light.intensity = 2f;
-                light.range = 6f;
+                CandleFlicker.boost = 1f;
+                CandleFlicker.flame.range = 6;
 
                 highlighted = true;
 
@@ -65,11 +65,12 @@ public class mainMenuCamScript : MonoBehaviour
             else if (!(Physics.Raycast(ray, out hit, 25f, mask)) && LastHit != null)
             {
                 //dim last candle 
-                light = LastHit.transform.GetChild(0).gameObject.transform.GetComponent<Light>();
+                CandleFlicker = LastHit.transform.GetComponent<CandleClick>() ;
+                CandleFlicker.boost = 0;
+                CandleFlicker.flame.intensity = 1f;
+                CandleFlicker.flame.range = 4;
 
-                light.intensity = 1f;
-                light.range = 4f;
-
+                CandleFlicker = null;
 
                 highlighted = false;
 

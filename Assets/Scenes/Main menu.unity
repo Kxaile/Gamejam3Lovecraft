@@ -3069,6 +3069,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  camScript: {fileID: 1426056055}
+  flame: {fileID: 0}
+  LightUpper: 0
+  LightLower: 0
 --- !u!1 &974389497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,6 +3574,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  camScript: {fileID: 1426056055}
+  flame: {fileID: 0}
+  LightUpper: 0
+  LightLower: 0
 --- !u!1 &1158795060
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +4616,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   SettingsCanvas: {fileID: 1864899535}
+  hitLight: {fileID: 0}
+  CandleFlicker: {fileID: 0}
 --- !u!1 &1440784419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5547,6 +5557,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  camScript: {fileID: 1426056055}
+  flame: {fileID: 0}
+  LightUpper: 0
+  LightLower: 0
 --- !u!1 &1836029205
 GameObject:
   m_ObjectHideFlags: 0
