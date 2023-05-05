@@ -13,9 +13,14 @@ public class Inventory : MonoBehaviour
     public int ItemBonus; // from menu
 
     public GameObject resourceTemp;
+
+    public GameObject itemDefault;
+
+    public GameObject RitualStuff;
     void Start()
     {
         //randomise inventory
+
 
         foreach(string Item in ResourceItems)
 		{
@@ -38,8 +43,10 @@ public class Inventory : MonoBehaviour
 
             for(int i = 0; i<PlrInv[Item]; i++)
 			{
-                Instantiate(resourceTemp, GameObject.Find("Inventory").transform).name = Item;
-			}
+                GameObject item2 = Instantiate(itemDefault, RitualStuff.transform);
+                item2.name = Item;
+                item2.transform.position = new Vector2(Random.Range(0, Screen.width / 3.2f), Random.Range(0,Screen.height));
+            }
 		}
 
         foreach (string Item in CreatureItems)
