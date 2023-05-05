@@ -13,6 +13,14 @@
 							<ObjectRef Name="GlassTapping" ID="{67C34DD7-1BA8-4825-A715-96195A4430DA}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="StartMenuMusic" ID="{229D159F-B966-4683-9DA5-68C50CBFA201}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="EndMusic" ID="{5D429907-2023-41A3-BF99-F54344E19739}" WorkUnitID="{D7FAB2C9-1855-46BE-A3DD-44436531048A}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -27,9 +35,19 @@
 							<GameParameterRef Name="SFXVolume" ID="{58091EFC-6A01-4534-BCF5-72E5CE513C6E}"/>
 							<Value>80</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="JumpscarePosition" ID="{7BBA70CB-C9EA-46F5-9B58-81C300862CC7}"/>
+							<Value>1.18557761426489</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Sanity" ID="{BB5D6F15-212C-4A16-978A-42A3DF2FBB08}"/>
+							<Value>73.8155737704918</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Level2" ID="{14E1D2B8-1045-43E7-B94A-E4DA3ECA7131}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

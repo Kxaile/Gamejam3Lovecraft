@@ -2002,7 +2002,7 @@
 										<Property Name="FilterFrequency" Type="Real32" Value="706"/>
 										<Property Name="FilterGain" Type="Real32" Value="0.5"/>
 										<Property Name="FilterType" Type="int32" Value="7"/>
-										<Property Name="Pitch" Type="Real32" Value="-1200"/>
+										<Property Name="Pitch" Type="Real32" Value="-2400"/>
 										<Property Name="SyncDry" Type="bool" Value="True"/>
 									</PropertyList>
 								</Effect>

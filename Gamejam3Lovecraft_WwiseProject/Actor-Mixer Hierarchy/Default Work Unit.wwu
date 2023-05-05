@@ -17,7 +17,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -154,6 +154,20 @@
 												<Value>53</Value>
 											</ValueList>
 										</Property>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{63A3837F-34DA-4CC4-94E5-E2BC4FCA004C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
 												<Value>1</Value>
@@ -179,8 +193,18 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>16</Value>
+												<Value>10</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B14EDD78-5E7D-4F6B-B05E-9151D6EF9F3D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -197,9 +221,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="GlassTapping" ID="{1E7DD679-EABC-4C82-828C-263717A191B2}">
 											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.365909090909091"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.08727272727273"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="4.55006784260515"/>
-												<Property Name="TrimEnd" Type="Real64" Value="5.84908412483039"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.3305223880597"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.45544776119403"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>GlassTapping.wav</AudioFile>
@@ -252,10 +278,42 @@
 							<ChildrenList>
 								<Sound Name="The Ticking Isn't Real" ID="{F97EBFFE-1102-4AA9-9C12-A48326F6AE49}" ShortID="883556034">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>38</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-480</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C0B73CFC-C229-4CF2-92CB-8BDAFE2C4AD0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+															<Property Name="Min" Type="Real64" Value="-400"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -282,10 +340,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="The Ticking Isn't Real" ID="{D28AA9AB-1DD4-47CD-B6C3-1B21038E7CEF}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="1.99202170963365"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.14366350067843"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="9.0640434192673"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.995474747474747"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.25329594451982"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>The Ticking Isn't Real.wav</AudioFile>
@@ -294,6 +351,153 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{518B8B03-5C48-4250-9EEE-0DEACBD40B21}"/>
+										<Position Name="" ID="{51E74BF6-34D1-4996-A2D6-07D71592A342}">
+											<ChildrenList>
+												<Path2D Name="The Ticking Isn't Real_Path" ID="{BCD5F8DE-FE08-4232-B47B-821B064B6995}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="13"/>
+														<Property Name="RandomY" Type="Real64" Value="12"/>
+														<Property Name="RandomZ" Type="Real64" Value="10"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>65.63193</XPos>
+															<YPos>83.76623</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>25.05544</XPos>
+															<YPos>70.12987</YPos>
+															<Flags>0</Flags>
+															<Time>6666</Time>
+														</Point>
+														<Point>
+															<XPos>-26.82927</XPos>
+															<YPos>81.81818</YPos>
+															<Flags>0</Flags>
+															<Time>13333</Time>
+														</Point>
+														<Point>
+															<XPos>-78.71397</XPos>
+															<YPos>82.68398</YPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="The Ticking Isn't Real_Path_01" ID="{94707C2D-2B52-4808-8B2D-D50F5BC2BE01}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="13"/>
+														<Property Name="RandomY" Type="Real64" Value="12"/>
+														<Property Name="RandomZ" Type="Real64" Value="10"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-73.61419</XPos>
+															<YPos>66.88311</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>25.05544</XPos>
+															<YPos>70.12987</YPos>
+															<Flags>0</Flags>
+															<Time>6666</Time>
+														</Point>
+														<Point>
+															<XPos>-13.08204</XPos>
+															<YPos>78.78788</YPos>
+															<Flags>0</Flags>
+															<Time>13333</Time>
+														</Point>
+														<Point>
+															<XPos>-50.77605</XPos>
+															<YPos>87.87879</YPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="The Ticking Isn't Real_Path_02" ID="{6814155F-5B3D-48D9-9167-6A3C1DCFA086}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="13"/>
+														<Property Name="RandomY" Type="Real64" Value="12"/>
+														<Property Name="RandomZ" Type="Real64" Value="10"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-14.19068</XPos>
+															<YPos>-72.07792</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>30.82041</XPos>
+															<YPos>-99.1342</YPos>
+															<Flags>0</Flags>
+															<Time>6666</Time>
+														</Point>
+														<Point>
+															<XPos>13.96896</XPos>
+															<YPos>-78.35498</YPos>
+															<Flags>0</Flags>
+															<Time>13333</Time>
+														</Point>
+														<Point>
+															<XPos>-71.17517</XPos>
+															<YPos>-96.1039</YPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="The Ticking Isn't Real_Path_03" ID="{77EB3122-88C7-454B-B1CD-2110457D7780}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+														<Property Name="RandomX" Type="Real64" Value="13"/>
+														<Property Name="RandomY" Type="Real64" Value="12"/>
+														<Property Name="RandomZ" Type="Real64" Value="10"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>60.75388</XPos>
+															<YPos>-11.03896</YPos>
+															<ZPos>36</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>36.58537</XPos>
+															<YPos>-19.48052</YPos>
+															<ZPos>36</ZPos>
+															<Flags>0</Flags>
+															<Time>6666</Time>
+														</Point>
+														<Point>
+															<XPos>1.10865</XPos>
+															<YPos>-22.51082</YPos>
+															<ZPos>36</ZPos>
+															<Flags>0</Flags>
+															<Time>13333</Time>
+														</Point>
+														<Point>
+															<XPos>-31.26386</XPos>
+															<YPos>-9.95671</YPos>
+															<ZPos>36</ZPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="The Ticking Isn't Real" ID="{D28AA9AB-1DD4-47CD-B6C3-1B21038E7CEF}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -399,6 +603,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<ActorMixer Name="background Noise" ID="{605DABD3-00C7-41BE-9189-6CF5679CC475}" ShortID="659202327">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
@@ -489,7 +700,7 @@
 						</Property>
 						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
-								<Value>18</Value>
+								<Value>10</Value>
 							</ValueList>
 						</Property>
 						<Property Name="OutputBusLowpass" Type="int16">
@@ -505,7 +716,7 @@
 						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-13</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -560,7 +771,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -767,6 +978,926 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="ballpoint_pen_4" ID="{FFF50A1E-2042-4357-9EE2-3FC31287D3B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="BreathingSounds_left" ID="{878BC57A-82B8-45B3-AA97-7A2644AADB44}" ShortID="666300166">
+					<PropertyList>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>16</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Breathing" ID="{04AF26C3-0E06-43BD-B060-E16F2C8804DF}" ShortID="26815760">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{A68B0A56-C1A0-47D6-884C-E04782B05CE4}" ShortID="811756380" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{2DAC04AA-9514-489F-AC08-D3C8AC122317}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.634280742459397"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.531818181818182"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.40951276102088"/>
+										<Property Name="TrimEnd" Type="Real64" Value="4.79234338747099"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="110639587"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{2DAC04AA-9514-489F-AC08-D3C8AC122317}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Breathing_02" ID="{5E50D8BC-6FB5-4888-880D-326F7B04AE2B}" ShortID="657925866">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{7B3B0F66-B933-4C16-83B2-08C16EC7E6AF}" ShortID="656012467" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{CCD213BD-CCD2-4508-93B8-E8614448CE7C}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.453844125711875"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.695454545454545"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.70214617169373"/>
+										<Property Name="TrimEnd" Type="Real64" Value="14.3865692891795"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="654372695"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{CCD213BD-CCD2-4508-93B8-E8614448CE7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Breathing_01" ID="{7DC33D4D-5AC4-4009-8BA7-B2D4A5A435F9}" ShortID="253661998">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{1B82AF95-57DA-41E3-93E7-C660689F52BE}" ShortID="462908430" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{E0FAE1FE-C029-43DB-ADCD-89AE18C250E2}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.617480489348239"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.899999999999999"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.02726218097448"/>
+										<Property Name="TrimEnd" Type="Real64" Value="11.1116589327146"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="149520615"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{E0FAE1FE-C029-43DB-ADCD-89AE18C250E2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{3AC797F3-7023-4D01-A429-C3212EE3C9FB}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-70"/>
+								<Property Name="PanY" Type="Real64" Value="40"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="BreathingSounds_right" ID="{77A146D8-F274-4623-A741-EF6951865256}" ShortID="164990883">
+					<PropertyList>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>16</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Breathing" ID="{664E1EE2-E588-4340-8465-6DDEAAAADF47}" ShortID="684477118">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{E95431CA-9222-4D26-97A5-6945CC659856}" ShortID="173721762" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{FCFFA42B-A77C-4DCC-818F-65E5875DB953}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.634280742459397"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.511363636363637"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.40951276102088"/>
+										<Property Name="TrimEnd" Type="Real64" Value="4.79234338747099"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="615985566"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{FCFFA42B-A77C-4DCC-818F-65E5875DB953}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Breathing_02" ID="{9F83D502-83AB-4176-8B35-65C20197DE05}" ShortID="571142095">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{11F5D2A2-CA06-4066-9D32-45146BBB7E27}" ShortID="785932666" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{75B6AD3D-7BCD-41AB-A5C2-CD74BDB1FCFD}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.535662307530057"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.531818181818183"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.70214617169373"/>
+										<Property Name="TrimEnd" Type="Real64" Value="15.041114743725"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="17881362"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{75B6AD3D-7BCD-41AB-A5C2-CD74BDB1FCFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Breathing_01" ID="{8E6709AC-6E35-4139-B731-F68AB1D029C1}" ShortID="771292304">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{D869C4C5-BD85-414E-913B-B8A18F0930D3}" ShortID="662026953" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{322FE901-86DE-448D-A4B7-6FD2C4A53099}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.617480489348239"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.511363636363637"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.02726218097448"/>
+										<Property Name="TrimEnd" Type="Real64" Value="11.1116589327146"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="129600264"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{322FE901-86DE-448D-A4B7-6FD2C4A53099}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{102E98E6-8293-4623-9DC0-D43CDF27F18F}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="70"/>
+								<Property Name="PanY" Type="Real64" Value="40"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="BreathingSounds_up" ID="{A702AEDE-5391-4CB1-A17F-DDC41F27A8F0}" ShortID="531728200">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>16</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Breathing" ID="{AC02CFA6-E823-4FFE-91B7-29E6BBF4F502}" ShortID="770357794">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{EB878EF5-2956-4195-B26C-CA80787ACC7A}" ShortID="788898846" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{8A6472ED-C6E3-4D72-881F-D3F787AC4F84}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.04337165155031"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.715909090909091"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.40951276102088"/>
+										<Property Name="TrimEnd" Type="Real64" Value="4.79234338747099"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="159790579"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{8A6472ED-C6E3-4D72-881F-D3F787AC4F84}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Breathing_02" ID="{6BF80315-A8F8-4F8F-86FF-BDB1776DDA14}" ShortID="692901495">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{02F8A063-BF24-4520-9925-3A024DE48199}" ShortID="1003570411" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{1C890C18-1FC1-4D4E-A9A1-67D3D5F3EDA7}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.617480489348239"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.818181818181818"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.70214617169373"/>
+										<Property Name="TrimEnd" Type="Real64" Value="14.9592965619068"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="960143816"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{1C890C18-1FC1-4D4E-A9A1-67D3D5F3EDA7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Breathing_01" ID="{29C88800-628E-48FB-BFD3-41757B45933F}" ShortID="2618492">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+									<ObjectRef Name="Monsterize" ID="{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{D453390B-3082-4093-879A-116C50415376}" ShortID="443854789" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionType" Type="int32" Value="1"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Rectification" Type="Real32" Value="64"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Breathing" ID="{1D1C8536-6365-48C5-AB4E-C9C9425C3BE1}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.903844125711876"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.08409090909091"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.02726218097448"/>
+										<Property Name="TrimEnd" Type="Real64" Value="11.1116589327146"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Breathing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="753641253"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Breathing" ID="{1D1C8536-6365-48C5-AB4E-C9C9425C3BE1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{CAA6E8DC-424B-40EE-ABF9-C49AE7F92A1C}">
+							<PropertyList>
+								<Property Name="PanY" Type="Real64" Value="70"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pages sounds" ID="{01A1A359-ACA0-4FD5-B715-765A39270449}" ShortID="46879866">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>28</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>37</Value>
+							</ValueList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-300</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Page LTR2" ID="{6BD99517-8347-476E-9AAB-E2CC5A755B9D}" ShortID="586714913">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Page LTR2" ID="{8920320D-DE3E-44A0-BEF2-E9B5B715F87E}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.36456565656565"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.98320202020202"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Page LTR2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="662874484"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Page LTR2" ID="{8920320D-DE3E-44A0-BEF2-E9B5B715F87E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="page RTL2" ID="{64A3A366-2181-442B-93EE-FF162DC756AC}" ShortID="963333098">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="page RTL2" ID="{660642BF-9663-4CE6-AD4F-5852E39E968D}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.2400606060606"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.17681818181818"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>page RTL2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="904154890"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="page RTL2" ID="{660642BF-9663-4CE6-AD4F-5852E39E968D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Page LTR2_01" ID="{3FA52AEE-C18B-4446-877C-255B0AD498F3}" ShortID="39568049">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Page LTR2" ID="{CF4239E6-43F2-45AD-A44B-4CC5383B5EAB}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.68788888888889"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.76019191919192"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Page LTR2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="234851028"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Page LTR2" ID="{CF4239E6-43F2-45AD-A44B-4CC5383B5EAB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="page RTL2_01" ID="{FB061742-C8D9-45AF-99B3-A07C1AFC144F}" ShortID="1068305632">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7108217F-D140-4408-B192-0B5998068DF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{807D685C-6384-4209-AE9F-CFA03DB84EBC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="page RTL2" ID="{2154B824-2CB6-4DD2-9CDB-E640EA3D02E4}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.3840101010101"/>
+										<Property Name="TrimEnd" Type="Real64" Value="9.84417171717172"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>page RTL2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="378131349"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="page RTL2" ID="{2154B824-2CB6-4DD2-9CDB-E640EA3D02E4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

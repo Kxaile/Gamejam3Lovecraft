@@ -39,12 +39,17 @@ public class BookInteract : MonoBehaviour
 			{
                 CurrentPage -= 1;
                 UpdatePages();
+                AkSoundEngine.PostEvent("Stop_Pages_sounds", this.gameObject);
+                AkSoundEngine.PostEvent("Play_Pages_sounds", this.gameObject);
 			}
 
             if (Input.GetKeyDown("d") && CurrentPage != MaxPages)
             {
                 CurrentPage += 1;
                 UpdatePages();
+                AkSoundEngine.PostEvent("Stop_Pages_sounds", this.gameObject);
+                AkSoundEngine.PostEvent("Play_Pages_sounds", this.gameObject);
+
             }
         }
     }

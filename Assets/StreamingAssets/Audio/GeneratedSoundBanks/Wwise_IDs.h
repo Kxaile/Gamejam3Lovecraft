@@ -15,11 +15,18 @@ namespace AK
     {
         static const AkUniqueID CANDLE_EXTINGUISHED = 920148974U;
         static const AkUniqueID ENDMUSIC = 1681803181U;
-        static const AkUniqueID PLAY_PEN_SOUNDS = 2020929858U;
+        static const AkUniqueID PLAY_BREATHINGSOUNDS_LEFT = 228354532U;
+        static const AkUniqueID PLAY_BREATHINGSOUNDS_RIGHT = 4194731459U;
+        static const AkUniqueID PLAY_BREATHINGSOUNDS_UP = 4027221260U;
+        static const AkUniqueID PLAY_PAGES_SOUNDS = 1558645989U;
         static const AkUniqueID STARTCLOCK = 3764788319U;
         static const AkUniqueID STARTMAIN = 3356728648U;
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
         static const AkUniqueID STARTRAIN = 2407527377U;
+        static const AkUniqueID STOP_BREATHINGSOUNDS_LEFT = 4049615514U;
+        static const AkUniqueID STOP_BREATHINGSOUNDS_RIGHT = 571069073U;
+        static const AkUniqueID STOP_BREATHINGSOUNDS_UP = 2950334470U;
+        static const AkUniqueID STOP_PAGES_SOUNDS = 1149349919U;
         static const AkUniqueID STOPRAIN = 856242967U;
     } // namespace EVENTS
 
@@ -58,6 +65,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID JUMPSCAREPOSITION = 1505334234U;
         static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SANITY = 2938993575U;

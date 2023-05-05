@@ -15,6 +15,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	PlayerLife			
 	2044049779	Dead	PlayerLife			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	551029368	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 	2346531308	MusicVolume			\Default Work Unit\MusicVolume	

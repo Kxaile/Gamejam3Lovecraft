@@ -108,6 +108,27 @@
 							</ObjectLists>
 						</Bus>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="PlayerLife" ID="{7DC0C6F7-BF06-43FD-B9B3-BB4B6809A175}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Dead" ID="{39997BA4-A99D-4236-A90E-200A62EB0A83}"/>
+								<CustomState Name="" ID="{4F3D2651-4CFB-4113-9CC0-6A922662D15C}" ShortID="551029368">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Alive" ID="{54B5B9F4-963D-4BFF-80B4-574C50F42ECA}"/>
+								<CustomState Name="" ID="{01913610-281F-4F06-A796-BA223D39B7BC}" ShortID="797724701"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
 							<Reference>
