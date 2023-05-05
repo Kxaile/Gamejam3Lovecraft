@@ -35,8 +35,7 @@ public class TraitHandler : MonoBehaviour
 
     void Start()
     {
-        PosTraits = GameObject.Find("RuntimeScripts").GetComponent<GameBuilder>().PosTraits;
-        NegTraits = GameObject.Find("RuntimeScripts").GetComponent<GameBuilder>().NegTraits;
+        
     }
 
     void Update()

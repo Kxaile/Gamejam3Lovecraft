@@ -16,13 +16,12 @@ public class GameBuilder : MonoBehaviour
     public int ChanceForSecondPositive;
     public int ChanceForNegative;
 
-    public List<string> PosTraits = new List<string> { "Energetic", "Assertive", "Strong", "Calm", "Informative", "Resilient", "Loyal", "Normal" };
-    public List<string> NegTraits = new List<string> { "Clumsy", "Aggressive", "Stubborn", "Dishonest", "Timid" };
-
     public List<string> MascNames = new List<string> { "Jebediah", "Chris", "Craig", "Damian", "Viktor", "Gus", "Hector", "Mac", "Dennis", "Charlie", "Frank" };
     public List<string> FemNames = new List<string> { "Deandra", "Artemis", "Amanda", "Victoria", "Mabel", "Violet", "Helena", "Beatrice", "Ebba", "Alexandra" };
     public List<string> Evils = new List<string> { "Shoggoth", "Kassogtha", "Azathoth", "Golonac", "Nyarlathotep"};
     public List<string> Rooms = new List<string> { "Kitchen", "Attic", "Hallway", "Bedrooms", "Office", "Library", "Observatory" };
+
+    public List<GameObject> Cultists;
 
     private Dictionary<string, System.Type> evilBehaviours = new Dictionary<string, System.Type>
     {
@@ -99,21 +98,6 @@ public class GameBuilder : MonoBehaviour
                 //change icon to fem one
             }
 
-            
-            
-
-            TraitScript.CultistTraits.Add(PosTraits[Random.Range(0, PosTraits.Count)]); // Adding random base trait
-
-            if (Random.Range(0,101) <= ChanceForSecondPositive) // adding a second Positive if the chance succeeds
-            {
-                TraitScript.CultistTraits.Add(PosTraits[Random.Range(0, PosTraits.Count)]);
-            }
-
-            if (Random.Range(0, 101) <= ChanceForNegative) // adding a negative if the chance succeeds
-			{
-                TraitScript.CultistTraits.Add(NegTraits[Random.Range(0, NegTraits.Count)]);
-            }
-
             TraitScript.Faith = Random.Range(0, 11);
             TraitScript.Mentality = Random.Range(0, 11);
             TraitScript.Perception = Random.Range(0, 11);
@@ -123,7 +107,7 @@ public class GameBuilder : MonoBehaviour
                 culty.AddComponent(evilBehaviours[chosenEvil]);
 			}
 
-            
+            Cultists.Add(culty);
 
             culty.transform.localPosition = new Vector3(-(NumCultists*2) + i * 5, 0, 0);
 		}
