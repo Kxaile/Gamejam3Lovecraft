@@ -1823,8 +1823,8 @@ MonoBehaviour:
   - Bone
   CreatureItems:
   - Matches
-  - Medicinal Herbs
-  - Smelling Salts
+  - Herbs
+  - Salts
   - Crucifix
   - Magnesium
   ItemBonus: 1

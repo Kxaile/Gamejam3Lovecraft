@@ -46,6 +46,7 @@ public class Inventory : MonoBehaviour
                 GameObject item2 = Instantiate(itemDefault, RitualStuff.transform);
                 item2.name = Item;
                 item2.transform.position = new Vector2(Random.Range(0, Screen.width / 3.2f), Random.Range(0,Screen.height));
+                item2.GetComponent<ItemUIScript>().Item = true;
             }
 		}
 
@@ -57,11 +58,11 @@ public class Inventory : MonoBehaviour
 
             print(Item);
 
-
-            for (int i = 0; i < PlrInv[Item]; i++)
-            {
-                Instantiate(resourceTemp, GameObject.Find("Inventory").transform).name = Item;
-            }
+            GameObject item2 = Instantiate(itemDefault, RitualStuff.transform);
+            item2.name = Item;
+            item2.transform.position = new Vector2(Random.Range((Screen.width /4f) * 3, Screen.width), Random.Range(0, Screen.height));
+            item2.GetComponent<ItemUIScript>().CreatureItem = true;
+            item2.GetComponent<ItemUIScript>().itemName = Item;
         }
 
         print(PlrInv);

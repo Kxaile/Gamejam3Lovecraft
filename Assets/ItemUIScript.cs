@@ -23,9 +23,11 @@ public class ItemUIScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     public ritual RitScript;
 
     public GameObject nameItem;
+    public Inventory inv;
 
 	private void Start()
 	{
+        inv = GameObject.Find("RuntimeScripts").GetComponent<Inventory>();
         RitScript = GameObject.Find("Rituals").GetComponent<ritual>();
         holder = transform.parent.gameObject;
         nameItem = GameObject.Find("NameCanvas").transform.GetChild(0).gameObject;
@@ -58,8 +60,19 @@ public class ItemUIScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
-        nameItem.GetComponent<TMP_Text>().text = this.name;
+		if (CreatureItem)
+		{
+            int amount = inv.PlrInv[itemName];
+            nameItem.GetComponent<TMP_Text>().text = this.name + "(" + amount + ")";
+        }
+		else
+		{
+            nameItem.GetComponent<TMP_Text>().text = this.name;
+		}
+
+        
         //nameItem.SetActive(true);
+
 	}
 
 	public void OnPointerExit(PointerEventData eventData)
