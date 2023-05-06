@@ -104,7 +104,7 @@ public class BookInteract : MonoBehaviour
 
     public void buildPages()
 	{
-        int pageSet = 0;
+        int pageSet = 1;
         bool left = true;
         int numPlaced = 0;
 
