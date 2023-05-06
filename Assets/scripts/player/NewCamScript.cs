@@ -14,6 +14,7 @@ public class NewCamScript : MonoBehaviour
     public Transform Seat;
 
     public BookInteract book;
+    public ritual rits;
 
     public Light Spotlight;
 
@@ -26,7 +27,7 @@ public class NewCamScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown && !book.BookOpen)
+        if (Input.anyKeyDown && !book.BookOpen && !rits.ritualsOpen)
         {
             if (Input.GetKeyDown(KeyCode.A))
             {

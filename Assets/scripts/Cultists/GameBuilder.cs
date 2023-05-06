@@ -16,8 +16,7 @@ public class GameBuilder : MonoBehaviour
     public int ChanceForSecondPositive;
     public int ChanceForNegative;
 
-    public List<string> MascNames = new List<string> { "Jebediah", "Chris", "Craig", "Damian", "Viktor", "Gus", "Hector", "Mac", "Dennis", "Charlie", "Frank" };
-    public List<string> FemNames = new List<string> { "Deandra", "Artemis", "Amanda", "Victoria", "Mabel", "Violet", "Helena", "Beatrice", "Ebba", "Alexandra" };
+    public List<string> Names = new List<string> { "Jebediah", "Chris", "Craig", "Damian", "Viktor", "Gus", "Hector", "Mac", "Dennis", "Charlie", "Frank", "Kyle", "Harri", "Lawrence", "Rohan", "Miri", "Stan", "Eric",  "Kenny", "Alex", "Jack", "Deandra", "Artemis", "Amanda", "Victoria", "Mabel", "Violet", "Helena", "Beatrice", "Ebba", "Alexandra", "Josie" };
     public List<string> Evils = new List<string> { "Shoggoth", "Kassogtha", "Azathoth", "Golonac", "Nyarlathotep"};
     public List<string> Rooms = new List<string> { "Kitchen", "Attic", "Hallway", "Bedrooms", "Office", "Library", "Observatory" };
 
@@ -83,20 +82,9 @@ public class GameBuilder : MonoBehaviour
 
             // PICKING NAME // 
 
-            if (Random.Range(0,2) == 1)
-			{
-                int x = Random.Range(0, MascNames.Count);
-                culty.gameObject.name = MascNames[x];
-                MascNames.RemoveAt(x);
-
-            } else
-			{
-                int x = Random.Range(0, FemNames.Count);
-                culty.gameObject.name = FemNames[x];
-                FemNames.RemoveAt(x);
-
-                //change icon to fem one
-            }
+            int x = Random.Range(0, Names.Count);
+            culty.gameObject.name = Names[x];
+            Names.RemoveAt(x);
 
             TraitScript.Faith = Random.Range(0, 11);
             TraitScript.Mentality = Random.Range(0, 11);

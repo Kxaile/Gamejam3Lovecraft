@@ -12,6 +12,7 @@ public class BookInteract : MonoBehaviour
     public GameObject cultistHolder;
     public GameObject pageBase;
 
+    public ritual rituals;
 
     public Transform bookStartPos;
     public Transform bookOpenPos;
@@ -28,7 +29,7 @@ public class BookInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && cameraScript.LookingDown)
+        if (Input.GetKeyDown(KeyCode.Space) && cameraScript.LookingDown && rituals.ritualsOpen == false)
 		{
             bookOpenClose();
 		}

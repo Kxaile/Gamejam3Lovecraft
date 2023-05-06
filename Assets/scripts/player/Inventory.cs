@@ -65,7 +65,11 @@ public class Inventory : MonoBehaviour
             item2.GetComponent<ItemUIScript>().itemName = Item;
         }
 
-        print(PlrInv);
+        // FIRE TO LOADING SCREEN TO SKIP/STOP LOADING
+
+        RitualStuff.transform.parent.parent.gameObject.SetActive(false);
+
+        //print(PlrInv);
     }
 
     // Update is called once per frame

@@ -15,8 +15,15 @@ public class ritual : MonoBehaviour
 
     public GameBuilder gameB;
     public Inventory inventory;
+    public BookInteract bok;
 
     public GameObject hoveredUI;
+
+    public GameObject Exorcise;
+    public GameObject Cleanse;
+    public GameObject Transmutate;
+
+    public GameObject Items;
 
     public void openRituals()
 	{
@@ -38,6 +45,38 @@ public class ritual : MonoBehaviour
 	{
         hoveredUI = null;
 	}
+
+    public void openExorcism()
+	{
+        bok.bookOpenClose();
+        ritualsOpen = true;
+        Exorcise.SetActive(true);
+        Items.SetActive(true);
+	}
+
+    public void openCleanse()
+    {
+        bok.bookOpenClose();
+        ritualsOpen = true;
+        Cleanse.SetActive(true);
+        Items.SetActive(true);
+    }
+    public void openTransumtation()
+    {
+        bok.bookOpenClose();
+        ritualsOpen = true;
+        Transmutate.SetActive(true);
+        Items.SetActive(true);
+    }
+
+    public void leave()
+	{
+        ritualsOpen = false;
+        Items.SetActive(false);
+        Transmutate.SetActive(false);
+        Cleanse.SetActive(false);
+        Exorcise.SetActive(false);
+    }
 
     void Start()
     {
