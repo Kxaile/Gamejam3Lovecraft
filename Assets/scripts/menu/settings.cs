@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using AK.Wwise.Editor;
-using AK.Wwise;
+
 
 public class settings : MonoBehaviour
 {
