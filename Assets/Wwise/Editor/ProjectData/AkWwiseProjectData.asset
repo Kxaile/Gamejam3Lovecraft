@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 2c8eb08a6570be4cb4951c740e84b543
     GuidInternal: 
-    m_lastTime: -8585245098418891046
+    m_lastTime: -8585243687081904895
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 5c687d8084630942ae9fcfa03db84ebc
     GuidInternal: 
-    m_lastTime: -8585183615012638826
+    m_lastTime: -8585183282308795548
     List:
     - name: Environment
       guid: 5eb02fd39c70e24489df294eb345ae71
@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ae2d59ae49a9d84daa8e78aeee2cd2e8
     GuidInternal: 
-    m_lastTime: -8585183543766246823
+    m_lastTime: -8585183282306668094
     List:
     - name: Main
       guid: e9057ed319a78e4b8c3ebd7611800be3
@@ -148,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
-    m_lastTime: -8585183543766639104
+    m_lastTime: -8585183282311402123
     List:
     - name: Candle_extinguished
       guid: 4133833f567e914a8e8e4988d3f210ba
@@ -451,7 +451,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: c99ec70bb83ce34bac46214e06cf6b3d
     GuidInternal: 
-    m_lastTime: -8585183610808000765
+    m_lastTime: -8585183282311284963
     List:
     - name: JumpscarePosition
       guid: cb70ba7beac9f5469b5881c300862cc7
@@ -535,7 +535,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 19f3ee151bf7714b8a0ab9956d643c76
     GuidInternal: 
-    m_lastTime: -8585183615013094212
+    m_lastTime: -8585186619906182157
     List:
     - name: PlayerLife
       guid: f7c6c07d06bffd43b9b3bb4b6809a175
@@ -615,7 +615,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5c35e3fc89e4234e99d09169689129ed
     GuidInternal: 
-    m_lastTime: -8585183555410597891
+    m_lastTime: -8585184159161623710
     List:
     - name: Insanity
       guid: 855ac085b48b0f42984ef51bb61ed7eb
@@ -711,7 +711,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f6fb536eb6a9604c8d056f0cc1bd371d
     GuidInternal: 
-    m_lastTime: -8585245098419556523
+    m_lastTime: -8585243687081910049
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
