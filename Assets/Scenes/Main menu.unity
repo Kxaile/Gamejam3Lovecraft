@@ -3073,6 +3073,7 @@ MonoBehaviour:
   flame: {fileID: 0}
   LightUpper: 0
   LightLower: 0
+  boost: 0
 --- !u!1 &974389497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,6 +3579,7 @@ MonoBehaviour:
   flame: {fileID: 0}
   LightUpper: 0
   LightLower: 0
+  boost: 0
 --- !u!1 &1158795060
 GameObject:
   m_ObjectHideFlags: 0
@@ -5561,6 +5563,7 @@ MonoBehaviour:
   flame: {fileID: 0}
   LightUpper: 0
   LightLower: 0
+  boost: 0
 --- !u!1 &1836029205
 GameObject:
   m_ObjectHideFlags: 0
@@ -6010,7 +6013,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8067726398312463513, guid: f44fd2749230fdc4bb7383f8a219cf64, type: 3}
+  - {fileID: -3033667219593020291, guid: edc3a60a311ade84a910dc5031abcc2f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

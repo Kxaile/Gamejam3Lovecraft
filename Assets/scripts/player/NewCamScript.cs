@@ -12,6 +12,9 @@ public class NewCamScript : MonoBehaviour
     public Transform UpTransform;
     public Transform Table;
     public Transform Seat;
+    public GameObject LeftCreature =null;
+    public GameObject RightCreature =null;
+    public GameObject UpCreature =null;
 
     public BookInteract book;
     public ritual rits;
@@ -92,6 +95,22 @@ public class NewCamScript : MonoBehaviour
         }
         //print(LookingDown);
 
+        if (LeftCreature && CurrentX ==-1)
+        {
+            LeftCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
+            print("leftLookCreature");
+        }
+        if(RightCreature && CurrentX == 1)
+        {
+            RightCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
+            print("RightLookCreature");
+        }
+        if(UpCreature && CurrentY == 1)
+        {
+            UpCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
+            print("UpLookCreature");
+        }
+        
 
         
         

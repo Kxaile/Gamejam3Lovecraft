@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - settings
+  - RuntimeScripts
   layers:
   - Default
   - TransparentFX

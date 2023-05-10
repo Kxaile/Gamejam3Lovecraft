@@ -120,7 +120,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ae2d59ae49a9d84daa8e78aeee2cd2e8
     GuidInternal: 
-    m_lastTime: -8585183543766246823
+    m_lastTime: -8585180225188427764
     List:
     - name: Main
       guid: e9057ed319a78e4b8c3ebd7611800be3
@@ -148,7 +148,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
-    m_lastTime: -8585183543766639104
+    m_lastTime: -8585180225188535097
     List:
     - name: Candle_extinguished
       guid: 4133833f567e914a8e8e4988d3f210ba
@@ -184,9 +184,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_BreathingSounds_left
+    - name: Play_BreathingSounds
       guid: 841da5fff26f594d804e4d8933c6f83d
-      id: 228354532
+      id: 3171898892
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -194,44 +194,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c9b2fad75518be46a3dd44436531048a
-      - ElementName: Play_BreathingSounds_left
+      - ElementName: Play_BreathingSounds
         ObjectType: 3
         guid: 841da5fff26f594d804e4d8933c6f83d
-      Path: Events\Default Work Unit\Play_BreathingSounds_left
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_BreathingSounds_right
-      guid: 8091a9d60a89b1408da53993fcd983c7
-      id: 4194731459
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c9b2fad75518be46a3dd44436531048a
-      - ElementName: Play_BreathingSounds_right
-        ObjectType: 3
-        guid: 8091a9d60a89b1408da53993fcd983c7
-      Path: Events\Default Work Unit\Play_BreathingSounds_right
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_BreathingSounds_up
-      guid: 5e81c52a40c8ed448bf5fe31f0c2ae74
-      id: 4027221260
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c9b2fad75518be46a3dd44436531048a
-      - ElementName: Play_BreathingSounds_up
-        ObjectType: 3
-        guid: 5e81c52a40c8ed448bf5fe31f0c2ae74
-      Path: Events\Default Work Unit\Play_BreathingSounds_up
+      Path: Events\Default Work Unit\Play_BreathingSounds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -354,9 +320,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Stop_BreathingSounds_left
+    - name: Stop_BreathingSounds
       guid: db46fe813d9d7b469edea32252802dac
-      id: 4049615514
+      id: 1291076182
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -364,44 +330,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c9b2fad75518be46a3dd44436531048a
-      - ElementName: Stop_BreathingSounds_left
+      - ElementName: Stop_BreathingSounds
         ObjectType: 3
         guid: db46fe813d9d7b469edea32252802dac
-      Path: Events\Default Work Unit\Stop_BreathingSounds_left
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_BreathingSounds_right
-      guid: 86bb3ed0f5cab64dbaa8c5392a87e97b
-      id: 571069073
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c9b2fad75518be46a3dd44436531048a
-      - ElementName: Stop_BreathingSounds_right
-        ObjectType: 3
-        guid: 86bb3ed0f5cab64dbaa8c5392a87e97b
-      Path: Events\Default Work Unit\Stop_BreathingSounds_right
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_BreathingSounds_up
-      guid: be5c6bf5acf2294289e980e05318728a
-      id: 2950334470
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: c9b2fad75518be46a3dd44436531048a
-      - ElementName: Stop_BreathingSounds_up
-        ObjectType: 3
-        guid: be5c6bf5acf2294289e980e05318728a
-      Path: Events\Default Work Unit\Stop_BreathingSounds_up
+      Path: Events\Default Work Unit\Stop_BreathingSounds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -713,9 +645,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585245098419556523
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedWaapiItemIds: 0200000003000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

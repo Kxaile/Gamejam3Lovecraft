@@ -142,18 +142,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_BreathingSounds_left" ID="{FFA51D84-6FF2-4D59-804E-4D8933C6F83D}">
+				<Event Name="Play_BreathingSounds" ID="{FFA51D84-6FF2-4D59-804E-4D8933C6F83D}">
 					<ChildrenList>
 						<Action Name="" ID="{E812E239-6850-44A4-9814-ED272DE0EFFB}" ShortID="217286859">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BreathingSounds_left" ID="{878BC57A-82B8-45B3-AA97-7A2644AADB44}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+									<ObjectRef Name="BreathingSounds" ID="{878BC57A-82B8-45B3-AA97-7A2644AADB44}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_BreathingSounds_left" ID="{81FE46DB-9D3D-467B-9EDE-A32252802DAC}">
+				<Event Name="Stop_BreathingSounds" ID="{81FE46DB-9D3D-467B-9EDE-A32252802DAC}">
 					<ChildrenList>
 						<Action Name="" ID="{3C86DE52-55F6-46CE-9B13-B39021C1878C}" ShortID="51460608">
 							<PropertyList>
@@ -161,57 +161,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BreathingSounds_left" ID="{878BC57A-82B8-45B3-AA97-7A2644AADB44}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BreathingSounds_right" ID="{D6A99180-890A-40B1-8DA5-3993FCD983C7}">
-					<ChildrenList>
-						<Action Name="" ID="{6AE57A42-B9FE-4303-B7EB-1718E64D97FE}" ShortID="889579593">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BreathingSounds_right" ID="{77A146D8-F274-4623-A741-EF6951865256}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_BreathingSounds_right" ID="{D03EBB86-CAF5-4DB6-BAA8-C5392A87E97B}">
-					<ChildrenList>
-						<Action Name="" ID="{651F7AD6-CBDB-46CC-B308-A7650BC79CB8}" ShortID="779649763">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BreathingSounds_right" ID="{77A146D8-F274-4623-A741-EF6951865256}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_BreathingSounds_up" ID="{2AC5815E-C840-44ED-8BF5-FE31F0C2AE74}">
-					<ChildrenList>
-						<Action Name="" ID="{3FA94272-D261-4035-A991-AE5D78AC1D9D}" ShortID="754664639">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BreathingSounds_up" ID="{A702AEDE-5391-4CB1-A17F-DDC41F27A8F0}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_BreathingSounds_up" ID="{F56B5CBE-F2AC-4229-89E9-80E05318728A}">
-					<ChildrenList>
-						<Action Name="" ID="{7F960F03-21D5-4B58-85D9-0E41F3A961D2}" ShortID="414952497">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BreathingSounds_up" ID="{A702AEDE-5391-4CB1-A17F-DDC41F27A8F0}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+									<ObjectRef Name="BreathingSounds" ID="{878BC57A-82B8-45B3-AA97-7A2644AADB44}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

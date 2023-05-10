@@ -9,6 +9,8 @@ public class Interactables : MonoBehaviour
     public LayerMask mask;
     public bool Highlighted;
     public NewCamScript camerascript;
+    public float StareTimeMax;
+    public float StareTimeCurrent;
   
 
     // Start is called before the first frame update
@@ -20,21 +22,19 @@ public class Interactables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (camerascript.LookingDown)
-        {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             if (Highlighted && Input.GetKeyDown(KeyCode.Mouse0))
             {
                 // Interact
-                print("you clicked the " + LastHit.name);
+               // print("you clicked the " + LastHit.name);
             }
 
             if (Physics.Raycast(ray, out hit, 25f, mask) && LastHit == null)
             {
                 // highlight object
-                hit.transform.GetChild(0).gameObject.SetActive(true);
+              //  hit.transform.GetChild(0).gameObject.SetActive(true);
 
                 Highlighted = true;
 
@@ -64,7 +64,6 @@ public class Interactables : MonoBehaviour
 
                 }
             }
-        }
         else
         {
             //if (LastHit.transform.GetChild(0).gameObject.activeSelf)

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mainMenuCamScript : MonoBehaviour
 {
-    public GameObject LastHit;
+    public GameObject LastHit;  //Last hit is stored so that the candle can be turned off, since raycast hit is lost when deselected
     public LayerMask mask;
     public Canvas SettingsCanvas;
     bool highlighted;

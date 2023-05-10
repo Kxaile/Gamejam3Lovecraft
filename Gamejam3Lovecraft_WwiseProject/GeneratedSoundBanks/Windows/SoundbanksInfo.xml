@@ -52,37 +52,25 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B7976A89-8D40-E710-A50F-6D2CA800881F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FD451DE8-1BFA-D521-4454-C80DAE8505D4}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="17881362" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_ACF2CF2D.wem</CachePath>
-				</File>
 				<File Id="110639587" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_444DE447.wem</CachePath>
-				</File>
-				<File Id="129600264" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_FF687BEC.wem</CachePath>
+					<CachePath>SFX/Breathing_4ACFD989.wem</CachePath>
 				</File>
 				<File Id="149520615" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_FEE595DA.wem</CachePath>
-				</File>
-				<File Id="159790579" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_EC829991.wem</CachePath>
+					<CachePath>SFX/Breathing_9030B5EC.wem</CachePath>
 				</File>
 				<File Id="234851028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Page LTR2.wav</ShortName>
-					<CachePath>SFX/Page LTR2_A8536C87.wem</CachePath>
+					<CachePath>SFX/Page LTR2_924C0097.wem</CachePath>
 				</File>
 				<File Id="378131349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>page RTL2.wav</ShortName>
-					<CachePath>SFX/page RTL2_12DB1342.wem</CachePath>
+					<CachePath>SFX/page RTL2_F4F34872.wem</CachePath>
 				</File>
 				<File Id="393081101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
@@ -96,29 +84,17 @@
 					<ShortName>clair de lune Start v2.wav</ShortName>
 					<CachePath>SFX/clair de lune Start v2_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="615985566" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_631432B8.wem</CachePath>
-				</File>
 				<File Id="654372695" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_E4377FA0.wem</CachePath>
+					<CachePath>SFX/Breathing_A36A1F4F.wem</CachePath>
 				</File>
 				<File Id="662874484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Page LTR2.wav</ShortName>
-					<CachePath>SFX/Page LTR2_B9B05652.wem</CachePath>
-				</File>
-				<File Id="753641253" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_792EF675.wem</CachePath>
+					<CachePath>SFX/Page LTR2_F3AFE8D5.wem</CachePath>
 				</File>
 				<File Id="904154890" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>page RTL2.wav</ShortName>
-					<CachePath>SFX/page RTL2_A26378C3.wem</CachePath>
-				</File>
-				<File Id="960143816" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_3994815B.wem</CachePath>
+					<CachePath>SFX/page RTL2_69D5D4D6.wem</CachePath>
 				</File>
 				<File Id="1001763267" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP.wav</ShortName>
@@ -150,25 +126,11 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="228354532" Name="Play_BreathingSounds_left" DurationType="Infinite">
+				<Event Id="3171898892" Name="Play_BreathingSounds" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="110639587"/>
 						<MediaRef Id="149520615"/>
 						<MediaRef Id="654372695"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4194731459" Name="Play_BreathingSounds_right" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="17881362"/>
-						<MediaRef Id="129600264"/>
-						<MediaRef Id="615985566"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4027221260" Name="Play_BreathingSounds_up" DurationType="OneShot" DurationMin="3.3828306" DurationMax="6.084397">
-					<MediaRefs>
-						<MediaRef Id="159790579"/>
-						<MediaRef Id="753641253"/>
-						<MediaRef Id="960143816"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1558645989" Name="Play_Pages_sounds" DurationType="OneShot" DurationMin="0.54722744" DurationMax="1.2751904">
@@ -205,9 +167,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="4049615514" Name="Stop_BreathingSounds_left" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="571069073" Name="Stop_BreathingSounds_right" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2950334470" Name="Stop_BreathingSounds_up" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1291076182" Name="Stop_BreathingSounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1149349919" Name="Stop_Pages_sounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
@@ -216,5 +176,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15C9ABFD-355B-21EB-2A62-53A9B64A0D97}</FileHash>
+	<FileHash>{F6CB4EB6-B8DF-CC3A-F625-D477F7DAA131}</FileHash>
 </SoundBanksInfo>

@@ -46,7 +46,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Level2" ID="{14E1D2B8-1045-43E7-B94A-E4DA3ECA7131}"/>
+						<CurrentSwitchRef Name="Level1" ID="{7AD323D9-8E31-4273-AB3D-1941333B09EF}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
