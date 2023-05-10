@@ -85,7 +85,7 @@ public class NewCamScript : MonoBehaviour
         {
             LookingDown = false;
         }
-        if(CurrentX!= 0)
+        if(CurrentX!= 0 || CurrentY==1)
         {
             Spotlight.gameObject.SetActive(true);
         }
