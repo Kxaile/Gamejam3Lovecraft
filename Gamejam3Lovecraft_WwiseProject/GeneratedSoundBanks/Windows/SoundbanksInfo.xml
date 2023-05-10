@@ -52,13 +52,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FD451DE8-1BFA-D521-4454-C80DAE8505D4}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DB313693-B6AE-F182-BE07-DA411BE02C32}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
 				<File Id="110639587" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing.wav</ShortName>
-					<CachePath>SFX/Breathing_4ACFD989.wem</CachePath>
+					<CachePath>SFX/Breathing_52F6362C.wem</CachePath>
 				</File>
 				<File Id="149520615" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Breathing.wav</ShortName>
@@ -176,5 +176,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F6CB4EB6-B8DF-CC3A-F625-D477F7DAA131}</FileHash>
+	<FileHash>{ED7EEE45-384F-7E29-0BB8-DB6A05A437A2}</FileHash>
 </SoundBanksInfo>
