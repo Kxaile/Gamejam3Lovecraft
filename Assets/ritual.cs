@@ -249,6 +249,11 @@ public class ritual : MonoBehaviour
         }
     }
 
+    public void damageItem(string item)
+	{
+        inventory.damage(item);
+	}
+
     public void exorcismCraft()
 	{
         Transform holder = Exorcise.transform.GetChild(0).GetChild(0);
@@ -260,16 +265,28 @@ public class ritual : MonoBehaviour
         Transform item4 = holder.GetChild(6);
         List<string> recipe = new List<string>() { Blood.GetChild(0).gameObject.name, CreatureItem.GetChild(0).gameObject.name, item1.GetChild(0).gameObject.name, item2.GetChild(0).gameObject.name, item3.GetChild(0).gameObject.name, item4.GetChild(0).gameObject.name };
 
-        if (compareRecipes(exorcismRecipe, recipe))
+        if (CreatureItem.GetChild(0).GetComponent<ItemUIScript>().CreatureItem)
         {
-            Destroy(item1.GetChild(0));
-            Destroy(item2.GetChild(0));
-            Destroy(item3.GetChild(0));
-            Destroy(item3.GetChild(0));
-            Destroy(Blood.GetChild(0));
+            if(inventory.PlrInv[CreatureItem.GetChild(0).gameObject.name] > 0)
+			{
+                damageItem(CreatureItem.GetChild(0).gameObject.name);
+
+                if(compareRecipes(exorcismRecipe, recipe)) 
+                {
+                    ExorWin();
+			    }
+			}
+            //Destroy(Blood.GetChild(0));
+		}
+		else
+		{
             Destroy(CreatureItem.GetChild(0));
-            ExorWin();
-        }
+		}
+
+        Destroy(item1.GetChild(0));
+        Destroy(item2.GetChild(0));
+        Destroy(item3.GetChild(0));
+        Destroy(item3.GetChild(0));
     }
 
     // Update is called once per frame

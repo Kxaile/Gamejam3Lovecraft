@@ -83,6 +83,11 @@ public class Inventory : MonoBehaviour
         item2.GetComponent<ItemUIScript>().itemName = nam;
     }
     // Update is called once per frame
+    public void damage(string item)
+	{
+        PlrInv[item] -= 1;
+	}
+
     void Update()
     {
         
