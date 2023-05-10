@@ -21,7 +21,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	3451596814	Hall_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	110639587	Breathing	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Breathing_4ACFD989.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing		649596
+	110639587	Breathing	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Breathing_52F6362C.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing		649596
 	149520615	Breathing_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Breathing_9030B5EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing_01		1168300
 	234851028	Page LTR2_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\Page LTR2_924C0097.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\Page LTR2_01		205976
 	378131349	page RTL2_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Windows\SFX\page RTL2_F4F34872.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\page RTL2_01		88444
