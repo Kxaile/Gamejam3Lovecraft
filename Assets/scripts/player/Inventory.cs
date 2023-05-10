@@ -17,6 +17,8 @@ public class Inventory : MonoBehaviour
     public GameObject itemDefault;
 
     public GameObject RitualStuff;
+
+    public GameBuilder gb;
     void Start()
     {
         //randomise inventory
@@ -72,6 +74,14 @@ public class Inventory : MonoBehaviour
         //print(PlrInv);
     }
 
+    public void newItem(string nam)
+	{
+        GameObject item2 = Instantiate(itemDefault, RitualStuff.transform);
+        item2.name = nam;
+        item2.transform.position = new Vector2(Random.Range((Screen.width / 4f) * 3, Screen.width), Random.Range(0, Screen.height));
+        item2.GetComponent<ItemUIScript>().Blood = true;
+        item2.GetComponent<ItemUIScript>().itemName = nam;
+    }
     // Update is called once per frame
     void Update()
     {

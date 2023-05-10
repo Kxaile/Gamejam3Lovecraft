@@ -371,7 +371,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 16579383}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1345747069}
+        m_TargetAssemblyTypeName: ritual, Assembly-CSharp
+        m_MethodName: exorcismCraft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &16579383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3301,7 +3313,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 339532710}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1345747069}
+        m_TargetAssemblyTypeName: ritual, Assembly-CSharp
+        m_MethodName: blessCraft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &339532710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3749,7 +3773,9 @@ MonoBehaviour:
   NumEvil: 1
   cultistParent: {fileID: 1475556874}
   chosenEvil: 
+  rits: {fileID: 1345747069}
   book: {fileID: 1397848174}
+  inv: {fileID: 411306796}
   ChanceForSecondPositive: 20
   ChanceForNegative: 50
   Names:
@@ -3843,6 +3869,7 @@ MonoBehaviour:
   resourceTemp: {fileID: 7624817690695912751, guid: b35ae83177c271642ab6e5955de8d8fa, type: 3}
   itemDefault: {fileID: 8318838896419616362, guid: a8d166f50165d3b409be374893ef3575, type: 3}
   RitualStuff: {fileID: 1346630438}
+  gb: {fileID: 411306794}
 --- !u!114 &411306797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7873,7 +7900,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 911524191}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8302,12 +8329,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1941324935}
+  - {fileID: 1327749154}
+  - {fileID: 875485166}
   - {fileID: 1946673549}
   - {fileID: 2013486569}
   - {fileID: 1272700154}
   - {fileID: 2095790893}
-  - {fileID: 1327749154}
-  - {fileID: 875485166}
   - {fileID: 16579381}
   - {fileID: 1161713448}
   m_Father: {fileID: 308518696}
@@ -11757,7 +11784,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 911524191}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12344,7 +12371,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 911524191}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12789,6 +12816,10 @@ MonoBehaviour:
   Transmutate: {fileID: 1724978577}
   Items: {fileID: 538594523}
   defaultItem: {fileID: 0}
+  exrocismBook: {fileID: 2055428316}
+  cleanseBook: {fileID: 438779018}
+  cleanseRecipe: []
+  exorcismRecipe: []
 --- !u!1 &1346630438
 GameObject:
   m_ObjectHideFlags: 0
@@ -18738,7 +18769,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 911524191}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19270,7 +19301,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 911524191}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19453,7 +19484,7 @@ MonoBehaviour:
   cultinter: {fileID: 411306799}
   textResp: {fileID: 935717107}
   characterSpeed: 0.05
-  inv: {fileID: 0}
+  inv: {fileID: 411306796}
 --- !u!114 &2040541536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20211,7 +20242,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 911524191}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

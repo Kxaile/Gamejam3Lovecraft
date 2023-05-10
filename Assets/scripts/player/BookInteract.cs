@@ -116,8 +116,8 @@ public class BookInteract : MonoBehaviour
             TraitHandler traits = cultist.GetComponent<TraitHandler>();
             B_Normal cultistStats = cultist.GetComponent<B_Normal>();
 
-            print(cultistStats);
-            print(cultistStats.Age);
+            //print(cultistStats);
+            //print(cultistStats.Age);
 
             GameObject page = Instantiate(pageBase);
 

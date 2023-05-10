@@ -9,6 +9,8 @@ public class B_Shoggoth : MonoBehaviour
     public GameObject cultist;
     public B_Normal baseScript;
 
+    public string names = "Shoggoth";
+
     // Start is called before the first frame update
     void Start()
     {

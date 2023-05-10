@@ -8,6 +8,7 @@ public class B_Golonac : MonoBehaviour
     public GameObject cultist;
     public B_Normal baseScript;
 
+    public string names = "Golonac";
     // Start is called before the first frame update
     void Start()
     {

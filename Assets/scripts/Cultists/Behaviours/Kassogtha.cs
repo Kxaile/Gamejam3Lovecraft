@@ -8,6 +8,7 @@ public class B_Kassogtha : MonoBehaviour
     public GameObject cultist;
     public B_Normal baseScript;
 
+    public string names = "Kassogtha";
     // Start is called before the first frame update
     void Start()
     {

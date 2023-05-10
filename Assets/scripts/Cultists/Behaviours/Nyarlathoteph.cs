@@ -8,6 +8,7 @@ public class B_Nyarlathoteph : MonoBehaviour
     public GameObject cultist;
     public B_Normal baseScript;
 
+    public string names = "Nyarlathoteph";
     // Start is called before the first frame update
     void Start()
     {

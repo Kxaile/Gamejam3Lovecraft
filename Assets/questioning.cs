@@ -145,6 +145,8 @@ public class questioning : MonoBehaviour
 
     public void itemHandler(string item)
 	{
+        print("Item calling" + item);
+
         if (inv.PlrInv[item] > 0)
         {
             inv.PlrInv[item] -= 1;

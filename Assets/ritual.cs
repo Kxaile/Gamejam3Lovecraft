@@ -29,6 +29,13 @@ public class ritual : MonoBehaviour
 
     public Dictionary<string, List<string>> transfusionRecipes = new Dictionary<string, List<string>>();
 
+    public GameObject exrocismBook;
+    public GameObject cleanseBook;
+
+    public List<string> cleanseRecipe;
+    public List<string> exorcismRecipe;
+
+
     void Start()
     {
         transfusionRecipes.Add("Gold", new List<string>() { "Obsidian", "Salt", "Sapphire" });
@@ -36,7 +43,64 @@ public class ritual : MonoBehaviour
         transfusionRecipes.Add("Sapphire", new List<string>() { "Gold", "Obsidian", "Bone" });
         transfusionRecipes.Add("Salt", new List<string>() { "Bone", "Sapphire", "Gold" });
         transfusionRecipes.Add("Bone", new List<string>() { "Salt", "Gold", "Obsidian" });
+
+        randomiseCleanse();
     }
+
+    public void createExorcistRecipe(string infected, string evil)
+	{
+        exorcismRecipe.Add(infected);
+
+        print("EVIL IS -------------------------------------------");
+
+        print(evil);
+
+        switch (evil)
+		{
+            case "Shoggoth":
+                exorcismRecipe.Add("Matches");
+                break;
+            case "NyarlathotepH":
+                exorcismRecipe.Add("Magnesium");
+                break;
+            case "Kassogtha":
+                exorcismRecipe.Add("Herbs");
+                break;
+            case "Golonac":
+                exorcismRecipe.Add("Matches");
+                break;
+            case "Azathoth":
+                exorcismRecipe.Add("Salts");
+                break;
+
+        }
+
+
+        List<string> itemsss = new List<string>(inventory.ResourceItems);
+
+        for (int i = 0; i < 4; i++)
+        {
+            int index = Random.Range(0, itemsss.Count);
+            exorcismRecipe.Add(itemsss[index]);
+            itemsss.RemoveAt(index);
+        }
+
+        // update book
+    }
+    public void randomiseCleanse()
+	{
+        List<string> itemsss = new List<string>(inventory.ResourceItems);
+
+        for (int i = 0; i < 4; i++)
+		{
+            int index = Random.Range(0, itemsss.Count);
+            cleanseRecipe.Add(itemsss[index]);
+            itemsss.RemoveAt(index);
+		}
+
+        //update book
+	}
+
     public void openRituals()
 	{
         ritualHolder.SetActive(!ritualsOpen);
@@ -116,6 +180,11 @@ public class ritual : MonoBehaviour
 
         return true;
     }
+
+    public void ExorWin()
+	{
+        Application.Quit();
+	}
     public void transmutationCraft()
 	{
         Transform holder = Transmutate.transform.GetChild(0).GetChild(0);
@@ -164,22 +233,42 @@ public class ritual : MonoBehaviour
             print(item);
         }
 
-        foreach (KeyValuePair<string, List<string>> Craftrecipe in transfusionRecipes)
+        if (compareRecipes(cleanseRecipe, recipe))
         {
-            if (compareRecipes(Craftrecipe.Value, recipe))
-            {
-                Destroy(item1.GetChild(0).gameObject);
-                Destroy(item2.GetChild(0).gameObject);
-                Destroy(item3.GetChild(0).gameObject);
-                Destroy(item3.GetChild(4).gameObject);
-                cleanse();
-                success = true;
-            }
+            Destroy(item1.GetChild(0).gameObject);
+            Destroy(item2.GetChild(0).gameObject);
+            Destroy(item3.GetChild(0).gameObject);
+            Destroy(item3.GetChild(4).gameObject);
+            cleanse();
+            success = true;
         }
 
         if (!success)
         {
             //PLAY BIG BUZZER OBNOXIOUS SOUND LIKE IN ALWAYS SUNNY EHHEHEHEHE
+        }
+    }
+
+    public void exorcismCraft()
+	{
+        Transform holder = Exorcise.transform.GetChild(0).GetChild(0);
+        Transform Blood = holder.GetChild(1);
+        Transform CreatureItem = holder.GetChild(2);
+        Transform item1 = holder.GetChild(3);
+        Transform item2 = holder.GetChild(4);
+        Transform item3 = holder.GetChild(5);
+        Transform item4 = holder.GetChild(6);
+        List<string> recipe = new List<string>() { Blood.GetChild(0).gameObject.name, CreatureItem.GetChild(0).gameObject.name, item1.GetChild(0).gameObject.name, item2.GetChild(0).gameObject.name, item3.GetChild(0).gameObject.name, item4.GetChild(0).gameObject.name };
+
+        if (compareRecipes(exorcismRecipe, recipe))
+        {
+            Destroy(item1.GetChild(0));
+            Destroy(item2.GetChild(0));
+            Destroy(item3.GetChild(0));
+            Destroy(item3.GetChild(0));
+            Destroy(Blood.GetChild(0));
+            Destroy(CreatureItem.GetChild(0));
+            ExorWin();
         }
     }
 

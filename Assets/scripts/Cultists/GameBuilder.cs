@@ -11,13 +11,15 @@ public class GameBuilder : MonoBehaviour
     public GameObject cultistParent;
     public string chosenEvil;
 
+    public ritual rits;
     public BookInteract book;
+    public Inventory inv;
 
     public int ChanceForSecondPositive;
     public int ChanceForNegative;
 
     public List<string> Names = new List<string> { "Jebediah", "Chris", "Craig", "Damian", "Viktor", "Gus", "Hector", "Mac", "Dennis", "Charlie", "Frank", "Kyle", "Harri", "Lawrence", "Rohan", "Miri", "Stan", "Eric",  "Kenny", "Alex", "Jack", "Deandra", "Artemis", "Amanda", "Victoria", "Mabel", "Violet", "Helena", "Beatrice", "Ebba", "Alexandra", "Josie" };
-    public List<string> Evils = new List<string> { "Shoggoth", "Kassogtha", "Azathoth", "Golonac", "Nyarlathotep"};
+    public List<string> Evils = new List<string> { "Shoggoth", "Kassogtha", "Azathoth", "Golonac", "Nyarlathoteph"};
     public List<string> Rooms = new List<string> { "Kitchen", "Attic", "Hallway", "Bedrooms", "Office", "Library", "Observatory" };
 
     public List<GameObject> Cultists;
@@ -83,6 +85,7 @@ public class GameBuilder : MonoBehaviour
             // PICKING NAME // 
 
             int x = Random.Range(0, Names.Count);
+            inv.newItem(Names[x]);
             culty.gameObject.name = Names[x];
             Names.RemoveAt(x);
 
@@ -93,6 +96,8 @@ public class GameBuilder : MonoBehaviour
             if (i >= NumCultists - NumEvil) // ADDING STARTING EVIL SCRIPT
 			{
                 culty.AddComponent(evilBehaviours[chosenEvil]);
+
+                rits.createExorcistRecipe(culty.gameObject.name, chosenEvil);
 			}
 
             Cultists.Add(culty);
