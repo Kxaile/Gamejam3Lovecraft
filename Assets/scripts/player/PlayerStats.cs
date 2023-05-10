@@ -17,7 +17,7 @@ public class PlayerStats : MonoBehaviour
     public gameStartOptions gameData;
 
     [Header("Tick Events")]
-    public float T_Insanity = 1f; // How often insanity is lost
+    public float T_Insanity = 0.03f; // How often insanity is lost
     public float T_Chaos = 1f; // How often chaos is gained
     public float CT_Insanity = 0; // Used for the insanity ticks
     public float CT_Chaos = 0; // Used for the chaos ticks

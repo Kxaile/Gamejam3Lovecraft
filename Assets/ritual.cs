@@ -16,6 +16,7 @@ public class ritual : MonoBehaviour
     public GameBuilder gameB;
     public Inventory inventory;
     public BookInteract bok;
+    public PlayerStats plrStats;
 
     public GameObject hoveredUI;
 
@@ -166,6 +167,12 @@ public class ritual : MonoBehaviour
     public void cleanse()
 	{
         //cleanse
+        foreach(GameObject cultist in gameB.Cultists)
+		{
+            cultist.GetComponent<TraitHandler>().Questions = 3;
+            plrStats.Sanity = Mathf.Clamp(plrStats.Sanity + 30, 0, 100);
+            plrStats.T_Insanity = Mathf.Clamp(plrStats.T_Insanity - 0.02f, 0.01f, 1);
+        }
 	}
 
     public bool compareRecipes(List<string> recipe, List<string> items)
