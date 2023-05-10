@@ -105,7 +105,7 @@ public class BookInteract : MonoBehaviour
 
     public void buildPages()
 	{
-        int pageSet = 1;
+        int pageSet = book.transform.Find("LeftPage").transform.childCount;
         bool left = true;
         int numPlaced = 0;
 

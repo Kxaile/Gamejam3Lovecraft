@@ -29,7 +29,7 @@ public class ItemUIScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 	{
         inv = GameObject.Find("RuntimeScripts").GetComponent<Inventory>();
         RitScript = GameObject.Find("Rituals").GetComponent<ritual>();
-        holder = transform.parent.gameObject;
+        holder = GameObject.Find("RitItems").transform.GetChild(0).GetChild(0).gameObject;
         nameItem = GameObject.Find("NameCanvas").transform.GetChild(0).gameObject;
 	}
 
