@@ -3969,6 +3969,7 @@ MonoBehaviour:
   CreatureLeft: 0
   CreatureRight: 0
   CreatureUp: 0
+  HasDefeatedCreature: 0
 --- !u!1 &411585979
 GameObject:
   m_ObjectHideFlags: 0
@@ -13512,6 +13513,8 @@ MonoBehaviour:
   LeftCreature: {fileID: 0}
   RightCreature: {fileID: 0}
   UpCreature: {fileID: 0}
+  Tutorial: {fileID: 2031546732}
+  Caller: {fileID: 0}
   book: {fileID: 1397848174}
   rits: {fileID: 1345747069}
   Spotlight: {fileID: 440844490}

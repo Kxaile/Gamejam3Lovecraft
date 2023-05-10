@@ -15,7 +15,9 @@ public class NewCamScript : MonoBehaviour
     public GameObject LeftCreature =null;
     public GameObject RightCreature =null;
     public GameObject UpCreature =null;
+    public Canvas Tutorial;
 
+    public QTE_Call Caller;
     public BookInteract book;
     public ritual rits;
 
@@ -24,7 +26,7 @@ public class NewCamScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Caller = GameObject.FindWithTag("RuntimeScripts").GetComponent<QTE_Call>();
     }
 
     // Update is called once per frame
@@ -99,16 +101,28 @@ public class NewCamScript : MonoBehaviour
         {
             LeftCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
             print("leftLookCreature");
+            if (!Caller.HasDefeatedCreature)
+            {
+                Tutorial.gameObject.SetActive(true);
+            }
         }
         if(RightCreature && CurrentX == 1)
         {
             RightCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
             print("RightLookCreature");
+            if (!Caller.HasDefeatedCreature)
+            {
+                Tutorial.gameObject.SetActive(true);
+            }
         }
         if(UpCreature && CurrentY == 1)
         {
             UpCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
             print("UpLookCreature");
+            if (!Caller.HasDefeatedCreature)
+            {
+                Tutorial.gameObject.SetActive(true);
+            }
         }
         
 

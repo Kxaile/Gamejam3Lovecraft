@@ -11,6 +11,7 @@ public class QTE_Call : MonoBehaviour
     public float chaosMultiplier = 1f;
     private float Check;
     public bool CreatureLeft, CreatureRight, CreatureUp = false;
+    public bool HasDefeatedCreature = false;
 
 
     // Start is called before the first frame update
