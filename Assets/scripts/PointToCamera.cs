@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PointToCamera : MonoBehaviour
 {
-    public Transform Target;
+    private Transform Target;
 
     private void Awake()
     {
