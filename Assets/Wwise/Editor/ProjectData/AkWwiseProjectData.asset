@@ -120,7 +120,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: ae2d59ae49a9d84daa8e78aeee2cd2e8
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585179279138570573
+=======
+    m_lastTime: -8585179207564054938
+>>>>>>> Stashed changes
     List:
     - name: Main
       guid: e9057ed319a78e4b8c3ebd7611800be3
@@ -148,7 +152,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c9b2fad75518be46a3dd44436531048a
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585179279140424699
+=======
+    m_lastTime: -8585179207564515214
+>>>>>>> Stashed changes
     List:
     - name: Candle_extinguished
       guid: 4133833f567e914a8e8e4988d3f210ba
