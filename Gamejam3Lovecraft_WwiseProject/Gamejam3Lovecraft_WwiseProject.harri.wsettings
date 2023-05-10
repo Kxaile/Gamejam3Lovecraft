@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{687BB904-4D51-4A39-B2E8-29377ECC509E}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\SFX\Sonniss.com-GDC2023-GameAudioBundle1of14\344 Audio - Generative Drones\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\harri\OneDrive\Desktop\Music stuff\"/>
 				<Property Name="EffectsView\MeteringObject\{C7E71A3B-745F-47B0-8F31-276DD413F83C}" Type="string" Value="{761B6068-6730-42F9-A251-DA873E852BA1}"/>
 				<Property Name="Event Action List\{1080BFDF-AC87-49A0-B9DA-1B4A6A208F41}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{19FB44E7-319F-4AE8-9C1F-EA3DE5C57F8F}\x64_Expand States" Type="string" Value=""/>
@@ -19,6 +19,7 @@
 				<Property Name="Event Action List\{7EF0985E-0119-41F3-ACB5-D348B76361BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{81E4751E-C18A-4E20-8A3A-F83F8EBE1450}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{81FE46DB-9D3D-467B-9EDE-A32252802DAC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B12CAB3F-AE75-49A8-8194-C8A3E74AB731}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D03EBB86-CAF5-4DB6-BAA8-C5392A87E97B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D6A99180-890A-40B1-8DA5-3993FCD983C7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F56B5CBE-F2AC-4229-89E9-80E05318728A}\x64_Expand States" Type="string" Value=""/>
