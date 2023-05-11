@@ -41,12 +41,12 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Sanity" ID="{BB5D6F15-212C-4A16-978A-42A3DF2FBB08}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Level1" ID="{7AD323D9-8E31-4273-AB3D-1941333B09EF}"/>
+						<CurrentSwitchRef Name="Level4" ID="{81CED5E4-22B3-4D0B-971E-2D3528B3ACA9}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

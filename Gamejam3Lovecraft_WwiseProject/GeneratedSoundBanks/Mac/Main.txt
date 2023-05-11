@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1291076182	Stop_BreathingSounds			\Default Work Unit\Stop_BreathingSounds	
 	1558645989	Play_Pages_sounds			\Default Work Unit\Play_Pages_sounds	
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
+	1725216094	Play_Woosh			\Default Work Unit\Play_Woosh	
 	2407527377	StartRain			\Default Work Unit\StartRain	
 	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
 	3171898892	Play_BreathingSounds			\Default Work Unit\Play_BreathingSounds	
@@ -16,8 +17,12 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	343527198	RoomVerb (Custom)	Wwise RoomVerb			
+	401633912	Harmonizer (Custom)	Wwise Harmonizer			
 	445125199	Nearly_Forever (Custom)	Wwise Delay			
+	811351674	Pitch Shifter (Custom)	Wwise Pitch Shifter			
+	1431265797	Monsterize	Wwise Pitch Shifter			
 	1588715066	Echoes_Linear	Wwise Delay			
+	2995775460	Room_Small	Wwise RoomVerb			
 	3451596814	Hall_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -26,10 +31,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	234851028	Page LTR2_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Page LTR2_924C0097.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\Page LTR2_01		205976
 	378131349	page RTL2_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\page RTL2_F4F34872.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\page RTL2_01		88444
 	393081101	blowing-out-candlewav-14441	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\blowing-out-candlewav-14441_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blowing-out-candlewav-14441		80736
+	417505013	WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2_A6D89596.wem		\Actor-Mixer Hierarchy\Default Work Unit\WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2		404764
 	484759496	Clock	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\CCTS - 099 - R Clock_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock		6144096
 	546093544	clair de lune Start v2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\clair de lune Start v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\clair de lune Start v2		5367092
 	654372695	Breathing_02	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Breathing_A36A1F4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing_02		899504
 	662874484	Page LTR2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Page LTR2_F3AFE8D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\Page LTR2		118876
+	896991565	Pad 3	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Pad 3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pad 3		34594656
 	904154890	page RTL2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\page RTL2_69D5D4D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\page RTL2		179952
 	1001763267	Rain	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_CE95220F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		5760292
 

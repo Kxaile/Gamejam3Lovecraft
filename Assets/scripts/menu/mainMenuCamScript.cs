@@ -34,6 +34,7 @@ public class mainMenuCamScript : MonoBehaviour
 
     public IEnumerator startCutscene(SceneSwtich scenes)
 	{
+        AkSoundEngine.PostEvent("EndMusic", this.gameObject);
         spotlight.SetActive(true);
         LeanTween.move(door, doorEnd.transform.position, 0.8f).setEaseInCubic();
         LeanTween.rotate(door, doorEnd.transform.eulerAngles, 0.8f).setEaseInCubic();

@@ -118,6 +118,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{8E527513-2A60-4404-821A-C5E7F1476148}" ShortID="33474458">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pad 3" ID="{FCE3C479-B338-43C9-B593-F6B86B3062A4}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Pen_Sounds" ID="{19FB44E7-319F-4AE8-9C1F-EA3DE5C57F8F}">
@@ -187,6 +194,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Pages sounds" ID="{01A1A359-ACA0-4FD5-B715-765A39270449}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Woosh" ID="{18380492-3AD4-401D-A2E0-965C5A254BF5}">
+					<ChildrenList>
+						<Action Name="" ID="{E773199F-BEFA-4634-803F-AA95F8B00640}" ShortID="798421480">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2" ID="{00D9205C-631A-4CCD-80C2-505B3F8193AB}" WorkUnitID="{0E68E625-5DA4-4C1B-9CCF-00B2A3F76D5F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

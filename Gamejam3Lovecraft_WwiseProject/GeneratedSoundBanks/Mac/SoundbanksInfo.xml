@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DD63CCBC-0679-317B-FBBD-F9E808AF35EB}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7A6CBA62-52FC-95FF-0678-BE49D918DA45}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -52,7 +52,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{31C8390C-0C15-9480-69C7-A444F0DD0E5B}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CD8878AF-FC8D-3BB2-4766-15D9C709B15E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -76,6 +76,10 @@
 					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
 					<CachePath>SFX/blowing-out-candlewav-14441_10C4C929.wem</CachePath>
 				</File>
+				<File Id="417505013" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2.wav</ShortName>
+					<CachePath>SFX/WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2_A6D89596.wem</CachePath>
+				</File>
 				<File Id="484759496" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CCTS - 099 - R Clock.wav</ShortName>
 					<CachePath>SFX/CCTS - 099 - R Clock_D79FB2B7.wem</CachePath>
@@ -92,6 +96,10 @@
 					<ShortName>Page LTR2.wav</ShortName>
 					<CachePath>SFX/Page LTR2_F3AFE8D5.wem</CachePath>
 				</File>
+				<File Id="896991565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pad 3.wav</ShortName>
+					<CachePath>SFX/Pad 3_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="904154890" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>page RTL2.wav</ShortName>
 					<CachePath>SFX/page RTL2_69D5D4D6.wem</CachePath>
@@ -104,10 +112,14 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="343527198" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="401633912" Name="Harmonizer (Custom)" LibName="Wwise Harmonizer" LibId="9043971"/>
 					<Plugin Id="445125199" Name="Nearly_Forever (Custom)" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="811351674" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1431265797" Name="Monsterize" LibName="Wwise Pitch Shifter" LibId="8912899"/>
 					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
@@ -132,6 +144,11 @@
 						<MediaRef Id="149520615"/>
 						<MediaRef Id="654372695"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="811351674"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="1558645989" Name="Play_Pages_sounds" DurationType="OneShot" DurationMin="0.54722744" DurationMax="1.2751904">
 					<MediaRefs>
@@ -141,10 +158,29 @@
 						<MediaRef Id="904154890"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1725216094" Name="Play_Woosh" DurationType="OneShot" DurationMin="0.88615596" DurationMax="1.1164867">
+					<MediaRefs>
+						<MediaRef Id="417505013"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="3764788319" Name="StartClock" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="484759496"/>
+						<MediaRef Id="896991565"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="401633912"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="1431265797"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="3356728648" Name="StartMain" DurationType="Infinite"/>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
@@ -176,5 +212,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{673EF9DE-E4EA-FF8C-566D-F0F5B31A3F58}</FileHash>
+	<FileHash>{E6415E63-7AD3-DEB5-4805-14BB980D50B4}</FileHash>
 </SoundBanksInfo>

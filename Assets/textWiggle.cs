@@ -51,6 +51,7 @@ public class textWiggle : MonoBehaviour
 	{
         spinnin = true;
         StartCoroutine(spinnies(text));
+        AkSoundEngine.PostEvent("Play_Woosh", this.gameObject);
     }
 
     public IEnumerator spinnies(string text)

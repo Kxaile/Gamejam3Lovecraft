@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID ENDMUSIC = 1681803181U;
         static const AkUniqueID PLAY_BREATHINGSOUNDS = 3171898892U;
         static const AkUniqueID PLAY_PAGES_SOUNDS = 1558645989U;
+        static const AkUniqueID PLAY_WOOSH = 1725216094U;
         static const AkUniqueID STARTCLOCK = 3764788319U;
         static const AkUniqueID STARTMAIN = 3356728648U;
         static const AkUniqueID STARTMENUMUSIC = 2440264179U;
