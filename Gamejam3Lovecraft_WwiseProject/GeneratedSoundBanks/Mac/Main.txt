@@ -1,9 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
 	856242967	StopRain			\Default Work Unit\StopRain	
 	920148974	Candle_extinguished			\Default Work Unit\Candle_extinguished	
+	1149349919	Stop_Pages_sounds			\Default Work Unit\Stop_Pages_sounds	
+	1291076182	Stop_BreathingSounds			\Default Work Unit\Stop_BreathingSounds	
+	1558645989	Play_Pages_sounds			\Default Work Unit\Play_Pages_sounds	
 	1681803181	EndMusic			\Default Work Unit\EndMusic	
 	2407527377	StartRain			\Default Work Unit\StartRain	
 	2440264179	StartMenuMusic			\Default Work Unit\StartMenuMusic	
+	3171898892	Play_BreathingSounds			\Default Work Unit\Play_BreathingSounds	
 	3356728648	StartMain			\Default Work Unit\StartMain	
 	3764788319	StartClock			\Default Work Unit\StartClock	
 
@@ -17,10 +21,15 @@ Effect plug-ins	ID	Name	Type				Notes
 	3451596814	Hall_Medium	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	110639587	Breathing	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Breathing_52F6362C.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing		649596
+	149520615	Breathing_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Breathing_9030B5EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing_01		1168300
+	234851028	Page LTR2_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Page LTR2_924C0097.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\Page LTR2_01		205976
+	378131349	page RTL2_01	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\page RTL2_F4F34872.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\page RTL2_01		88444
 	393081101	blowing-out-candlewav-14441	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\blowing-out-candlewav-14441_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blowing-out-candlewav-14441		80736
 	484759496	Clock	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\CCTS - 099 - R Clock_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clock		6144096
 	546093544	clair de lune Start v2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\clair de lune Start v2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Menu\clair de lune Start v2\clair de lune Start v2		5367092
-	774007996	Ambient_Body	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Drone 17_E9485EC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\background Noise\Ambient_Body		5603784
-	964153902	Ambient_Start	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Drone 17_23CE8040.wem		\Actor-Mixer Hierarchy\Default Work Unit\background Noise\Ambient_Start		5932036
-	1001763267	Rain	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_7722C869.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		5760292
+	654372695	Breathing_02	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Breathing_A36A1F4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\BreathingSounds\Breathing_02		899504
+	662874484	Page LTR2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\Page LTR2_F3AFE8D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\Page LTR2		118876
+	904154890	page RTL2	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\page RTL2_69D5D4D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pages sounds\page RTL2		179952
+	1001763267	Rain	C:\Users\harri\OneDrive\Documents\GitHub\Gamejam3Lovecraft\Gamejam3Lovecraft_WwiseProject\.cache\Mac\SFX\RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_CE95220F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain		5760292
 

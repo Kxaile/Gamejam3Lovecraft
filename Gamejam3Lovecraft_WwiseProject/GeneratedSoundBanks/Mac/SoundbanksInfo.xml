@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4635A7A6-D22C-7E8F-D89E-3FEE88F1DF65}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DD63CCBC-0679-317B-FBBD-F9E808AF35EB}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -26,6 +26,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume"/>
+				<GameParameter Id="1505334234" Name="JumpscarePosition"/>
 				<GameParameter Id="2346531308" Name="MusicVolume"/>
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 				<GameParameter Id="2938993575" Name="Sanity"/>
@@ -41,6 +42,7 @@
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="34996162" Name="Insanity">
+					<GameParameterRef Id="2938993575"/>
 					<Switches>
 						<Switch Id="2678230379" Name="Level4"/>
 						<Switch Id="2678230380" Name="Level3"/>
@@ -50,10 +52,26 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{0FB29950-8B15-2914-2E8C-5A28500D0472}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{31C8390C-0C15-9480-69C7-A444F0DD0E5B}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="110639587" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing.wav</ShortName>
+					<CachePath>SFX/Breathing_52F6362C.wem</CachePath>
+				</File>
+				<File Id="149520615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing.wav</ShortName>
+					<CachePath>SFX/Breathing_9030B5EC.wem</CachePath>
+				</File>
+				<File Id="234851028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Page LTR2.wav</ShortName>
+					<CachePath>SFX/Page LTR2_924C0097.wem</CachePath>
+				</File>
+				<File Id="378131349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>page RTL2.wav</ShortName>
+					<CachePath>SFX/page RTL2_F4F34872.wem</CachePath>
+				</File>
 				<File Id="393081101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>blowing-out-candlewav-14441.wav</ShortName>
 					<CachePath>SFX/blowing-out-candlewav-14441_10C4C929.wem</CachePath>
@@ -66,17 +84,21 @@
 					<ShortName>clair de lune Start v2.wav</ShortName>
 					<CachePath>SFX/clair de lune Start v2_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="774007996" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Drone 17.wav</ShortName>
-					<CachePath>SFX/Drone 17_E9485EC8.wem</CachePath>
+				<File Id="654372695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Breathing.wav</ShortName>
+					<CachePath>SFX/Breathing_A36A1F4F.wem</CachePath>
 				</File>
-				<File Id="964153902" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Drone 17.wav</ShortName>
-					<CachePath>SFX/Drone 17_23CE8040.wem</CachePath>
+				<File Id="662874484" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Page LTR2.wav</ShortName>
+					<CachePath>SFX/Page LTR2_F3AFE8D5.wem</CachePath>
+				</File>
+				<File Id="904154890" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>page RTL2.wav</ShortName>
+					<CachePath>SFX/page RTL2_69D5D4D6.wem</CachePath>
 				</File>
 				<File Id="1001763267" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP.wav</ShortName>
-					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_7722C869.wem</CachePath>
+					<CachePath>SFX/RAINConc_InsJ_Ambience_Rain_Moderate_03_LOOP_CE95220F.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -104,17 +126,27 @@
 					</PluginRefs>
 				</Event>
 				<Event Id="1681803181" Name="EndMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3171898892" Name="Play_BreathingSounds" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="110639587"/>
+						<MediaRef Id="149520615"/>
+						<MediaRef Id="654372695"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1558645989" Name="Play_Pages_sounds" DurationType="OneShot" DurationMin="0.54722744" DurationMax="1.2751904">
+					<MediaRefs>
+						<MediaRef Id="234851028"/>
+						<MediaRef Id="378131349"/>
+						<MediaRef Id="662874484"/>
+						<MediaRef Id="904154890"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3764788319" Name="StartClock" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="484759496"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3356728648" Name="StartMain" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="774007996"/>
-						<MediaRef Id="964153902"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="3356728648" Name="StartMain" DurationType="Infinite"/>
 				<Event Id="2440264179" Name="StartMenuMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="546093544"/>
@@ -135,6 +167,8 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="1291076182" Name="Stop_BreathingSounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1149349919" Name="Stop_Pages_sounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="856242967" Name="StopRain" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
@@ -142,5 +176,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{885BEEF7-4605-A38B-909E-22054F8673B4}</FileHash>
+	<FileHash>{673EF9DE-E4EA-FF8C-566D-F0F5B31A3F58}</FileHash>
 </SoundBanksInfo>
