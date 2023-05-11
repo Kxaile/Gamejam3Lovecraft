@@ -170,10 +170,10 @@ public class ritual : MonoBehaviour
         foreach(GameObject cultist in gameB.Cultists)
 		{
             cultist.GetComponent<TraitHandler>().Questions = 3;
-            plrStats.Sanity = Mathf.Clamp(plrStats.Sanity + 30, 0, 100);
-            plrStats.T_Insanity = Mathf.Clamp(plrStats.T_Insanity - 0.02f, 0.01f, 1);
         }
-	}
+        plrStats.Sanity = Mathf.Clamp(plrStats.Sanity + 30, 0, 100);
+        plrStats.T_Insanity = Mathf.Clamp(plrStats.T_Insanity - 0.02f, 0.01f, 1);
+    }
 
     public bool compareRecipes(List<string> recipe, List<string> items)
 	{
@@ -245,7 +245,7 @@ public class ritual : MonoBehaviour
             Destroy(item1.GetChild(0).gameObject);
             Destroy(item2.GetChild(0).gameObject);
             Destroy(item3.GetChild(0).gameObject);
-            Destroy(item3.GetChild(4).gameObject);
+            Destroy(item4.GetChild(0).gameObject);
             cleanse();
             success = true;
         }
