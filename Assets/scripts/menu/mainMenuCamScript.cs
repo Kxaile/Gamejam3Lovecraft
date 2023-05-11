@@ -27,6 +27,7 @@ public class mainMenuCamScript : MonoBehaviour
     }
     void Start()
     {
+        Screen.SetResolution(640, 480, true);
         LastHit = null;
         AllowRaycast = true;
     }
