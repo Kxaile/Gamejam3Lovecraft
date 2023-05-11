@@ -13,6 +13,10 @@ public class mainMenuCamScript : MonoBehaviour
     public Light hitLight;
     public CandleClick CandleFlicker;
 
+    public textWiggle wiggle;
+
+    public bool glowed;
+
     public void SetAllowRaycast(bool boolean)
     {
         AllowRaycast = boolean;
@@ -59,6 +63,12 @@ public class mainMenuCamScript : MonoBehaviour
                 highlighted = true;
 
                 LastHit = hit.transform.gameObject;
+
+				if (glowed)
+				{
+                    wiggle.spinNchange(hit.transform.gameObject.name);
+				}
+                
             }
             else if (!(Physics.Raycast(ray, out hit, 25f, mask)) && LastHit != null)
             {

@@ -12,6 +12,7 @@ public class CandleClick : MonoBehaviour
     public float boost;
     private bool Increasing;
 
+    private bool isChangingIntensity = true;
 
     private void Start()
     {
@@ -19,11 +20,25 @@ public class CandleClick : MonoBehaviour
         LightUpper = flame.intensity + 0.4f;
         LightLower = flame.intensity - 0.4f;
         Increasing = true;
-        boost = 0f; 
+        boost = 0f;
+
+        LeanTween.value(flame.gameObject, -2, 2.8f, 5).setOnUpdate(setRange);
     }
+
+    public void setRange(float range)
+	{
+        flame.range = range;
+
+        if(flame.range > 2.5f)
+		{
+            camScript.glowed = true;
+		}
+	}
 
     private void Update()
     {
+
+
         if (camScript.CandleFlicker == this.gameObject.GetComponent<CandleClick>())
         {
             if (flame.intensity < LightUpper+boost && Increasing)
