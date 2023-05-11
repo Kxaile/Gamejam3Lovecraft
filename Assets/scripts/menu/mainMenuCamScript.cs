@@ -17,6 +17,9 @@ public class mainMenuCamScript : MonoBehaviour
 
     public bool glowed;
     public GameObject cameraEnd;
+    public GameObject door;
+    public GameObject doorEnd;
+    public GameObject spotlight;
 
     public void SetAllowRaycast(bool boolean)
     {
@@ -30,9 +33,13 @@ public class mainMenuCamScript : MonoBehaviour
 
     public IEnumerator startCutscene(SceneSwtich scenes)
 	{
-        LeanTween.move(Camera.main.gameObject, cameraEnd.transform.position, 1f).setEaseInCubic();
-        LeanTween.rotate(Camera.main.gameObject, cameraEnd.transform.eulerAngles, 1f).setEaseInCubic();
-        yield return new WaitForSeconds(1f);
+        spotlight.SetActive(true);
+        LeanTween.move(door, doorEnd.transform.position, 0.8f).setEaseInCubic();
+        LeanTween.rotate(door, doorEnd.transform.eulerAngles, 0.8f).setEaseInCubic();
+
+        LeanTween.move(Camera.main.gameObject, cameraEnd.transform.position, 2f).setEaseInCubic();
+        LeanTween.rotate(Camera.main.gameObject, cameraEnd.transform.eulerAngles, 2f).setEaseInCubic();
+        yield return new WaitForSeconds(2f);
         scenes.ChangeScene(1);
     }
 
