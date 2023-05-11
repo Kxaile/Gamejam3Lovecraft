@@ -117,7 +117,7 @@ public class NewCamScript : MonoBehaviour
         }
         if(UpCreature && CurrentY == 1)
         {
-            UpCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime;
+            UpCreature.GetComponent<CreatureScript>().currentStare += Time.deltaTime; 
             print("UpLookCreature");
             if (!Caller.HasDefeatedCreature)
             {
