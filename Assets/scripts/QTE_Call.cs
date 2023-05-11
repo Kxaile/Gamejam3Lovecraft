@@ -31,7 +31,7 @@ public class QTE_Call : MonoBehaviour
             StartQTE(PositionParent.transform.GetChild(0).gameObject);
             CreatureLeft = true;
             Debug.Log("creature left");
-            camScript.LeftCreature = PositionParent.transform.GetChild(0).transform.GetChild(0).gameObject;
+            camScript.LeftCreature = PositionParent.transform.GetChild(0).transform.Find("CumGuzzler").gameObject;
 
         }
         if(Check >= 10 && Check <= 11 && !CreatureRight)
@@ -39,20 +39,21 @@ public class QTE_Call : MonoBehaviour
             StartQTE(PositionParent.transform.GetChild(1).gameObject);
             CreatureRight = true;
             Debug.Log("creature right");
-            camScript.RightCreature = PositionParent.transform.GetChild(1).transform.GetChild(0).gameObject;
+            camScript.RightCreature = PositionParent.transform.GetChild(1).transform.Find("CumGuzzler").gameObject;
         }
         if (Check >= 20 && Check <= 21 && !CreatureUp)
         {
             StartQTE(PositionParent.transform.GetChild(2).gameObject);
             CreatureUp = true;
             Debug.Log("creature up");
-            camScript.UpCreature = PositionParent.transform.GetChild(2).transform.GetChild(0).gameObject;`
+            camScript.UpCreature = PositionParent.transform.GetChild(2).transform.Find("CumGuzzler").gameObject;
         }
     }
 
     void StartQTE(GameObject Position)
     {
-         Instantiate(QTEPrefab, Position.transform);
+        GameObject qtMonster = Instantiate(QTEPrefab, Position.transform);
+        qtMonster.name = "CumGuzzler";
         
     }
     

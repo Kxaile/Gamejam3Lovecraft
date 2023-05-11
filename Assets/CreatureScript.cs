@@ -20,8 +20,8 @@ public class CreatureScript : MonoBehaviour
 
         GetChaos.insanityGain += Gain;
 
-        LeanTween.rotate(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorEnd").localEulerAngles, 1f);
-        LeanTween.move(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorEnd").localPosition, 1f);
+        LeanTween.rotate(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorEnd").eulerAngles, 1f);
+        LeanTween.move(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorEnd").position, 1f);
 
     }
 
@@ -52,10 +52,10 @@ public class CreatureScript : MonoBehaviour
                 GetChaos.transform.GetComponent<QTE_Call>().HasDefeatedCreature = true;
                 camScript.Tutorial.gameObject.SetActive(false);
             }
-
+            LeanTween.rotate(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorStart").eulerAngles, 0.2f);
+            LeanTween.move(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorStart").position, 0.2f);
             Destroy(this.gameObject);
-            LeanTween.rotate(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorStart").localEulerAngles, 0.2f);
-            LeanTween.move(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorStart").localPosition, 0.2f);
+            
         }
         if (currentStare > 0)
         {
