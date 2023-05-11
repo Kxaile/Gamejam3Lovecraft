@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="Gamejam3Lovecraft_WwiseProject" GUID="{08611B6E-3116-40C6-B033-49547F5A9684}" Generator="2022.1.1.8100"/>
+	<Project Name="Gamejam3Lovecraft_WwiseProject" GUID="{08611B6E-3116-40C6-B033-49547F5A9684}" Generator="2022.1.2.8150"/>
 	<CacheRoot>../../../../Gamejam3Lovecraft_WwiseProject/.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Mac" GUID="{CF5365B9-02D9-4535-8654-327EE8BAADB2}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Gamejam3Lovecraft_WwiseProject/GeneratedSoundBanks/Mac"/>
@@ -9,5 +9,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{1633799D-B8EB-4665-BE15-00883B1A8434}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{23A3F86E-5095-3DA9-1516-FD024C8C73F9}</FileHash>
+	<FileHash>{94BE201E-E2C2-97D9-E4C1-B1999A43A383}</FileHash>
 </ProjectInfo>

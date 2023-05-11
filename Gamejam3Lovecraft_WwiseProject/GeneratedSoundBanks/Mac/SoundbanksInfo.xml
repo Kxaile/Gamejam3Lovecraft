@@ -52,7 +52,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CD8878AF-FC8D-3BB2-4766-15D9C709B15E}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{DAF0D16F-9A58-B276-523D-04090194F95E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -78,7 +78,7 @@
 				</File>
 				<File Id="417505013" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2.wav</ShortName>
-					<CachePath>SFX/WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2_A6D89596.wem</CachePath>
+					<CachePath>SFX/WHSH_Whoosh 1_344 Audio_Geophonic Design Vol 2_D79B1F74.wem</CachePath>
 				</File>
 				<File Id="484759496" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CCTS - 099 - R Clock.wav</ShortName>
@@ -212,5 +212,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E6415E63-7AD3-DEB5-4805-14BB980D50B4}</FileHash>
+	<FileHash>{DE15E3F5-4B23-64B0-0697-B6BF74C0AD39}</FileHash>
 </SoundBanksInfo>
