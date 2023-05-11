@@ -290,10 +290,10 @@ public class ritual : MonoBehaviour
             Destroy(CreatureItem.GetChild(0));
 		}
 
-        Destroy(item1.GetChild(0));
-        Destroy(item2.GetChild(0));
-        Destroy(item3.GetChild(0));
-        Destroy(item3.GetChild(0));
+        Destroy(item1.GetChild(0).gameObject);
+        Destroy(item2.GetChild(0).gameObject);
+        Destroy(item3.GetChild(0).gameObject);
+        Destroy(item3.GetChild(0).gameObject);
     }
 
     // Update is called once per frame
