@@ -16,6 +16,7 @@ public class mainMenuCamScript : MonoBehaviour
     public textWiggle wiggle;
 
     public bool glowed;
+    public GameObject cameraEnd;
 
     public void SetAllowRaycast(bool boolean)
     {
@@ -27,6 +28,13 @@ public class mainMenuCamScript : MonoBehaviour
         AllowRaycast = true;
     }
 
+    public IEnumerator startCutscene(SceneSwtich scenes)
+	{
+        LeanTween.move(Camera.main.gameObject, cameraEnd.transform.position, 1f).setEaseInCubic();
+        LeanTween.rotate(Camera.main.gameObject, cameraEnd.transform.eulerAngles, 1f).setEaseInCubic();
+        yield return new WaitForSeconds(1f);
+        scenes.ChangeScene(1);
+    }
 
     void Update()
     {
@@ -41,7 +49,7 @@ public class mainMenuCamScript : MonoBehaviour
 
                 switch (Id)
                 {
-                    case 0: LastHit.transform.GetComponent<SceneSwtich>().ChangeScene(1);
+                    case 0: StartCoroutine(startCutscene(LastHit.transform.GetComponent<SceneSwtich>()));
                         break;
                     case 1: SettingsCanvas.transform.gameObject.SetActive(true);
                         AllowRaycast = false;
