@@ -19,7 +19,10 @@ public class CreatureScript : MonoBehaviour
         camScript = GameObject.FindWithTag("MainCamera").GetComponent<NewCamScript>();
 
         GetChaos.insanityGain += Gain;
-        
+
+        LeanTween.rotate(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorEnd").localEulerAngles, 1f);
+        LeanTween.move(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorEnd").localPosition, 1f);
+
     }
 
     void Update()
@@ -51,6 +54,8 @@ public class CreatureScript : MonoBehaviour
             }
 
             Destroy(this.gameObject);
+            LeanTween.rotate(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorStart").localEulerAngles, 0.2f);
+            LeanTween.move(transform.parent.Find("Door").gameObject, transform.parent.Find("DoorStart").localPosition, 0.2f);
         }
         if (currentStare > 0)
         {

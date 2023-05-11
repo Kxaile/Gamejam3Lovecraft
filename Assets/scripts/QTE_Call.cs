@@ -46,7 +46,7 @@ public class QTE_Call : MonoBehaviour
             StartQTE(PositionParent.transform.GetChild(2).gameObject);
             CreatureUp = true;
             Debug.Log("creature up");
-            camScript.UpCreature = PositionParent.transform.GetChild(2).transform.GetChild(0).gameObject;
+            camScript.UpCreature = PositionParent.transform.GetChild(2).transform.GetChild(0).gameObject;`
         }
     }
 
